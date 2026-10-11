@@ -1,0 +1,36 @@
+# Contrôles — marché, concurrence, voix du client, positionnement
+
+Un contrôle par ligne. Colonnes imposées ; voir `lancer-projet/references/dossier-projet.md` pour les étiquettes.
+
+| ID | Jalon | Criticité | Types | Conditions | Contrôle | Preuve attendue | Référence |
+|---|---|---|---|---|---|---|---|
+| MAR-001 | J1 | majeur | tous | - | Le job à accomplir, le segment visé et l'alternative actuelle sont formulés en trois phrases au début de l'étude de marché | 01-decouverte/etude-de-marche.md | Jobs to be done, HBR 2016 |
+| MAR-002 | J1 | majeur | site,ecommerce,mobile,saas,niche | - | La taille du marché est calculée de deux façons, par le haut et par le bas, et l'écart entre les deux est expliqué | 01-decouverte/etude-de-marche.md | bonne pratique |
+| MAR-003 | J1 | majeur | site,ecommerce,mobile,saas,niche | - | Chaque hypothèse du calcul porte source, date de l'édition et fourchette basse, centrale et haute, avec la sensibilité des deux hypothèses dominantes | 01-decouverte/etude-de-marche.md | bonne pratique |
+| MAR-004 | J1 | majeur | tous | - | Le segment de départ est justifié par une douleur fréquente, des alternatives faibles, un canal accessible et un consentement à payer observé | 01-decouverte/etude-de-marche.md | bonne pratique |
+| MAR-005 | J1 | mineur | site,ecommerce,mobile,saas,niche | - | Chaque tendance retenue indique son sens, sa source datée, son effet sur le chiffre de marché et le signal qui ferait changer d'avis | 01-decouverte/etude-de-marche.md | bonne pratique |
+| MAR-006 | J1 | mineur | tous | - | Les cinq forces sont examinées avec les substituts, l'option « ne rien faire » et les plateformes dont dépend l'offre | 01-decouverte/etude-de-marche.md | Porter, HBR 2008 |
+| MAR-007 | J1 | majeur | ecommerce,mobile,saas,niche | - | Le prix observé sur le marché est confronté au coût d'acquisition plausible et au revenu annuel par client avant toute recommandation d'aller | 01-decouverte/etude-de-marche.md | CB Insights 2026 |
+| MAR-008 | J1 | bloquant | tous | - | Au moins dix concurrents ou alternatives sont listés et classés direct, indirect, substitut ou « ne rien faire », avec la raison de chaque exclusion | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-009 | J1 | majeur | tous | - | Chaque concurrent retenu a une fiche de faits au gabarit du pôle, écrite dans le dossier des sources | 01-decouverte/sources/concurrents/ | bonne pratique |
+| MAR-010 | J1 | bloquant | tous | - | Chaque prix, chaque fonction et chaque chiffre cités portent une URL et une date de consultation, sinon la mention « non trouvé » | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-011 | J1 | majeur | tous | - | La matrice fonctionnelle compte au moins vingt fonctions notées absent, partiel ou complet, avec une preuve par cellule | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-012 | J1 | majeur | ecommerce,mobile,saas,niche,erp | - | Les prix sont comparés en coût total sur un cas d'usage type décrit, avec unités, paliers et frais annexes | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-013 | J1 | mineur | tous | - | Les données de trafic, de référencement et de part de marché sont étiquetées estimation et croisées sur deux outils | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-014 | J1 | mineur | ecommerce,mobile,saas,niche,site | ue | Les publicités actives des concurrents clés sont cherchées dans les bibliothèques publicitaires publiques, ou l'impossibilité est indiquée | 01-decouverte/benchmark-concurrentiel.md | Meta Ad Library |
+| MAR-015 | J2 | mineur | tous | - | Un plan de veille fixe le rafraîchissement mensuel des prix et des nouveautés et trimestriel du reste, avec la date du prochain passage | 01-decouverte/benchmark-concurrentiel.md | bonne pratique |
+| MAR-016 | J1 | bloquant | tous | - | Un registre des sources donne pour chacune son statut d'accès et la date de lecture des conditions, sans collecte d'une source qui l'interdit | 01-decouverte/voix-du-client.md | CNIL 19 juin 2025 |
+| MAR-017 | J1 | bloquant | tous | - | Aucun verbatim n'est inventé : chacun est une citation exacte de 25 mots au plus ou une reformulation signalée, avec URL de la page et date | 01-decouverte/sources/avis/ | bonne pratique |
+| MAR-018 | J1 | majeur | ecommerce,mobile,saas,niche | - | Le corpus compte au moins deux cents avis par concurrent clé, échantillonnés par note et par période, ou l'insuffisance est déclarée | 01-decouverte/voix-du-client.md | bonne pratique |
+| MAR-019 | J1 | majeur | tous | - | La distribution des notes est analysée et les biais (distribution en J, minorité vocale, audience de la plateforme) sont nommés avec leur effet | 01-decouverte/voix-du-client.md | Hu, Pavlou, Zhang |
+| MAR-020 | J1 | majeur | tous | - | Un codebook est écrit, au moins dix pour cent du corpus est double-codé avec l'accord reporté, et cinquante codages du modèle sont vérifiés à la main | 01-decouverte/voix-du-client.md | bonne pratique |
+| MAR-021 | J1 | majeur | tous | - | Chaque thème porte fréquence, sévérité, tendance et statut, et aucun thème n'est conclu sous trente occurrences | 01-decouverte/voix-du-client.md | bonne pratique |
+| MAR-022 | J1 | majeur | tous | - | Un manque n'est déclaré confirmé qu'avec au moins trois sources de natures différentes, sinon il est qualifié d'indice | 01-decouverte/voix-du-client.md | bonne pratique |
+| MAR-023 | J1 | bloquant | tous | donnees-perso | Les fiches d'avis ne contiennent ni nom d'auteur, ni pseudonyme, ni lien de profil, et excluent santé, mineurs et profils privés | 01-decouverte/sources/avis/ | RGPD ; CNIL 19 juin 2025 |
+| MAR-024 | J1 | bloquant | tous | - | La matrice d'écarts classe chaque besoin en ajouter, supprimer, différencier ou protéger, avec les preuves THM, CON et FAC qui le fondent | 01-decouverte/note-opportunite.md | bonne pratique |
+| MAR-025 | J1 | majeur | tous | - | Le positionnement énonce les alternatives, les attributs uniques, la valeur, les clients best-fit et la catégorie en une phrase unique | 01-decouverte/note-opportunite.md | Dunford, à vérifier |
+| MAR-026 | J1 | bloquant | tous | - | La note présente deux ou trois options de périmètre chiffrées avec la source des coûts, examine acheter ou renoncer, et recommande avec motifs | 01-decouverte/note-opportunite.md | bonne pratique |
+| MAR-027 | J1 | majeur | tous | - | Les critères produit-marché, timing et économie unitaire sont examinés explicitement avant toute recommandation d'aller | 01-decouverte/note-opportunite.md | CB Insights 2026 |
+| MAR-028 | J1 | majeur | tous | - | Les fonctions retenues portent une priorité RICE à confiance justifiée et un rang MoSCoW, et les fonctions supprimées sont listées avec leur raison | 01-decouverte/note-opportunite.md | bonne pratique |
+| MAR-029 | J2 | majeur | tous | - | Les seuils de succès de chaque test de demande sont écrits avant le test, et les hypothèses restantes sont transmises au cadrage | 01-decouverte/note-opportunite.md | bonne pratique |
+| MAR-030 | J7 | mineur | tous | - | Les premiers retours réels des utilisateurs sont comparés aux hypothèses de la note d'opportunité, avec les écarts expliqués | 07-exploitation/suivi-indicateurs.md | bonne pratique |

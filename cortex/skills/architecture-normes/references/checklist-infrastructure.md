@@ -1,0 +1,38 @@
+# Contrôles — infrastructure, environnements, livraison, observabilité et continuité
+
+Un contrôle par ligne. Colonnes imposées ; voir `lancer-projet/references/dossier-projet.md` pour les étiquettes.
+
+| ID | Jalon | Criticité | Types | Conditions | Contrôle | Preuve attendue | Référence |
+|---|---|---|---|---|---|---|---|
+| INF-001 | J3 | bloquant | tous | - | Chaque charge est classée par sensibilité, localisation des données et exigence de qualification avant le choix de l'hébergeur | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-002 | J3 | majeur | tous | - | Le choix de l'hébergeur compare au moins deux options sur souveraineté, coût sur trois à cinq ans, compétences disponibles et réversibilité | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-003 | J3 | bloquant | tous | fr+secteur-public,fr+sante,fr+donnees-sensibles | La qualification SecNumCloud revendiquée est vérifiée sur la liste de l'ANSSI pour le périmètre exact du service utilisé | 03-conception/architecture/infrastructure.md | ANSSI, référentiel SecNumCloud v3.2 |
+| INF-004 | J3 | majeur | tous | ue | Aucune étape du planning ne dépend d'une qualification d'hébergeur non encore obtenue ; un plan de repli est écrit | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-005 | J3 | majeur | tous | ue | Le contrat d'hébergement chiffre frais standard, pénalités de résiliation et frais de changement de fournisseur, lecture à valider par le juriste | 03-conception/architecture/infrastructure.md | Règlement (UE) 2023/2854, art. 29 |
+| INF-006 | J3 | majeur | tous | - | Un plan de sortie couvrant données, infrastructure as code et secrets est décrit, avec coût et délai estimés | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-007 | J3 | bloquant | tous | - | SLO, RTO et RPO sont fixés par parcours métier, repris des exigences non fonctionnelles, avant tout dimensionnement | 03-conception/architecture/infrastructure.md | Google SRE ; bonne pratique |
+| INF-008 | J3 | majeur | tous | - | Les points uniques de défaillance sont inventoriés avec leur parade, et chaque dépendance tierce prévoit une dégradation gracieuse | 03-conception/architecture/infrastructure.md | Google SRE, annexe E |
+| INF-009 | J3 | majeur | tous | - | Les environnements dev, test, recette, préproduction et production sont définis, la préproduction rejoue charge et déploiement, sans donnée de production non anonymisée | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-010 | J3 | majeur | tous | - | Toute l'infrastructure est décrite en code versionné et relu, et le choix entre Terraform et OpenTofu est motivé | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-011 | J3 | majeur | tous | - | La promotion entre environnements est outillée, sans script manuel, et la dérive entre dépôt et environnement est détectée | 03-conception/architecture/infrastructure.md | CNCF, enquête Argo CD 2025 |
+| INF-012 | J3 | majeur | tous | - | Les secrets sont hors dépôt, conservés dans un coffre, renouvelés automatiquement, et les comptes techniques disposent du moindre privilège | 03-conception/architecture/infrastructure.md | bonne pratique |
+| INF-013 | J3 | majeur | tous | - | La stratégie de reprise (sauvegarde-restauration, pilot light, warm standby, actif-actif) est cohérente avec le RTO et le RPO, l'actif-actif étant justifié par le métier | 03-conception/architecture/infrastructure.md | AWS REL13-BP02 |
+| INF-014 | J4 | bloquant | tous | - | La chaîne produit un artefact unique, versionné et lié à un commit, promu d'un environnement à l'autre sans reconstruction | 04-realisation/journal-de-build.md | bonne pratique |
+| INF-015 | J4 | majeur | tous | - | Les accès de la chaîne aux environnements sont à moindre privilège, avec identifiants éphémères et sans secret durable dans les variables du pipeline | capture | bonne pratique |
+| INF-016 | J4 | majeur | tous | - | Un déploiement progressif (canary, puis région, puis global) avec retour arrière automatique sur alarme est configuré pour la production | 04-realisation/journal-de-build.md | Google SRE, chapitre 27 |
+| INF-017 | J4 | majeur | tous | - | Les migrations de schéma sont rétrocompatibles et découplées du déploiement, et leur retour arrière est exercé hors production | rapport de test | bonne pratique |
+| INF-018 | J4 | mineur | tous | - | Les cinq métriques DORA sont suivies par service en tendance, sans cible imposée et sans confusion avec le règlement européen du même nom | 04-realisation/journal-de-build.md | DORA, guide des métriques |
+| INF-019 | J4 | majeur | tous | - | Si Kubernetes est utilisé, aucun Ingress NGINX n'est exposé en production : Gateway API ou un contrôleur maintenu le remplace | capture | Kubernetes, annonce du 29/01/2026 |
+| INF-020 | J4 | majeur | tous | - | Les certificats TLS sont émis et renouvelés par ACME et la chaîne servie est surveillée depuis l'extérieur | capture | CA/Browser Forum SC-081v3 |
+| INF-021 | J4 | majeur | tous | - | Les coûts sont alloués par produit et par environnement, avec budgets et alertes d'anomalie configurés avant le lancement | capture | FinOps Framework 2025 |
+| INF-022 | J4 | majeur | tous | - | Les services sont instrumentés avec OpenTelemetry pour traces, métriques et journaux, sans dépendance critique au signal Profiles, encore en alpha | 03-conception/architecture/infrastructure.md | OpenTelemetry |
+| INF-023 | J4 | majeur | tous | - | Les SLI et SLO sont définis par parcours et les alertes à taux de consommation multi-fenêtres sont recalibrées sur le SLO réel | 03-conception/architecture/infrastructure.md | Google SRE Workbook |
+| INF-024 | J4 | bloquant | tous | - | Les sauvegardes suivent trois copies dont une hors ligne, et les serveurs de sauvegarde sont hors du domaine d'administration de production | 03-conception/architecture/infrastructure.md | ANSSI-BP-100 v1.1, R5, R11, R12 |
+| INF-025 | J4 | majeur | tous | - | Une perte de données tolérée inférieure à 24 heures est couverte par réplication, complétée d'une restauration à un instant donné contre la corruption | 03-conception/architecture/infrastructure.md | ANSSI-BP-100 v1.1 ; AWS REL13-BP02 |
+| INF-026 | J5 | majeur | tous | - | Le dimensionnement est validé par un test de charge de bout en bout au pic de lancement plus six mois, avec marge de 10× documentée | rapport de test | Google SRE, chapitre 27 |
+| INF-027 | J5 | majeur | tous | - | Le retour arrière de l'application et du schéma est exercé en préproduction et sa durée est mesurée | rapport de test | bonne pratique |
+| INF-028 | J5 | bloquant | tous | - | Une restauration complète est testée dans l'ordre DNS, NTP, annuaire puis applications, et sa durée mesurée respecte le RTO et le RPO | rapport de test | ANSSI-BP-100 v1.1, R22, R23 |
+| INF-029 | J5 | majeur | tous | - | L'infrastructure de sauvegarde, les configurations et les clés de chiffrement sont elles-mêmes sauvegardées | rapport de test | ANSSI-BP-100 v1.1, R26 |
+| INF-030 | J5 | majeur | tous | - | Les rôles d'incident (commandant, communications, opérations) sont nommés, les playbooks écrits et un exercice est réalisé avant le lancement | rapport de test | Google SRE, guide de gestion d'incident |
+| INF-031 | J6 | majeur | tous | - | Les alertes de page et de ticket sont déclenchées en test, atteignent la bonne personne, et la supervision est elle-même supervisée | rapport de test | Google SRE, annexe E |
+| INF-032 | J6 | mineur | tous | - | La page de statut est hébergée hors de l'infrastructure qu'elle surveille | capture | bonne pratique |

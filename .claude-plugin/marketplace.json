@@ -1,0 +1,23 @@
+{
+  "name": "cortex-projets",
+  "owner": {
+    "name": "Aksil"
+  },
+  "metadata": {
+    "description": "Cortex : le réseau d'agents experts qui lance vos projets numériques avec Claude.",
+    "version": "0.9.0"
+  },
+  "plugins": [
+    {
+      "name": "cortex",
+      "source": "./cortex",
+      "description": "Un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique sans rien oublier et en consommant peu de tokens.",
+      "version": "0.9.0",
+      "author": {
+        "name": "Aksil"
+      },
+      "license": "MIT",
+      "keywords": ["gestion de projet", "multi-agents", "cahier des charges", "spécifications", "architecture", "tests", "sécurité", "juridique", "budget", "marketing", "lancement"]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "J1": {
+    "question": "Faut-il y aller, et sous quel angle ?",
+    "documents": [
+      {"chemin": "01-decouverte/etude-de-marche.md"},
+      {"chemin": "01-decouverte/benchmark-concurrentiel.md", "modes": ["standard", "integral"]},
+      {"chemin": "01-decouverte/voix-du-client.md", "modes": ["standard", "integral"]},
+      {"chemin": "01-decouverte/analyse-contexte.md", "modes": ["standard", "integral"]},
+      {"chemin": "01-decouverte/prediagnostic-juridique.md", "modes": ["standard", "integral"]},
+      {"chemin": "01-decouverte/note-faisabilite-technique.md", "modes": ["standard", "integral"]},
+      {"chemin": "01-decouverte/note-opportunite.md"}
+    ]
+  },
+  "J2": {
+    "question": "Quoi, pour qui, combien, quand ?",
+    "documents": [
+      {"chemin": "02-cadrage/note-de-cadrage.md"},
+      {"chemin": "02-cadrage/cahier-des-charges.md"},
+      {"chemin": "02-cadrage/budget.md"},
+      {"chemin": "00-pilotage/planning.md"},
+      {"chemin": "02-cadrage/personas-parcours.md", "modes": ["standard", "integral"]},
+      {"chemin": "02-cadrage/analyse-risques-securite.md", "modes": ["standard", "integral"]},
+      {"chemin": "02-cadrage/cartographie-donnees.md", "tags": ["donnees-perso"]},
+      {"chemin": "02-cadrage/strategie-marche.md", "modes": ["standard", "integral"]}
+    ]
+  },
+  "J3": {
+    "question": "Comment exactement ?",
+    "controles": ["interactions"],
+    "documents": [
+      {"chemin": "03-conception/specifications/sfg.md"},
+      {"chemin": "03-conception/specifications/sfd/*.md"},
+      {"chemin": "03-conception/specifications/specs-techniques.md"},
+      {"chemin": "03-conception/architecture/dossier-architecture.md"},
+      {"chemin": "03-conception/architecture/adr/*.md"},
+      {"chemin": "03-conception/architecture/modele-donnees.md"},
+      {"chemin": "03-conception/architecture/normes-developpement.md"},
+      {"chemin": "03-conception/architecture/infrastructure.md", "modes": ["standard", "integral"]},
+      {"chemin": "03-conception/design/workflows/*.md"},
+      {"chemin": "03-conception/design/interactions/ecrans.md"},
+      {"chemin": "03-conception/design/design-system.md", "modes": ["standard", "integral"]},
+      {"chemin": "03-conception/securite/modele-menaces.md", "modes": ["standard", "integral"]},
+      {"chemin": "03-conception/juridique/conformite-reglementaire.md"},
+      {"chemin": "03-conception/juridique/registre-traitements.md", "tags": ["donnees-perso"]},
+      {"chemin": "03-conception/tests/strategie-de-test.md"},
+      {"chemin": "03-conception/tests/cahier-de-recette.md"},
+      {"chemin": "03-conception/marketing/plan-marketing.md", "modes": ["standard", "integral"]}
+    ]
+  },
+  "J4": {
+    "question": "Est-ce construit et testé ?",
+    "documents": [
+      {"chemin": "04-realisation/lots.md"},
+      {"chemin": "04-realisation/journal-de-build.md"},
+      {"chemin": "04-realisation/journaux/*.log"}
+    ]
+  },
+  "J5": {
+    "question": "Est-ce prêt ?",
+    "controles": ["interactions"],
+    "documents": [
+      {"chemin": "05-validation/pv-recette.md"},
+      {"chemin": "05-validation/rapport-securite.md"},
+      {"chemin": "05-validation/rapport-test-intrusion.md", "modes": ["standard", "integral"]},
+      {"chemin": "05-validation/rapport-accessibilite.md", "modes": ["standard", "integral"]},
+      {"chemin": "05-validation/dossier-conformite.md"},
+      {"chemin": "00-pilotage/audits/audit-general.md"},
+      {"chemin": "06-lancement/checklist-go-no-go.md"}
+    ]
+  },
+  "J6": {
+    "question": "Lancer et tenir",
+    "documents": [
+      {"chemin": "06-lancement/plan-de-lancement.md"},
+      {"chemin": "06-lancement/runbook-mise-en-production.md"},
+      {"chemin": "06-lancement/plan-support.md", "modes": ["standard", "integral"]}
+    ]
+  },
+  "J7": {
+    "question": "Qu'a-t-on appris ?",
+    "documents": [
+      {"chemin": "07-exploitation/suivi-indicateurs.md"},
+      {"chemin": "07-exploitation/bilan-de-projet.md"}
+    ]
+  }
+}
