@@ -114,7 +114,6 @@ class AutonomyTests(unittest.TestCase):
 
     def test_provisional_decisions_are_listed(self):
         self.init("--autonomie", "autonome")
-        # Les champs avant --dossier : c'est l'ordre que Python 3.11 et 3.12 acceptent pour ce sous-parseur.
         proc = cortex("registre", "decisions", "ajouter", "titre=Choix de la pile", "type=1",
                       "decideur=chef d'orchestre", "statut=provisoire", "--dossier", str(self.dossier))
         self.assertEqual(proc.returncode, 0, proc.stderr)
@@ -133,6 +132,46 @@ class AutonomousSettingsTests(unittest.TestCase):
         data = json.loads(REGLAGES.read_text(encoding="utf-8"))
         self.assertTrue(data["sandbox"]["enabled"])
         self.assertNotIn(data["permissions"]["defaultMode"], ("bypassPermissions", "dontAsk"))
+
+
+class RegistreArgumentsTests(unittest.TestCase):
+    """--dossier peut se placer n'importe où, quelle que soit la version de Python."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dossier = str(Path(self.tmp.name) / "projet")
+        proc = cortex("init", "--dossier", self.dossier, "--nom", "Essai", "--types", "saas")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def decisions(self):
+        chemin = Path(self.dossier) / "00-pilotage" / "registres" / "decisions.csv"
+        with open(chemin, encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f, delimiter=";"))
+
+    def test_dossier_before_fields(self):
+        proc = cortex("registre", "decisions", "ajouter", "--dossier", self.dossier, "titre=Avant", "type=2")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertEqual(self.decisions()[0]["titre"], "Avant")
+
+    def test_dossier_between_fields_keeps_order(self):
+        proc = cortex("registre", "decisions", "ajouter", "titre=Milieu", "--dossier", self.dossier, "type=2")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        ligne = self.decisions()[0]
+        self.assertEqual((ligne["titre"], ligne["type"]), ("Milieu", "2"))
+
+    def test_update_with_dossier_before_id(self):
+        cortex("registre", "decisions", "ajouter", "titre=X", "--dossier", self.dossier)
+        proc = cortex("registre", "decisions", "maj", "--dossier", self.dossier, "DEC-001", "statut=validee")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertEqual(self.decisions()[0]["statut"], "validee")
+
+    def test_unknown_option_still_rejected(self):
+        proc = cortex("registre", "decisions", "ajouter", "titre=X", "--inconnue", "--dossier", self.dossier)
+        self.assertEqual(proc.returncode, 2)
+        self.assertIn("--inconnue", proc.stderr)
 
 
 if __name__ == "__main__":

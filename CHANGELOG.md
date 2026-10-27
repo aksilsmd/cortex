@@ -1,5 +1,11 @@
 # Journal des versions
 
+## 1.0.1 — 27 octobre 2026
+
+- `cortex.py registre` accepte `--dossier` (et `--max`) avant, entre ou après les champs `cle=valeur`, y compris
+  sous Python 3.11 et 3.12, qui rejetaient jusqu'ici les champs placés après une option. Une option inconnue
+  reste refusée.
+
 ## 1.0.0 — 27 octobre 2026
 
 Cortex devient **Dan-Cortex** et fusionne avec Claude Code Autonomy Lab.

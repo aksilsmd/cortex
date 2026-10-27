@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Dan-Cortex : le réseau d'agents experts qui lance vos projets numériques avec Claude, en autonomie si tu le veux.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "dan-cortex",
       "source": "./dan-cortex",
       "description": "Un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique sans rien oublier, en autonomie si tu le veux, avec un pôle de robustesse des agents.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Aksil"
       },

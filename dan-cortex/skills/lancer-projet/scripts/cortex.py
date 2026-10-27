@@ -1218,7 +1218,14 @@ def main():
     s.add_argument("action", choices=["verifier"])
     s.add_argument("--etiquettes", action="store_true")
 
-    a = p.parse_args()
+    a, reste = p.parse_known_args()
+    if a.commande == "registre":
+        # Avant Python 3.13, argparse écarte les champs cle=valeur placés après une option
+        # (« registre decisions ajouter --dossier D titre=… ») : on les rend aux champs, dans l'ordre.
+        a.champs += [x for x in reste if not x.startswith("-")]
+        reste = [x for x in reste if x.startswith("-")]
+    if reste:
+        p.error("arguments non reconnus : %s" % " ".join(reste))
     if a.commande in (None, "aide"):
         print(AIDE)
         return
