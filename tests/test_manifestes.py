@@ -71,5 +71,24 @@ class SkillsTests(unittest.TestCase):
                 self.assertIn("/dan-cortex:%s" % dossier.name, plugin)
 
 
+class RenvoisTests(unittest.TestCase):
+    def test_renvois_entre_skills_resolus(self):
+        motif = re.compile(r"\$\{CLAUDE_SKILL_DIR\}/(\.\./[A-Za-z0-9_./-]+)")
+        vus = 0
+        for skill_md in sorted((PLUGIN / "skills").glob("*/SKILL.md")):
+            for cible in motif.findall(lire(skill_md)):
+                vus += 1
+                with self.subTest(skill=skill_md.parent.name, cible=cible):
+                    chemin = (skill_md.parent / cible).resolve()
+                    # « ../../agents/<nom>.md » est un modèle : seul son dossier doit exister.
+                    self.assertTrue(chemin.is_dir() if cible.endswith("/") else chemin.is_file())
+        self.assertGreater(vus, 0)
+
+    def test_nouveaux_skills_branches_dans_le_chef_d_orchestre(self):
+        texte = lire(PLUGIN / "skills" / "lancer-projet" / "SKILL.md")
+        for skill in ("execution-resiliente", "confidentialite-traces"):
+            self.assertIn("${CLAUDE_SKILL_DIR}/../%s/SKILL.md" % skill, texte)
+
+
 if __name__ == "__main__":
     unittest.main()

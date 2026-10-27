@@ -189,6 +189,8 @@ les manques et les prochaines actions. Ne rien relire d'autre avant d'en avoir b
 | `references/routage-skills-outils.md` | à J0, pour tirer parti des skills et connecteurs présents dans la session |
 | `references/dossier-projet.md` | à J0 : arborescence, identifiants, registres, commandes du script |
 | `references/autonomie.md` | à J0 si l'utilisateur veut que le réseau avance seul ; en entier avant le mode `autonome` |
+| `${CLAUDE_SKILL_DIR}/../execution-resiliente/SKILL.md` | dès qu'une mission échoue ou qu'un jalon reste bloqué, et avant chaque bilan en `delegue` ou `autonome` : boucle de reprise, vérification avant de conclure |
+| `${CLAUDE_SKILL_DIR}/../confidentialite-traces/SKILL.md` | avant d'écrire un journal, un rapport ou un compte rendu qui touche des secrets ou des données personnelles |
 | `references/planification.md` | pour bâtir ou contrôler un planning ; référence du `planificateur` |
 | `references/reseau.md` | si l'utilisateur demande comment le réseau fonctionne |
 | `references/profils/<type>.md` | à J0, pour le ou les types du projet |

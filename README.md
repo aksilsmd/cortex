@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 1.3.0" src="https://img.shields.io/badge/version-1.3.0-2563EB">
+  <img alt="Version 1.3.1" src="https://img.shields.io/badge/version-1.3.1-2563EB">
   <img alt="16 skills" src="https://img.shields.io/badge/skills-16-0F766E">
   <img alt="45 agents" src="https://img.shields.io/badge/agents-45-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">

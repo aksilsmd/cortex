@@ -1,6 +1,6 @@
 {
   "name": "dan-cortex",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Dan-Cortex : un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un grand projet numérique (site d'entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP), capable d'enchaîner tout un projet en autonomie dans un cadre que tu fixes, avec un pôle de robustesse des agents (audit des réglages Claude Code, résistance à l'injection d'instructions) ; autonomie résiliente et confidentialité des traces sensibles.",
   "author": {
     "name": "Aksil"

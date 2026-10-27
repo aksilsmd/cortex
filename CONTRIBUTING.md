@@ -11,4 +11,5 @@
 6. Toute modification de `dan-cortex/` se termine par `python3 scripts/construire_plugin.py`, qui reconstruit
    `dist/dan-cortex.plugin` de façon reproductible à partir des fichiers suivis par Git. La CI vérifie que
    l'archive est à jour (`--verifier`).
-7. Avant une pull request : `python3 -m unittest discover -s tests -v` et le vérificateur de checklists ci-dessus.
+7. Ne relance pas un ancien paquet de mise à jour (`dan-cortex-update-1.3.0`) : son script réécrit la version.
+8. Avant une pull request : `python3 -m unittest discover -s tests -v` et le vérificateur de checklists ci-dessus.

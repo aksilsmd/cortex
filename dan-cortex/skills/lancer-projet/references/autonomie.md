@@ -55,7 +55,9 @@ des réglages. Sans ces réponses, rester en `accompagne`.
 4. **Agir dans le cadre écrit.** Un effet extérieur couvert par une autorisation permanente est exécuté puis
    journalisé au registre des actions. Un effet non couvert va au registre des actions avec `statut=ouverte` et
    la mention « en attente d'accord » ; le travail continue sur le reste.
-5. **Réparer avant de s'arrêter.** Un jalon que le script refuse déclenche deux tours de correction par les auteurs.
+5. **Réparer avant de s'arrêter.** Un jalon que le script refuse déclenche deux tours de correction par les auteurs,
+   menés selon la boucle de reprise du skill `execution-resiliente` (cause classée, hypothèse testée, autre
+   stratégie si la première échoue).
    S'il reste bloqué, poursuivre les missions indépendantes, puis s'arrêter et rendre compte. Ne jamais forcer un
    jalon (`--force`) sans accord : forcer, c'est accepter un risque à la place de l'utilisateur.
 6. **Tenir le budget.** À 80 % du plafond de tokens, passer en mode `eclair` pour la suite ; à 100 %, s'arrêter et
