@@ -194,7 +194,8 @@ Les retours sont les bienvenus.
 |---|---|
 | `dan-cortex/` | le plugin : 16 skills, 45 agents, 126 fichiers de référence et gabarits, 3 scripts |
 | `dist/dan-cortex.plugin` | le plugin empaqueté pour l'application Claude |
-| `tests/`, `pyproject.toml` | tests du paquet `ccal` et des niveaux d'autonomie ; installation de la commande `ccal` |
+| `tests/`, `pyproject.toml` | tests du paquet `ccal`, des niveaux d'autonomie, des manifestes et du build ; installation de la commande `ccal` |
+| `scripts/construire_plugin.py` | construction reproductible de `dist/dan-cortex.plugin` |
 | `docs/expertise.md` | le rapport d'expertise qui a servi à le construire, avec ses sources |
 | `docs/essai-a-blanc.md` | le compte rendu de l'essai en conditions réelles |
 
@@ -206,6 +207,7 @@ Les retours sont les bienvenus.
 - Modifier un agent : son fichier dans `dan-cortex/agents/`.
 - Ajouter un type de projet : un profil dans `dan-cortex/skills/lancer-projet/references/profils/`.
 - Lancer les tests : `python3 -m unittest discover -s tests -v`.
+- Reconstruire l'archive distribuable après toute modification du plugin : `python3 scripts/construire_plugin.py`.
 
 Les corrections de droit, de normes et de versions d'outils sont particulièrement utiles : ouvre un ticket en
 citant le texte ou la source.

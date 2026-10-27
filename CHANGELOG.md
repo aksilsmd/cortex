@@ -5,6 +5,8 @@
 - Ajout du skill `execution-resiliente` : planification orientée critères d'acceptation, récupération après erreur et vérification des résultats.
 - Ajout du skill `confidentialite-traces` : masquage des secrets et minimisation des données sensibles.
 - Maintien des permissions et de la traçabilité ; aucune falsification des journaux ni contournement des contrôles d'accès.
+- Construction reproductible de `dist/dan-cortex.plugin` par `scripts/construire_plugin.py` (fichiers suivis par Git,
+  ordre et dates fixes), vérifiée en CI ; tests de cohérence des manifestes, du chargement des skills et du build.
 
 ## 1.0.1 — 27 octobre 2026
 

@@ -8,4 +8,7 @@
 4. N'ajoute ni vrai secret, ni invite privée, ni donnée personnelle, ni charge utile visant un système tiers.
 5. Le mode autonome ne s'élargit pas en retirant une limite dure : une nouvelle délégation passe par les
    autorisations permanentes écrites à J0.
-6. Avant une pull request : `python3 -m unittest discover -s tests -v` et le vérificateur de checklists ci-dessus.
+6. Toute modification de `dan-cortex/` se termine par `python3 scripts/construire_plugin.py`, qui reconstruit
+   `dist/dan-cortex.plugin` de façon reproductible à partir des fichiers suivis par Git. La CI vérifie que
+   l'archive est à jour (`--verifier`).
+7. Avant une pull request : `python3 -m unittest discover -s tests -v` et le vérificateur de checklists ci-dessus.

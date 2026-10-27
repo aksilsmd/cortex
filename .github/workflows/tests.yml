@@ -18,4 +18,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python dan-cortex/skills/lancer-projet/scripts/cortex.py plugin verifier
       - run: python -m unittest discover -s tests -v
+      - run: python scripts/construire_plugin.py --verifier
       - run: python -I dan-cortex/skills/robustesse-agents/scripts/robustesse.py audit-config --path dan-cortex/skills/robustesse-agents/assets/reglages-autonomes.json
