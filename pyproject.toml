@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dan-cortex-ccal"
+version = "1.0.0"
+description = "Local configuration auditing and robustness evaluation toolkit for Claude Code"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Claude Code Autonomy Lab contributors"}]
+keywords = ["claude-code", "llm-security", "prompt-injection", "red-team", "developer-tools"]
+classifiers = ["Development Status :: 3 - Alpha", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.11", "Topic :: Security"]
+dependencies = []
+
+[project.scripts]
+ccal = "ccal.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["dan-cortex/skills/robustesse-agents/scripts"]

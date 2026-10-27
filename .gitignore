@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+*.egg-info/
+build/
+.venv/
+ccal-results/
+ccal-scenarios.json

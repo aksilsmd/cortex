@@ -1,0 +1,2 @@
+"""Claude Code Autonomy Lab."""
+__version__ = "1.0.0"

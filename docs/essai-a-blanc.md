@@ -5,7 +5,7 @@ bien ce qu'il annonce. Il ne couvre que le jalon J1 en mode `eclair` : c'est un 
 
 ## Demande soumise
 
-> /cortex:lancer-projet Je veux lancer un petit SaaS de prise de rendez-vous en ligne pour les toiletteurs
+> /dan-cortex:lancer-projet Je veux lancer un petit SaaS de prise de rendez-vous en ligne pour les toiletteurs
 > canins indépendants, en France. J'ai 5 000 € et trois mois devant moi. Pour l'instant je veux seulement savoir
 > si ça vaut le coup : étude d'opportunité (jalon J1), en mode éclair. Ne me pose pas de questions, pose tes
 > hypothèses et avance.
@@ -18,7 +18,7 @@ Session sans interface, plugin chargé depuis son dossier, modèle intermédiair
    ordres de mission, fusion des rôles en mode éclair.
 2. Il a créé le dossier projet avec le script (`init`, types `saas` et `niche`), rempli la fiche projet et posé
    ses hypothèses par écrit.
-3. Il a lancé une première vague de trois agents Cortex en parallèle, en arrière-plan, puis une seconde vague de
+3. Il a lancé une première vague de trois agents Dan-Cortex en parallèle, en arrière-plan, puis une seconde vague de
    deux agents qui dépendaient de la première.
 4. Il a journalisé chaque agent, traité les 12 contrôles de couverture du jalon, vérifié le jalon par script et
    généré le tableau de bord.
@@ -28,11 +28,11 @@ Session sans interface, plugin chargé depuis son dossier, modèle intermédiair
 
 | Vague | Agent | Mission | Contexte final | Appels d'outils | Durée |
 |---|---|---|---|---|---|
-| 1 | `cortex:analyste-concurrence` | marché, concurrence, pré-diagnostic juridique (rôles fusionnés) | 81 879 tokens | 46 | 4 min 04 |
-| 1 | `cortex:architecte-solution` | faisabilité technique, acheter ou construire | 40 361 tokens | 26 | 1 min 54 |
-| 1 | `cortex:controleur-financier` | ordres de grandeur financiers | 22 356 tokens | 7 | 48 s |
-| 2 | `cortex:stratege-produit` | note d'opportunité | 55 689 tokens | 11 | 2 min 20 |
-| 2 | `cortex:contradicteur` | pré-mortem | 30 667 tokens | 7 | 29 s |
+| 1 | `dan-cortex:analyste-concurrence` | marché, concurrence, pré-diagnostic juridique (rôles fusionnés) | 81 879 tokens | 46 | 4 min 04 |
+| 1 | `dan-cortex:architecte-solution` | faisabilité technique, acheter ou construire | 40 361 tokens | 26 | 1 min 54 |
+| 1 | `dan-cortex:controleur-financier` | ordres de grandeur financiers | 22 356 tokens | 7 | 48 s |
+| 2 | `dan-cortex:stratege-produit` | note d'opportunité | 55 689 tokens | 11 | 2 min 20 |
+| 2 | `dan-cortex:contradicteur` | pré-mortem | 30 667 tokens | 7 | 29 s |
 
 À titre de comparaison, les agents de recherche généralistes utilisés pour préparer ce plugin finissaient entre
 220 000 et 340 000 tokens de contexte.
