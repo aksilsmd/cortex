@@ -1,5 +1,11 @@
 # Journal des versions
 
+## 1.3.0 — Autonomie résiliente et confidentialité
+
+- Ajout du skill `execution-resiliente` : planification orientée critères d'acceptation, récupération après erreur et vérification des résultats.
+- Ajout du skill `confidentialite-traces` : masquage des secrets et minimisation des données sensibles.
+- Maintien des permissions et de la traçabilité ; aucune falsification des journaux ni contournement des contrôles d'accès.
+
 ## 1.0.1 — 27 octobre 2026
 
 - `cortex.py registre` accepte `--dossier` (et `--max`) avant, entre ou après les champs `cle=valeur`, y compris

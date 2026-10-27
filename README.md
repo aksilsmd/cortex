@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 1.0.1" src="https://img.shields.io/badge/version-1.0.1-2563EB">
-  <img alt="14 skills" src="https://img.shields.io/badge/skills-14-0F766E">
+  <img alt="Version 1.3.0" src="https://img.shields.io/badge/version-1.3.0-2563EB">
+  <img alt="16 skills" src="https://img.shields.io/badge/skills-16-0F766E">
   <img alt="45 agents" src="https://img.shields.io/badge/agents-45-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
@@ -24,6 +24,8 @@ et éprouve les fonctions d'IA contre l'injection d'instructions.
 
 > Dan-Cortex prépare, vérifie et rédige. Il ne remplace ni un avocat, ni un expert-comptable, ni un auditeur de
 > sécurité qualifié : ce qui engage est marqué « à valider ».
+
+**Nouveau en 1.3.0 :** deux skills transversaux renforcent l'exécution résiliente (récupération après erreur et vérification des résultats) et la confidentialité (masquage des secrets et données personnelles), sans contourner les permissions ni falsifier les journaux d'audit.
 
 ## Installer
 
@@ -139,6 +141,8 @@ flowchart TB
 | Réunions | `/dan-cortex:reunion-decision` | débat entre experts et décision tracée |
 | Audit | `/dan-cortex:audit-general` | audit à 360° d'un projet, mené avec Dan-Cortex ou non |
 | Robustesse des agents | `/dan-cortex:robustesse-agents` | audit des réglages Claude Code, réglages pour l'autonomie, scénarios d'injection d'instructions, rapport de robustesse |
+| Exécution résiliente | `/dan-cortex:execution-resiliente` | critères d'acceptation, reprise après erreur, poursuite des tâches indépendantes, vérification avant de conclure |
+| Confidentialité des traces | `/dan-cortex:confidentialite-traces` | masquage des secrets et données personnelles dans les sorties et journaux, traçabilité préservée |
 
 ## Sobriété en tokens
 
@@ -148,7 +152,7 @@ Un système multi-agents coûte plus cher qu'une conversation simple. Dan-Cortex
 |---|---|
 | Contexte de départ d'un agent généraliste | environ 90 000 tokens |
 | Contexte de départ d'un agent Dan-Cortex | environ 6 000 tokens |
-| Coût permanent du plugin par session | environ 4 000 tokens |
+| Coût permanent du plugin par session | environ 4 300 tokens |
 
 - Chaque agent n'a que les outils de son métier et précharge le seul skill de son pôle.
 - Collecte et exécution sur le modèle léger, production sur le modèle intermédiaire, jugement sur le modèle de la
@@ -188,7 +192,7 @@ Les retours sont les bienvenus.
 
 | Chemin | Contenu |
 |---|---|
-| `dan-cortex/` | le plugin : 14 skills, 45 agents, 126 fichiers de référence et gabarits, 3 scripts |
+| `dan-cortex/` | le plugin : 16 skills, 45 agents, 126 fichiers de référence et gabarits, 3 scripts |
 | `dist/dan-cortex.plugin` | le plugin empaqueté pour l'application Claude |
 | `tests/`, `pyproject.toml` | tests du paquet `ccal` et des niveaux d'autonomie ; installation de la commande `ccal` |
 | `docs/expertise.md` | le rapport d'expertise qui a servi à le construire, avec ses sources |

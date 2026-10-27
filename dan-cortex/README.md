@@ -97,6 +97,8 @@ Chaque pôle s'utilise aussi directement.
 | `/dan-cortex:reunion-decision` | faire débattre les experts et tracer une décision |
 | `/dan-cortex:audit-general` | audit à 360° d'un projet, mené avec Dan-Cortex ou non |
 | `/dan-cortex:robustesse-agents` | audit des réglages Claude Code, réglages pour l'autonomie, scénarios d'injection d'instructions, évaluation live sur accord |
+| `/dan-cortex:execution-resiliente` | exécution orientée résultats : critères d'acceptation, reprise après erreur, poursuite des tâches indépendantes, vérification |
+| `/dan-cortex:confidentialite-traces` | masquage des secrets et données personnelles dans les sorties, journaux et rapports, sans toucher à la traçabilité |
 
 ## Comment ça marche
 
@@ -125,7 +127,7 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 14 | `skills/` |
+| Skills | 16 | `skills/` |
 | Agents | 45 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 126 | `skills/*/references/`, `skills/*/assets/` |
@@ -140,7 +142,7 @@ Ordres de grandeur observés en octobre 2026 dans une session très équipée ; 
 | agent généraliste | environ 90 000 tokens |
 | agent Dan-Cortex, outils de métier | environ 6 000 tokens |
 
-- Coût permanent du plugin : environ 4 000 tokens par session, pour les noms et descriptions des
+- Coût permanent du plugin : environ 4 300 tokens par session, pour les noms et descriptions des
   skills et des agents. Désactive le plugin quand tu ne t'en sers pas : ce coût tombe à zéro.
 - Les agents de collecte et d'exécution tournent sur le modèle léger, la production sur le modèle intermédiaire,
   le jugement (architecture, droit, audit) sur le modèle de ta session.
