@@ -114,8 +114,10 @@ class AutonomyTests(unittest.TestCase):
 
     def test_provisional_decisions_are_listed(self):
         self.init("--autonomie", "autonome")
-        cortex("registre", "decisions", "ajouter", "--dossier", str(self.dossier), "titre=Choix de la pile",
-               "type=1", "decideur=chef d'orchestre", "statut=provisoire")
+        # Les champs avant --dossier : c'est l'ordre que Python 3.11 et 3.12 acceptent pour ce sous-parseur.
+        proc = cortex("registre", "decisions", "ajouter", "titre=Choix de la pile", "type=1",
+                      "decideur=chef d'orchestre", "statut=provisoire", "--dossier", str(self.dossier))
+        self.assertEqual(proc.returncode, 0, proc.stderr)
         proc = cortex("etat", "--dossier", str(self.dossier))
         self.assertIn("Décisions provisoires", proc.stdout)
 
