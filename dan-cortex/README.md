@@ -106,6 +106,7 @@ Chaque pôle s'utilise aussi directement.
 | `/dan-cortex:boite-outils-it` | empreintes, secrets de test, TOTP, JWT, QR codes (IT-Tools, local) |
 | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
+| `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
 
 ## Comment ça marche
 
@@ -134,8 +135,8 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 23 | `skills/` |
-| Agents | 56 | `agents/` |
+| Skills | 24 | `skills/` |
+| Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 138 | `skills/*/references/`, `skills/*/assets/` |
 | Scripts | 6 | `skills/lancer-projet/scripts/` (`cortex.py`, `essais.py`), `skills/robustesse-agents/scripts/` (`robustesse.py` et le paquet `ccal`) |

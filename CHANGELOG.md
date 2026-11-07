@@ -1,5 +1,23 @@
 # Journal des versions
 
+## 1.17.0 — 7 novembre 2026
+
+- Nouvelle compétence **`traduction-interpretariat`** (FR/AR/EN) : traduire un texte, un livre ou une interface
+  en gardant sens, registre et intention ; localiser un produit (RTL arabe, PO/XLIFF, mémoires de traduction) ;
+  cadrer l'interprétation orale (consécutif, simultané, liaison). Théories (sourcier/cibliste, skopos, Vinay &
+  Darbelnet), cycle qualité, spécificités des trois langues, et outils libres (OmegaT, Weblate, Translate Toolkit,
+  LanguageTool, Okapi). Nouveaux agents `traducteur`, `interprete`, `localisateur`.
+- **`atelier-ecriture`** enrichi : références sur les métiers et la maison d'édition (chaîne du livre, processus,
+  droits, métadonnées ONIX/BISAC/CLIL/Thema, ISBN), les outils d'édition libres (PAO, PDF imprimable, flux
+  éditorial, EPUB, validation ONIX), les littératures française, arabe et anglaise (mouvements, genres, prosodie
+  comparée, poétique) et la philosophie (branches, traditions dont la falsafa, écriture et dissertation).
+- **`recueil-besoin`** : nouvelle option **étude approfondie** enchaînée après le recueil — ratissage et analyses
+  (marché, concurrence, existant, voix du client, contexte), design et maquettes, choix des outils, marketing,
+  avec réunions de décision, débats, propositions, décisions tracées et validation, puis consolidation de toute la
+  documentation ; enfin, proposition de réaliser (via `lancer-projet`) ou de remettre le dossier à une entreprise.
+- Matière rassemblée par recherche en ligne et sur GitHub (Firecrawl et agents), contenu traité comme donnée,
+  aucun script tiers exécuté, licences lues, forme A. Le plugin compte désormais 24 skills et 59 agents.
+
 ## 1.16.0 — 7 novembre 2026
 
 - Nouvelle compétence **`recueil-besoin`** : Dan-Cortex recueille le besoin d'une personne par un entretien

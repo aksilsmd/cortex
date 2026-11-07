@@ -1,7 +1,7 @@
 {
   "name": "dan-cortex",
-  "version": "1.16.0",
-  "description": "Dan-Cortex : un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un grand projet numérique (site d'entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP), capable d'enchaîner tout un projet en autonomie dans un cadre que tu fixes, avec un pôle de robustesse des agents (audit des réglages Claude Code, résistance à l'injection d'instructions) ; autonomie résiliente et confidentialité des traces sensibles ; boîte à outils IT locale (IT-Tools) ; cartographie du code en graphe (Graphify, local) ; design de niveau Apple (règles HIG appliquées au web, au mobile et aux outils de gestion) ; CRM libre Twenty (auto-hébergement sûr, intégration, applications) ; mouvement d'interface (construire, chorégraphier, fluidifier, auditer et alléger les animations, règles MV) ; données extrêmes pour casser l'interface ; web mobile au toucher natif, prototypes en variantes, choix de bibliothèques d'interface ; animation React Native et Swift moderne ; choix de l'outillage (skills, plugins, Playwright MCP, Chrome DevTools) décidé par l'orchestrateur et contrôlé par la vigie ; suivi d'avancement en barres de progression et états, mesuré sur preuves. Recueil du besoin par interview adaptée au profil (du brut au cahier des charges, schémas et maquettes, même pour un novice) ; atelier d'écriture et maison d'édition (livres, romans, essais, édition, publication EPUB/PDF, outils libres).",
+  "version": "1.17.0",
+  "description": "Dan-Cortex : un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un grand projet numérique (site d'entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP), capable d'enchaîner tout un projet en autonomie dans un cadre que tu fixes, avec un pôle de robustesse des agents (audit des réglages Claude Code, résistance à l'injection d'instructions) ; autonomie résiliente et confidentialité des traces sensibles ; boîte à outils IT locale (IT-Tools) ; cartographie du code en graphe (Graphify, local) ; design de niveau Apple (règles HIG appliquées au web, au mobile et aux outils de gestion) ; CRM libre Twenty (auto-hébergement sûr, intégration, applications) ; mouvement d'interface (construire, chorégraphier, fluidifier, auditer et alléger les animations, règles MV) ; données extrêmes pour casser l'interface ; web mobile au toucher natif, prototypes en variantes, choix de bibliothèques d'interface ; animation React Native et Swift moderne ; choix de l'outillage (skills, plugins, Playwright MCP, Chrome DevTools) décidé par l'orchestrateur et contrôlé par la vigie ; suivi d'avancement en barres de progression et états, mesuré sur preuves. Recueil du besoin par interview adaptée au profil (du brut au cahier des charges, schémas et maquettes, même pour un novice) ; atelier d'écriture et maison d'édition (livres, romans, essais, édition, publication EPUB/PDF, outils libres). Traduction et interprétariat (FR/AR/EN : méthode, localisation, RTL arabe, outils libres CAT).",
   "author": {
     "name": "Aksil"
   },
@@ -52,7 +52,16 @@
     "édition",
     "EPUB",
     "publication",
-    "maison d'édition"
+    "maison d'édition",
+    "traduction",
+    "interprétariat",
+    "localisation",
+    "RTL",
+    "OmegaT",
+    "langues",
+    "littérature",
+    "philosophie",
+    "ONIX"
   ],
   "homepage": "https://github.com/aksilsmd/cortex",
   "repository": "https://github.com/aksilsmd/cortex"

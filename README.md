@@ -4,14 +4,14 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 1.4.0" src="https://img.shields.io/badge/version-1.16.0-2563EB">
-  <img alt="23 skills" src="https://img.shields.io/badge/skills-23-0F766E">
-  <img alt="56 agents" src="https://img.shields.io/badge/agents-56-0F766E">
+  <img alt="Version 1.4.0" src="https://img.shields.io/badge/version-1.17.0-2563EB">
+  <img alt="24 skills" src="https://img.shields.io/badge/skills-24-0F766E">
+  <img alt="59 agents" src="https://img.shields.io/badge/agents-59-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
 </p>
 
-Dan-Cortex est un plugin pour Claude. Il organise 56 agents experts comme les équipes d'une vraie
+Dan-Cortex est un plugin pour Claude. Il organise 59 agents experts comme les équipes d'une vraie
 entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique : site web de grande
 entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP. Les agents travaillent en parallèle, se
 relisent entre métiers, débattent des décisions structurantes, et un auditeur indépendant passe tout en revue
@@ -152,6 +152,7 @@ flowchart TB
 | Boîte à outils IT | `/dan-cortex:boite-outils-it` | empreintes, secrets de test, TOTP, JWT, QR codes (IT-Tools, local) |
 | Recueil du besoin | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | Atelier d'écriture | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
+| Traduction et interprétariat | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
 
 ## Sobriété en tokens
 
@@ -201,7 +202,7 @@ Les retours sont les bienvenus.
 
 | Chemin | Contenu |
 |---|---|
-| `dan-cortex/` | le plugin : 23 skills, 56 agents, 207 fichiers de référence et gabarits, 16 scripts |
+| `dan-cortex/` | le plugin : 24 skills, 59 agents, 221 fichiers de référence et gabarits, 16 scripts |
 | `dist/dan-cortex.plugin` | le plugin empaqueté pour l'application Claude |
 | `tests/`, `pyproject.toml` | tests du paquet `ccal`, des niveaux d'autonomie, des manifestes et du build ; installation de la commande `ccal` |
 | `scripts/construire_plugin.py` | construction reproductible de `dist/dan-cortex.plugin` |

@@ -60,3 +60,9 @@ Pour **coder un outil d'aide à l'écriture**, on bascule sur `lancer-projet` / 
 | `${CLAUDE_SKILL_DIR}/references/construction-et-edition.md` | personnages, univers, intrigue, POV, dialogue, rythme, montrer/dire ; genres ; les quatre passes d'édition ; bêta et continuité |
 | `${CLAUDE_SKILL_DIR}/references/publication-formats.md` | formats, auto-édition vs maison, métadonnées, couverture, ISBN |
 | `${CLAUDE_SKILL_DIR}/references/outils-ecriture.md` | outils libres (licences) et briques pour coder un outil d'aide à l'écriture |
+| `${CLAUDE_SKILL_DIR}/references/metiers-edition.md` | maison d'édition : chaîne du livre et métiers, processus éditorial, droits et contrats (indicatif), métadonnées (ONIX, BISAC/CLIL/Thema, ISBN) |
+| `${CLAUDE_SKILL_DIR}/references/outils-edition.md` | outils libres d'édition : PAO et PDF imprimable, flux éditorial, EPUB, validation ONIX (licences) |
+| `${CLAUDE_SKILL_DIR}/references/litteratures.md` | situer et éditer une œuvre : littératures française, arabe, anglaise ; genres, mouvements, prosodie comparée, poétique |
+| `${CLAUDE_SKILL_DIR}/references/philosophie.md` | écrire un texte philosophique : branches, traditions (dont falsafa), problématisation et dissertation |
+
+Pour traduire une œuvre ou localiser un contenu (FR/AR/EN), voir la compétence `${CLAUDE_PLUGIN_ROOT}/skills/traduction-interpretariat/SKILL.md`.

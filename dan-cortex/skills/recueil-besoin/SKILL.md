@@ -1,6 +1,6 @@
 ---
 name: recueil-besoin
-description: "Recueil du besoin par interview, du brut au cahier des charges. Dan-Cortex interroge une personne — même sans aucune notion d'informatique, de code ou de gestion de projet — pour transformer un besoin mal formulé en un cahier des charges complet, avec architecture, spécifications, schémas et maquettes. Interview adaptée au profil (débutant, intermédiaire, professionnel), questions à choix proposés, reformulation et validation à chaque étape, puis proposition de réaliser ou de remettre la documentation. À utiliser pour « j'ai une idée », « je veux créer une application/un site », « aide-moi à définir mon projet », « recueille mon besoin », « fais-moi un cahier des charges », « interviewe-moi »."
+description: "Recueil du besoin par interview, du brut au cahier des charges. Dan-Cortex interroge une personne — même sans aucune notion d'informatique, de code ou de gestion de projet — pour transformer un besoin mal formulé en un cahier des charges complet, avec architecture, spécifications, schémas et maquettes. Interview adaptée au profil (débutant, intermédiaire, professionnel), questions à choix proposés, reformulation et validation à chaque étape ; en option, enchaîne une étude approfondie (concurrence, existant, maquettes, outils, marketing) avec réunions, débats et décisions tracées ; puis proposition de réaliser ou de remettre la documentation à une entreprise. À utiliser pour « j'ai une idée », « je veux créer une application/un site », « aide-moi à définir mon projet », « recueille mon besoin », « fais-moi un cahier des charges », « interviewe-moi »."
 ---
 
 # Recueil du besoin par interview
@@ -47,10 +47,22 @@ Rédiger, puis montrer pour validation :
 
 **Tout est montré à la personne, qui valide ou modifie.** Rien n'est figé sans son accord.
 
+### Phase 5 bis — Étude approfondie (option, proposée à la personne)
+À la fin du recueil, proposer une **étude approfondie** avant de décider de la réalisation. Si la personne accepte, Dan-Cortex lance un large ratissage, puis débat et tranche, et produit toute la documentation. C'est un enchaînement des pôles existants, orchestré par le chef d'orchestre :
+
+1. **Ratissage et analyses** (pôle `veille-marche`) : étude de marché (`analyste-marche`), **analyse de la concurrence** et des sites existants (`analyste-concurrence`, `collecteur-web` — fonctionnalités, prix, positionnements, captures), **analyse de l'existant** s'il y en a un, voix du client (`analyste-voix-client`), contexte par pays (`analyste-contexte`).
+2. **Design et outils** : parcours et architecture de l'information (`concepteur-ux`), **maquettes et designs** (`maquettiste` avec `maquettes-parcours` et `design-apple`), choix des **outils et de la pile** (`architecte-solution`, `architecte-donnees`).
+3. **Marketing** : positionnement, acquisition, prix, plan de lancement (pôle `marketing-commercial`).
+4. **Réunions et débats** : pour chaque choix structurant, une **réunion de décision** (`reunion-decision`) — positions séparées, contradiction, arbitrage. Les **propositions d'amélioration** sont consignées et soumises.
+5. **Décisions et validation** : chaque décision est tracée au registre ; la personne **valide ou corrige** à chaque jalon (rien n'est figé sans son accord).
+6. **Documentation complète** : consolidation de tout le dossier **comme convenu** — cahier des charges, architecture, spécifications, schémas, maquettes, étude de concurrence, plan marketing, décisions.
+
+Si la personne refuse l'étude, on s'en tient au dossier de la phase 5.
+
 ### Phase 6 — La suite, au choix de la personne
-Proposer deux voies, sans pousser :
+Une fois la documentation remise et validée, proposer deux voies, sans pousser :
 - **Dan-Cortex réalise** : on enchaîne sur `lancer-projet` (cadrage → conception → réalisation → tests → lancement), dans le cadre que la personne fixe.
-- **Remise de la documentation** : on livre un dossier propre (cahier des charges, architecture, specs, schémas, maquettes) que la personne confie à qui elle veut pour la réalisation.
+- **Remise de la documentation** : on livre un dossier propre et complet (cahier des charges, architecture, specs, schémas, maquettes, étude de marché et de concurrence, plan marketing, décisions tracées) que la personne **confie à une entreprise** ou à qui elle veut pour la réalisation.
 
 ## Avec les agents Dan-Cortex (si disponibles)
 
