@@ -6,8 +6,8 @@ Créée par `cortex.py init`. Les chemins sont ceux qu'attend la vérification d
 
 ```
 <projet>/
-  00-pilotage/     fiche-projet.md, organigramme.md, planning.md, tableau-de-bord.md, index-documents.md,
-                   lecons.md, cortex.json, couverture.csv, journal-agents.csv,
+  00-pilotage/     fiche-projet.md, organigramme.md, planning.md, tableau-de-bord.md, avancement.md, index-documents.md,
+                   lecons.md, cortex.json, couverture.csv, journal-agents.csv, avancement.csv,
                    registres/ (decisions, risques, constats, anomalies, actions, changements : fichiers .csv),
                    plans/ (plans de délégation et synthèses de pôle),
                    reunions/ (PV-<aaaammjj>-<sujet>.md), audits/ (revues, audits de jalon, audit-general.md,
@@ -114,6 +114,8 @@ interactif est couvert par un cas de test, directement ou par son workflow.
 | Traçabilité complète ? | `tracabilite verifier` |
 | Jalon franchissable ? | `jalon verifier J3` ; puis `jalon franchir J3` |
 | Vue pour l'utilisateur | `tableau-de-bord` |
+| Avancement d'une étape | `avancement maj L1 --etape "Page d'accueil" --fait 3 --total 8` ; `--parent L1` pour une sous-étape ; `--statut en-revue|bloque|fait --note "preuve ou motif"` |
+| Barres de progression | `avancement afficher` (écrit `00-pilotage/avancement.md`) ; `avancement liste` pour la vue courte |
 
 Statuts d'un contrôle : `a-faire`, `en-cours`, `fait` (preuve obligatoire), `non-applicable` (motif obligatoire),
 `risque-accepte` (nom et raison obligatoires).

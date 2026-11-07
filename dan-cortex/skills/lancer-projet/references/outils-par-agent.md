@@ -12,6 +12,7 @@ extérieur ou un connecteur de la session revient au chef d'orchestre (voir `rou
 | `planificateur` | Pilotage | B, `sonnet`, effort medium | aucun | Read, Write, Edit, Glob, Grep, Bash |
 | `rapporteur` | Pilotage | B, `sonnet`, effort medium | `reunion-decision` | Read, Write, Edit, Glob, Grep |
 | `verificateur` | Pilotage | C, `haiku`, effort low | aucun | Read, Glob, Grep, Bash, Write |
+| `suivi-avancement` | Pilotage | C, `haiku`, effort low | aucun | Read, Glob, Grep, Bash, Write |
 | `analyste-concurrence` | Stratégie et marché | B, `sonnet`, effort medium | `veille-marche` | Read, Write, Edit, Glob, Grep, WebSearch, WebFetch |
 | `analyste-contexte` | Stratégie et marché | B, `sonnet`, effort medium | `veille-marche` | Read, Write, Edit, Glob, Grep, WebSearch, WebFetch |
 | `analyste-marche` | Stratégie et marché | B, `sonnet`, effort medium | `veille-marche` | Read, Write, Edit, Glob, Grep, WebSearch, WebFetch |

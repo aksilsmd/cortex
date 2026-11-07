@@ -1082,10 +1082,182 @@ def cmd_tableau(a):
         if nom == "risques":
             tri = sorted(tri, key=lambda l: -int(l.get("score") or 0))
         out += ["- %s — %s" % (l["id"], court(l.get(champ, ""), 140)) for l in tri[:15]] or ["Aucun."]
+    out += ["", "## Avancement", ""]
+    out += [("#" + l) if l.startswith("## ") else l for l in rendu_avancement(dossier, config)[4:]]
     chemin = os.path.join(dossier, "00-pilotage", "tableau-de-bord.md")
     with open(chemin, "w", encoding="utf-8") as f:
         f.write("\n".join(out) + "\n")
     print("Tableau de bord écrit : 00-pilotage/tableau-de-bord.md")
+
+
+# --------------------------------------------------------------------------- avancement
+COL_AVANCEMENT = ["id", "etape", "parent", "fait", "total", "statut", "note", "maj"]
+STATUTS_ETAPE = ["a-faire", "en-cours", "en-revue", "bloque", "fait", "abandonne"]
+ICONES = {"a-faire": "⏳ à faire", "en-cours": "🔄 en cours", "en-revue": "🔍 en revue",
+          "bloque": "⛔ bloqué", "fait": "✅ terminé", "abandonne": "✖ abandonné",
+          "non-franchi": "⚠ non franchi"}
+
+
+def chemin_avancement(dossier):
+    return os.path.join(dossier, "00-pilotage", "avancement.csv")
+
+
+def barre(ratio, largeur=20):
+    if ratio is None:
+        return "·" * largeur + "  n.m."
+    ratio = max(0.0, min(1.0, ratio))
+    pleins = int(round(ratio * largeur))
+    return "█" * pleins + "░" * (largeur - pleins) + " %3d %%" % round(100 * ratio)
+
+
+def ratio_etape(l):
+    try:
+        total = float(l.get("total") or 0)
+        fait = float(l.get("fait") or 0)
+    except ValueError:
+        return None
+    if l.get("statut") == "fait":
+        return 1.0
+    return fait / total if total > 0 else None
+
+
+def statut_deduit(fait, total, demande):
+    if demande:
+        if demande not in STATUTS_ETAPE:
+            erreur("statut inconnu « %s ». Statuts possibles : %s" % (demande, ", ".join(STATUTS_ETAPE)))
+        return demande
+    if total and fait >= total:
+        return "fait"
+    return "en-cours" if fait else "a-faire"
+
+
+def lignes_jalons(dossier, config, largeur):
+    couverture = lire_csv(chemin_couverture(dossier))
+    franchis = {j["jalon"] for j in config.get("jalons_franchis", [])}
+    courant = config.get("jalon", "J0")
+    perimetre = config.get("perimetre", "J7")
+    out = []
+    for j in JALONS:
+        if rang_jalon(j) > rang_jalon(perimetre):
+            break
+        lignes = [l for l in couverture if l.get("jalon") == j]
+        clos = sum(1 for l in lignes if l["statut"] in CLOS)
+        if j in franchis:
+            ratio, etat = 1.0, "fait"
+        else:
+            ratio = clos / len(lignes) if lignes else (0.0 if rang_jalon(j) > rang_jalon(courant) else None)
+            etat = ("en-cours" if j == courant else
+                    "a-faire" if rang_jalon(j) > rang_jalon(courant) else "non-franchi")
+        out.append((j, ratio, etat, "%d/%d contrôles" % (clos, len(lignes)) if lignes else "—"))
+    return out
+
+
+def rendu_avancement(dossier, config, largeur=20):
+    etapes = lire_csv(chemin_avancement(dossier))
+    out = ["# Avancement — %s" % config["nom"], "",
+           "Généré par `cortex.py avancement afficher` le %s. Barres calculées sur des comptes "
+           "(fait/total), jamais estimées ; « n.m. » = non mesuré." % aujourdhui(), ""]
+    # Global : moyenne des étapes de premier niveau, à poids égal (une étape en % ne pèse pas plus qu'une autre).
+    mesurees = [(ratio_etape(l), l) for l in etapes if l.get("statut") != "abandonne" and not l.get("parent")]
+    ratios = [r for r, _ in mesurees if r is not None]
+    if ratios:
+        glob = sum(ratios) / len(ratios)
+        finies = sum(1 for r, l in mesurees if l.get("statut") == "fait")
+        out += ["**Global** `%s`  —  %d/%d étapes terminées%s" % (
+            barre(glob, largeur), finies, len(mesurees),
+            "" if len(ratios) == len(mesurees) else " (%d non mesurée(s))" % (len(mesurees) - len(ratios))), ""]
+    out += ["## Jalons", "", "| Jalon | Progression | État | Base |", "|---|---|---|---|"]
+    for j, ratio, etat, base in lignes_jalons(dossier, config, largeur):
+        out.append("| %s | `%s` | %s | %s |" % (j, barre(ratio, largeur), ICONES[etat], base))
+    out += ["", "## Étapes", ""]
+    if not etapes:
+        out.append("Aucune étape déclarée (`cortex.py avancement maj ID --etape \"…\" --fait N --total M`).")
+    else:
+        out += ["| ID | Étape | Progression | État | Détail | Mise à jour |", "|---|---|---|---|---|---|"]
+        enfants = {}
+        for l in etapes:
+            enfants.setdefault(l.get("parent") or "", []).append(l)
+
+        def ajouter(parent, niveau):
+            for l in enfants.get(parent, []):
+                total = l.get("total") or ""
+                detail = "%s/%s" % (l.get("fait") or 0, total) if total else ""
+                if l.get("note"):
+                    detail = (detail + " · " if detail else "") + court(l["note"], 70)
+                out.append("| %s | %s%s | `%s` | %s | %s | %s |" % (
+                    l["id"], "↳ " * niveau, court(l.get("etape", ""), 60), barre(ratio_etape(l), largeur),
+                    ICONES.get(l.get("statut"), l.get("statut", "")), detail, l.get("maj", "")))
+                if niveau < 3:
+                    ajouter(l["id"], niveau + 1)
+        ajouter("", 0)
+        orphelins = [l for l in etapes if l.get("parent") and l["parent"] not in {e["id"] for e in etapes}]
+        for l in orphelins:
+            out.append("| %s | %s | `%s` | %s | parent %s absent | %s |" % (
+                l["id"], court(l.get("etape", ""), 60), barre(ratio_etape(l), largeur),
+                ICONES.get(l.get("statut"), ""), l["parent"], l.get("maj", "")))
+    bloques = [l for l in etapes if l.get("statut") == "bloque"]
+    out += ["", "## Bloquages (%d)" % len(bloques), ""]
+    out += ["- %s — %s : %s" % (l["id"], court(l.get("etape", ""), 60), court(l.get("note", "") or "motif non indiqué", 100))
+            for l in bloques] or ["Aucun."]
+    return out
+
+
+def cmd_avancement(a):
+    dossier = trouver_dossier(a.dossier)
+    config = lire_config(dossier)
+    chemin = chemin_avancement(dossier)
+    etapes = lire_csv(chemin)
+    if a.action in ("maj", "retirer"):
+        if not a.id:
+            erreur("usage : avancement %s ID …" % a.action)
+        ids = [x.strip() for x in a.id.split(",") if x.strip()]
+        if a.action == "retirer":
+            etapes = [l for l in etapes if l["id"] not in ids]
+            ecrire_csv(chemin, COL_AVANCEMENT, etapes)
+            print("Étape(s) retirée(s) : %s" % ", ".join(ids))
+            return
+        for ident in ids:
+            l = next((e for e in etapes if e["id"] == ident), None)
+            if l is None:
+                if not a.etape and len(ids) == 1:
+                    erreur("nouvelle étape %s : --etape \"libellé\" est requis" % ident)
+                l = {"id": ident, "etape": a.etape or ident, "fait": "0", "total": ""}
+                etapes.append(l)
+            if a.etape and len(ids) == 1:
+                l["etape"] = a.etape
+            if a.parent is not None:
+                l["parent"] = a.parent
+            if a.total is not None:
+                if a.total < 0:
+                    erreur("--total doit être positif")
+                l["total"] = "%g" % a.total
+            if a.fait is not None:
+                l["fait"] = "%g" % a.fait
+            if a.pct is not None:
+                l["total"], l["fait"] = "100", "%g" % max(0, min(100, a.pct))
+            total = float(l.get("total") or 0)
+            fait = float(l.get("fait") or 0)
+            if total and fait > total:
+                erreur("%s : fait (%g) dépasse total (%g)" % (ident, fait, total))
+            l["statut"] = statut_deduit(fait, total, a.statut)
+            if a.note is not None:
+                l["note"] = a.note
+            l["maj"] = aujourdhui()
+        ecrire_csv(chemin, COL_AVANCEMENT, etapes)
+        for ident in ids:
+            l = next(e for e in etapes if e["id"] == ident)
+            print("%s  %s  %s" % (ident, barre(ratio_etape(l), a.largeur), ICONES[l["statut"]]))
+        return
+    if a.action == "liste":
+        for l in etapes:
+            print("%-10s %s  %-14s %s" % (l["id"], barre(ratio_etape(l), a.largeur),
+                                          ICONES.get(l.get("statut"), ""), court(l.get("etape", ""), 60)))
+        return
+    out = rendu_avancement(dossier, config, a.largeur)
+    with open(os.path.join(dossier, "00-pilotage", "avancement.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(out) + "\n")
+    print("\n".join(out))
+    print("\nÉcrit : 00-pilotage/avancement.md")
 
 
 # --------------------------------------------------------------------------- contrôle du plugin
@@ -1130,6 +1302,10 @@ AIDE = """Dan-Cortex — commandes
   etat [--set cle=valeur …]                      état du projet et prochains manques (jalon, vague, note, mode,
                                                  autonomie)
   tableau-de-bord                                écrit 00-pilotage/tableau-de-bord.md
+  avancement maj ID[,ID] [--etape "…"] [--parent ID] [--fait N --total M | --pct P]
+             [--statut a-faire|en-cours|en-revue|bloque|fait|abandonne] [--note "…"]
+  avancement afficher|liste [--largeur 20]       barres de progression et état par jalon et par étape,
+                                                 écrit 00-pilotage/avancement.md   |   avancement retirer ID
   couverture stats|liste [--domaine X] [--jalon Jn] [--statut s] [--criticite c] [--court] [--max N]
   couverture maj ID[,ID] --nouveau fait|non-applicable|risque-accepte|en-cours [--preuve P] [--note N]
   couverture ajouter --domaine XXX --controle "…" [--jalon Jn] [--criticite c] [--preuve-attendue "…"]
@@ -1168,6 +1344,18 @@ def main():
     s.add_argument("--set", nargs="*", default=[])
     s = sp.add_parser("tableau-de-bord")
     commun(s)
+    s = sp.add_parser("avancement")
+    s.add_argument("action", choices=["afficher", "liste", "maj", "retirer"])
+    s.add_argument("id", nargs="?")
+    commun(s)
+    s.add_argument("--etape")
+    s.add_argument("--parent")
+    s.add_argument("--fait", type=float)
+    s.add_argument("--total", type=float)
+    s.add_argument("--pct", type=float)
+    s.add_argument("--statut")
+    s.add_argument("--note")
+    s.add_argument("--largeur", type=int, default=20)
     s = sp.add_parser("couverture")
     s.add_argument("action", choices=["stats", "liste", "maj", "ajouter", "resync"])
     s.add_argument("ids", nargs="?")
@@ -1233,7 +1421,8 @@ def main():
         if not a.champs:
             erreur("usage : registre <type> maj <ID> cle=valeur …")
         a.id, a.champs = a.champs[0], a.champs[1:]
-    {"init": cmd_init, "etat": cmd_etat, "tableau-de-bord": cmd_tableau, "couverture": cmd_couverture,
+    {"init": cmd_init, "etat": cmd_etat, "tableau-de-bord": cmd_tableau, "avancement": cmd_avancement,
+     "couverture": cmd_couverture,
      "registre": cmd_registre, "journal": cmd_journal, "docs": cmd_docs, "interactions": cmd_interactions,
      "tracabilite": cmd_tracabilite, "jalon": cmd_jalon, "plugin": cmd_plugin}[a.commande](a)
 
