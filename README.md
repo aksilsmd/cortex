@@ -4,14 +4,14 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 1.3.1" src="https://img.shields.io/badge/version-1.3.1-2563EB">
+  <img alt="Version 1.4.0" src="https://img.shields.io/badge/version-1.4.0-2563EB">
   <img alt="16 skills" src="https://img.shields.io/badge/skills-16-0F766E">
-  <img alt="45 agents" src="https://img.shields.io/badge/agents-45-0F766E">
+  <img alt="46 agents" src="https://img.shields.io/badge/agents-46-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
 </p>
 
-Dan-Cortex est un plugin pour Claude. Il organise 45 agents experts comme les équipes d'une vraie
+Dan-Cortex est un plugin pour Claude. Il organise 46 agents experts comme les équipes d'une vraie
 entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique : site web de grande
 entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP. Les agents travaillent en parallèle, se
 relisent entre métiers, débattent des décisions structurantes, et un auditeur indépendant passe tout en revue
@@ -192,7 +192,7 @@ Les retours sont les bienvenus.
 
 | Chemin | Contenu |
 |---|---|
-| `dan-cortex/` | le plugin : 16 skills, 45 agents, 126 fichiers de référence et gabarits, 3 scripts |
+| `dan-cortex/` | le plugin : 16 skills, 46 agents, 126 fichiers de référence et gabarits, 3 scripts |
 | `dist/dan-cortex.plugin` | le plugin empaqueté pour l'application Claude |
 | `tests/`, `pyproject.toml` | tests du paquet `ccal`, des niveaux d'autonomie, des manifestes et du build ; installation de la commande `ccal` |
 | `scripts/construire_plugin.py` | construction reproductible de `dist/dan-cortex.plugin` |
@@ -220,7 +220,7 @@ MIT. Voir [`LICENSE`](LICENSE).
 
 ## In English
 
-**Dan-Cortex** is a Claude plugin that runs a network of 45 expert agents, organised like a real company,
+**Dan-Cortex** is a Claude plugin that runs a network of 46 expert agents, organised like a real company,
 to scope, design, build, test, secure and launch a digital project: enterprise website, mobile app, SaaS, niche
 product, e-commerce, ERP. Agents work in parallel waves, cross-review each other's deliverables, debate
 structural decisions in bounded written meetings, and an independent auditor reviews everything before launch. A

@@ -104,7 +104,7 @@ Chaque pôle s'utilise aussi directement.
 
 - **Un chef d'orchestre** parle avec toi, lance les agents par vagues parallèles et ne lit que des comptes rendus
   courts.
-- **45 agents experts** répartis en pôles, chacun avec les compétences de son métier (le skill de son
+- **46 agents experts** répartis en pôles, chacun avec les compétences de son métier (le skill de son
   pôle, préchargé) et les seuls outils dont il a besoin.
 - **Des orchestrateurs de pôle** découpent le travail en ordres de mission ; des sous-agents légers font la
   collecte et l'exécution.
@@ -128,7 +128,7 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 | Élément | Nombre | Où |
 |---|---|---|
 | Skills | 16 | `skills/` |
-| Agents | 45 | `agents/` |
+| Agents | 46 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 126 | `skills/*/references/`, `skills/*/assets/` |
 | Scripts | 3 | `skills/lancer-projet/scripts/` (`cortex.py`, `essais.py`), `skills/robustesse-agents/scripts/` (`robustesse.py` et le paquet `ccal`) |

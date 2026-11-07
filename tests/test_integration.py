@@ -174,5 +174,48 @@ class RegistreArgumentsTests(unittest.TestCase):
         self.assertIn("--inconnue", proc.stderr)
 
 
+class AvancementTests(unittest.TestCase):
+    """Barres de progression et états calculés sur des comptes, jamais estimés."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dossier = str(Path(self.tmp.name) / "projet")
+        proc = cortex("init", "--dossier", self.dossier, "--nom", "Essai", "--types", "saas")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def av(self, *args):
+        return cortex("avancement", *args, "--dossier", self.dossier)
+
+    def test_barres_et_etats(self):
+        self.assertEqual(self.av("maj", "L0", "--etape", "Socle", "--fait", "3", "--total", "4").returncode, 0)
+        self.av("maj", "L1", "--etape", "Accueil", "--fait", "2", "--total", "2")
+        self.av("maj", "L2", "--etape", "Flux B", "--statut", "bloque", "--note", "attente L0")
+        self.av("maj", "L0.1", "--etape", "Sous-étape", "--parent", "L0", "--pct", "50")
+        proc = self.av("afficher")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        sortie = proc.stdout
+        self.assertIn("███████████████░░░░░  75 %", sortie)
+        self.assertIn("✅ terminé", sortie)          # L1 : fait == total
+        self.assertIn("⛔ bloqué", sortie)
+        self.assertIn("n.m.", sortie)               # L2 sans total : non mesurée
+        self.assertIn("↳ Sous-étape", sortie)
+        self.assertIn("1/3 étapes terminées (1 non mesurée(s))", sortie)
+        self.assertIn("L2 — Flux B : attente L0", sortie)
+        md = Path(self.dossier) / "00-pilotage" / "avancement.md"
+        self.assertTrue(md.is_file())
+        cortex("tableau-de-bord", "--dossier", self.dossier)
+        tableau = (Path(self.dossier) / "00-pilotage" / "tableau-de-bord.md").read_text(encoding="utf-8")
+        self.assertIn("## Avancement", tableau)
+        self.assertIn("### Étapes", tableau)
+
+    def test_refus_des_comptes_incoherents(self):
+        self.assertEqual(self.av("maj", "X", "--fait", "1", "--total", "2").returncode, 2)   # libellé manquant
+        self.assertEqual(self.av("maj", "X", "--etape", "x", "--fait", "3", "--total", "2").returncode, 2)
+        self.assertEqual(self.av("maj", "Y", "--etape", "y", "--statut", "presque").returncode, 2)
+
+
 if __name__ == "__main__":
     unittest.main()

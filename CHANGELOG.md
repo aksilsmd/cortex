@@ -1,5 +1,16 @@
 # Journal des versions
 
+## 1.4.0 — 7 novembre 2026
+
+- Nouvel agent `suivi-avancement` (pilotage, niveau C, `haiku`) : relève l'avancement de chaque étape sur
+  preuves comptables (paliers commités, tests au vert, contrôles clos) et le rend en barres de progression avec
+  leur état (à faire, en cours, en revue, bloqué, terminé, abandonné). Aucun pourcentage estimé : sans compte,
+  l'étape est « non mesurée ».
+- `cortex.py avancement maj|afficher|liste|retirer` : étapes et sous-étapes dans `00-pilotage/avancement.csv`,
+  rendu dans `00-pilotage/avancement.md` (barre globale, jalons, étapes, bloquages), repris dans le tableau de bord.
+- Le chef d'orchestre déclare les étapes dès le plan et joint le bloc d'avancement à chaque compte rendu de vague ;
+  en mode autonome, ce bloc remplace la ligne d'avancement entre deux jalons.
+
 ## 1.3.1 — 27 octobre 2026
 
 - Les skills `execution-resiliente` et `confidentialite-traces` sont branchés dans le réseau, par renvoi et sans

@@ -16,7 +16,7 @@
 
 | | `accompagne` | `delegue` | `autonome` |
 |---|---|---|---|
-| Pause entre deux jalons | oui : compte rendu, puis attente de ton accord | non : compte rendu, puis enchaînement | non : une ligne d'avancement, puis enchaînement |
+| Pause entre deux jalons | oui : compte rendu, puis attente de ton accord | non : compte rendu, puis enchaînement | non : le bloc d'avancement (`cortex.py avancement afficher`), puis enchaînement |
 | Décisions de type 2 | prises par le réseau, tracées | prises par le réseau, tracées | prises par le réseau, tracées |
 | Décisions de type 1 | soumises à toi | regroupées et soumises à la fin de chaque jalon | prises en réunion collégiale, au statut `provisoire`, confirmées par toi au bilan |
 | Question qui surgit en cours de route | posée tout de suite | posée à la fin du jalon | jamais posée : hypothèse écrite dans la fiche projet, travail poursuivi |

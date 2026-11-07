@@ -123,7 +123,11 @@ concurrence seule, cahier des charges seul, audit d'un projet existant) n'exécu
 6. **Consolider** : registres et matrice de couverture mis à jour par script, puis
    `cortex.py jalon verifier <Jn>`. Le jalon n'est franchi que si le script ne signale plus aucun manque bloquant.
 7. **Rendre compte** à l'utilisateur en dix lignes au plus : ce qui est acquis, ce qui est à valider, les livrables
-   remis, la suite. Mettre à jour le tableau de bord : `cortex.py tableau-de-bord`. En `delegue` et en `autonome`,
+   remis, la suite, suivis du bloc d'avancement (barres de progression et état de chaque étape). Déclarer les
+   étapes dès le plan (`cortex.py avancement maj <ID> --etape "…" --total N`). Si les comptes viennent de vos
+   propres comptes rendus, les reporter soi-même puis lancer `cortex.py avancement afficher`. Lancer
+   `dan-cortex:suivi-avancement` quand il faut les relever dans plusieurs lots ou branches. Mettre à jour le
+   tableau de bord : `cortex.py tableau-de-bord`. En `delegue` et en `autonome`,
    ne pas attendre de réponse : franchir le jalon et enchaîner (`references/autonomie.md`).
 
 ## Orchestrateurs, experts et sous-agents

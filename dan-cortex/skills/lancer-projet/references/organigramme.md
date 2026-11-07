@@ -13,7 +13,7 @@
 |---|---|---|---|---|
 | A — jugement | arbitrer, concevoir, auditer | celui de la session (`inherit`) | élevé | architecte-solution, juriste-numerique, auditeur-general |
 | B — production | analyser, rédiger, développer, tester | `sonnet` | moyen | la plupart des experts |
-| C — collecte et exécution | collecter, exécuter, vérifier une liste | `haiku` | faible | collecteur-web, executant-tests, verificateur |
+| C — collecte et exécution | collecter, exécuter, vérifier une liste | `haiku` | faible | collecteur-web, executant-tests, verificateur, suivi-avancement |
 
 Le modèle et l'effort sont déjà inscrits dans chaque fiche d'agent : un lancement sans paramètre applique ce
 tableau. Ne passer un modèle à l'appel que pour appliquer les ajustements de la section 5.
@@ -35,6 +35,7 @@ Type d'agent à lancer : `dan-cortex:<nom>`.
 | `contradicteur` | B | Avocat du diable : cherche les failles d'une position, d'un plan, d'une décision |
 | `auditeur-general` | A | Super-auditeur indépendant : audit à 360° avant lancement et à la clôture |
 | `verificateur` | C | Contrôle un livrable contre sa liste de critères, à bas coût |
+| `suivi-avancement` | C | Relève l'avancement de chaque étape sur preuves et le rend en barres de progression avec leur état |
 
 ### Stratégie et marché (skill `veille-marche`)
 
@@ -171,7 +172,7 @@ Type d'agent à lancer : `dan-cortex:<nom>`.
 | planificateur | ● | ● | ● | ● | ○ | ● | au-delà de quelques semaines |
 | auditeur-general | ● | ● | ● | ● | ● | ● | |
 
-`rapporteur`, `contradicteur`, `verificateur`, `collecteur-web`, `executant-tests` et `orchestrateur-de-pole`
+`rapporteur`, `contradicteur`, `verificateur`, `suivi-avancement`, `collecteur-web`, `executant-tests` et `orchestrateur-de-pole`
 sont des agents de service, activés par les protocoles (réunions, essaimage, revues, orchestration déléguée).
 
 ## 4. Fusion des rôles en mode éclair
