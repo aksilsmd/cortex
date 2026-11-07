@@ -1,10 +1,6 @@
 ---
 name: reunion-decision
-description: >
-  Réunion entre agents experts Dan-Cortex : positions séparées, débat contradictoire, arbitrage, décision tracée. À
-  utiliser pour trancher un choix structurant (positionnement, périmètre, architecture, budget, go/no-go),
-  départager des experts, ou quand l'utilisateur dit « réunis les experts », « fais débattre », « aide-moi à
-  décider ».
+description: "Réunion entre agents experts Dan-Cortex : positions séparées, débat contradictoire, arbitrage, décision tracée. À utiliser pour trancher un choix structurant (positionnement, périmètre, architecture, budget, go/no-go), départager des experts, ou quand l'utilisateur dit « réunis les experts », « fais débattre », « aide-moi à décider ».\n"
 ---
 
 # Réunion et décision

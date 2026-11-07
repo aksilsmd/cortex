@@ -1,7 +1,6 @@
 ---
 name: specifications
-description: >
-  Pôle Besoin et spécifications de Dan-Cortex : note de cadrage, cahier des charges (EX-, EXNF-), spécifications générales (FN-), détaillées (RG-) et techniques. À utiliser pour « rédige le cahier des charges », « exigences », « spécifications fonctionnelles », « règles de gestion », « SFD ».
+description: "Pôle Besoin et spécifications de Dan-Cortex : note de cadrage, cahier des charges (EX-, EXNF-), spécifications générales (FN-), détaillées (RG-) et techniques. À utiliser pour « rédige le cahier des charges », « exigences », « spécifications fonctionnelles », « règles de gestion », « SFD ».\n"
 ---
 
 # Besoin et spécifications — pôle Besoin et spécifications

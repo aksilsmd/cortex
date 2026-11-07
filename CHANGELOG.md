@@ -1,5 +1,25 @@
 # Journal des versions
 
+## 1.16.0 — 7 novembre 2026
+
+- Nouvelle compétence **`recueil-besoin`** : Dan-Cortex recueille le besoin d'une personne par un entretien
+  adapté à son profil (débutant, intermédiaire, professionnel), même sans aucune notion d'informatique. Il part
+  d'une description brute, la réorganise et la fait valider, mène une interview à choix proposés, priorise
+  (MoSCoW, impact/effort, carte des histoires), puis produit un cahier des charges complet avec architecture,
+  spécifications, schémas (Mermaid) et appui pour les maquettes, et propose en fin de parcours soit la
+  réalisation par Dan-Cortex, soit la remise de la documentation. Compétence auto-portante (utilisable même hors
+  plugin). Nouvel agent `intervieweur`. Références : trame d'interview, adaptation au profil, gabarit de cahier
+  des charges, schémas Mermaid.
+- Nouvelle compétence **`atelier-ecriture`** (atelier d'écriture / maison d'édition) : écrire et accompagner un
+  livre, un roman, une nouvelle, un essai, un livre technique, un mémoire ou de la littérature jeunesse, de l'idée
+  au manuscrit publiable, et concevoir ou coder un outil d'aide à l'écriture. Structures narratives, construction
+  des personnages et de l'univers, passes d'édition, publication (EPUB/PDF, métadonnées, ISBN) et outils libres
+  (licences vérifiées). Nouveaux agents `architecte-recit`, `plume`, `editeur-litteraire`, `concepteur-univers`.
+- Mise à niveau du dépôt : cette version intègre aussi les skills ajoutés au plugin depuis la 1.4.0 et absents du
+  dépôt — `design-apple`, `crm-twenty`, `cartographie-graphe`, `mouvement-interface`, `boite-outils-it` — ainsi
+  que les renforts d'audit de sécurité (compétence `safety` branchée dans le pôle, référence `renforts-securite`).
+  Le plugin compte désormais 23 skills et 56 agents.
+
 ## 1.4.0 — 7 novembre 2026
 
 - Nouvel agent `suivi-avancement` (pilotage, niveau C, `haiku`) : relève l'avancement de chaque étape sur

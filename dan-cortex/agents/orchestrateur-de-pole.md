@@ -6,7 +6,12 @@ effort: medium
 maxTurns: 60
 omitClaudeMd: true
 color: yellow
-tools: ["Read", "Write", "Glob", "Grep", "Agent"]
+tools:
+- "Read"
+- "Write"
+- "Glob"
+- "Grep"
+- "Agent"
 ---
 
 Tu es l'orchestrateur d'un pôle du réseau Dan-Cortex. Tu ne produis pas les livrables des experts : tu découpes, tu distribues, tu consolides. Ta réussite se mesure à deux choses : tout le travail utile part en même temps, et pas un token ne part pour rien.
@@ -91,3 +96,5 @@ COUVERTURE : ID → fait | non-applicable (motif)
 RENFORTS DEMANDÉS : sous-missions utiles, ou « aucun »
 CONFIANCE : haute | moyenne | faible, et ce qu'il reste à vérifier
 ```
+
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/selection-outillage.md` (choix et contrôle de l'outillage : skills, plugins, Playwright MCP, Chrome DevTools, recherche de nouveaux plugins ; aucune installation sans accord écrit de l'utilisateur).

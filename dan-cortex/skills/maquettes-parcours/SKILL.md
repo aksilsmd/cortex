@@ -1,10 +1,6 @@
 ---
 name: maquettes-parcours
-description: >
-  Pôle Design de Dan-Cortex : workflow schématisé de chaque fonctionnalité, matrice d'interactions (chaque écran,
-  bouton, clic, réaction, destination), maquettes, thème, accessibilité, localisation. À utiliser pour des
-  maquettes, wireframes, parcours utilisateur, « où mène chaque bouton », carte de navigation, design system,
-  choix d'un thème.
+description: "Pôle Design de Dan-Cortex : workflow schématisé de chaque fonctionnalité, matrice d'interactions (chaque écran, bouton, clic, réaction, destination), maquettes, thème, accessibilité, localisation. À utiliser pour des maquettes, wireframes, parcours utilisateur, « où mène chaque bouton », carte de navigation, design system, choix d'un thème.\n"
 ---
 
 # Maquettes et parcours — pôle Design
@@ -65,12 +61,21 @@ d'or : **un développeur ou un testeur ne doit jamais avoir à inventer ce qui s
 | Fichier | Quand le lire |
 |---|---|
 | `${CLAUDE_SKILL_DIR}/references/workflows-fonctionnels.md` | avant de modéliser un workflow |
+| `${CLAUDE_SKILL_DIR}/references/schemas-mermaid.md` | pour dessiner états, séquences, parcours, BPMN léger, ER ou C4 en Mermaid, et les valider hors ligne |
+| `${CLAUDE_SKILL_DIR}/references/drawio/` | quand Mermaid ne suffit pas (BPMN 2.0 complet, pools) : `.drawio` écrit à la main et rendu en local ; commencer par `types-diagrammes.md` (texte tiers MIT, voir `NOTICE.md`) |
 | `${CLAUDE_SKILL_DIR}/references/matrice-interactions.md` | avant d'inventorier les écrans ou de décrire des interactions : le format est imposé |
 | `${CLAUDE_SKILL_DIR}/references/recherche-utilisateur.md` | pour les personas, les parcours, l'architecture de l'information |
 | `${CLAUDE_SKILL_DIR}/references/maquettes.md` | avant de produire des maquettes |
 | `${CLAUDE_SKILL_DIR}/references/theme-design-system.md` | pour choisir un thème et écrire le système de design |
+| `${CLAUDE_SKILL_DIR}/references/prototypes-en-variantes.md` | pour comparer plusieurs directions réellement différentes d'une même pièce dans un sélecteur, sur demande |
+| `${CLAUDE_SKILL_DIR}/references/choisir-une-bibliotheque-ui.md` | avant de faire à la main un composant courant (notification, menu, palette, saisie de code) : options, licence, poids |
+| `${CLAUDE_SKILL_DIR}/references/web-mobile-natif.md` | pour qu'une application web se comporte comme une application installée sur téléphone |
 | `${CLAUDE_SKILL_DIR}/references/accessibilite.md` | pour les exigences et l'audit d'accessibilité |
 | `${CLAUDE_SKILL_DIR}/references/contenu-localisation-culture.md` | pour la microcopie, la traduction, l'adaptation culturelle |
+| `${CLAUDE_SKILL_DIR}/references/formation-design-web-mobile.md` | formation : design web et mobile (grilles, typographie, plateformes, composants) |
+| `${CLAUDE_SKILL_DIR}/references/formation-ui-ux.md` | formation : recherche, conception et évaluation UI/UX |
+| `${CLAUDE_SKILL_DIR}/references/formation-animation-motion.md` | formation : animation et motion (principes, reduced-motion, CSS/View Transitions/WAAPI, Motion) |
+| `${CLAUDE_SKILL_DIR}/references/formation-figma-workflows.md` | formation : Figma (auto layout, variantes, variables, Dev Mode, Code Connect) et modélisation des parcours |
 | `${CLAUDE_SKILL_DIR}/references/orchestration.md` | chef d'orchestre seulement : agents du pôle, vagues, essaimage, revues |
 
 ## Garde-fous

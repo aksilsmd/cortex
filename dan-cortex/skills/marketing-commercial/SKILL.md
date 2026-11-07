@@ -1,7 +1,6 @@
 ---
 name: marketing-commercial
-description: >
-  Pôle Marketing et commercial de Dan-Cortex : stratégie de mise sur le marché, marque, acquisition, prix et offre, vente, support client, plan de lancement. À utiliser pour « plan marketing », « stratégie de lancement », « combien facturer », « SEO et stores », « processus de vente », « plan de communication ».
+description: "Pôle Marketing et commercial de Dan-Cortex : stratégie de mise sur le marché, marque, acquisition, prix et offre, vente, support client, plan de lancement. À utiliser pour « plan marketing », « stratégie de lancement », « combien facturer », « SEO et stores », « processus de vente », « plan de communication ».\n"
 ---
 
 # Marketing et commercial — pôle Marketing et commercial

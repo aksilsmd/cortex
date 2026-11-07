@@ -1,11 +1,6 @@
 ---
 name: execution-resiliente
-description: >
-  Mode d'exécution autonome et résiliente pour tout type de projet : transforme une demande en livrable vérifié,
-  exploite les outils et agents disponibles, diagnostique les blocages, récupère après les erreurs et
-  poursuit les tâches indépendantes. À utiliser pour les missions longues, les projets logiciels,
-  la recherche, l'analyse, les tests, la cybersécurité autorisée et toute tâche où l'agent s'arrête
-  trop tôt ou se contente d'un plan.
+description: "Mode d'exécution autonome et résiliente pour tout type de projet : transforme une demande en livrable vérifié, exploite les outils et agents disponibles, diagnostique les blocages, récupère après les erreurs et poursuit les tâches indépendantes. À utiliser pour les missions longues, les projets logiciels, la recherche, l'analyse, les tests, la cybersécurité autorisée et toute tâche où l'agent s'arrête trop tôt ou se contente d'un plan.\n"
 ---
 
 # Exécution résiliente — mode transversal

@@ -5,8 +5,17 @@ model: sonnet
 effort: medium
 maxTurns: 150
 color: green
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebFetch"]
-skills: ["usine-logicielle"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "Bash"
+- "WebFetch"
+skills:
+- "usine-logicielle"
+- "crm-twenty"
 ---
 
 Tu es l'intégrateur du réseau Dan-Cortex. Ton métier : faire parler des systèmes entre eux et faire entrer les données existantes dans le nouveau, sans perte et sans doublon. Tu traques la correspondance de champ approximative, l'échange rejoué deux fois, la reprise qu'on ne peut pas réconcilier et le paramétrage fait à la main que personne ne sait refaire.
@@ -56,6 +65,8 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/sobriete-code.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/decoupage-lots.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/architecture-normes/references/donnees-schema.md`
+
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/discipline-realisation.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/revue-multi-angles.md`
 
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
 

@@ -1,7 +1,6 @@
 ---
 name: architecture-normes
-description: >
-  Pôle Architecture et normes de Dan-Cortex : choix tracés du langage, des frameworks, de la base de données, de la structure et des outils ; schéma de données ; normes de code ; infrastructure. À utiliser pour « quelle techno choisir », « quelle architecture », « modèle de données », « ADR », « stack technique », « hébergement ».
+description: "Pôle Architecture et normes de Dan-Cortex : choix tracés du langage, des frameworks, de la base de données, de la structure et des outils ; schéma de données ; normes de code ; infrastructure. À utiliser pour « quelle techno choisir », « quelle architecture », « modèle de données », « ADR », « stack technique », « hébergement ».\n"
 ---
 
 # Architecture et normes — pôle Architecture
@@ -50,12 +49,19 @@ Ce pôle décide comment le produit est construit, sur quelle pile, avec quelles
 | `${CLAUDE_SKILL_DIR}/references/styles-architecture.md` | choisir un style, une API, une messagerie ; attributs de qualité ; évaluer ; anti-modèles |
 | `${CLAUDE_SKILL_DIR}/references/donnees-schema.md` | concevoir le schéma, les migrations, les locataires, les données personnelles |
 | `${CLAUDE_SKILL_DIR}/references/dossier-architecture-adr.md` | rédiger le dossier d'architecture ou une décision |
+| `${CLAUDE_SKILL_DIR}/references/c4-ddd-hexagonal.md` | vues C4 niveau par niveau, choix du gabarit d'ADR, DDD, ports et adaptateurs |
+| `${CLAUDE_SKILL_DIR}/references/ddd-hexagonal/` | détail DDD tactique, ports et adaptateurs, CQRS et événements ; commencer par `vue-ensemble.md` (texte tiers MIT, voir `NOTICE.md`) |
 | `${CLAUDE_SKILL_DIR}/references/normes-developpement.md` | écrire ou contrôler les normes de code et les dépendances |
 | `${CLAUDE_SKILL_DIR}/references/infrastructure-hebergement.md` | concevoir hébergement, environnements, déploiement, supervision |
 | `${CLAUDE_SKILL_DIR}/references/checklist-architecture.md` | contrôles ARC avant chaque jalon |
 | `${CLAUDE_SKILL_DIR}/references/checklist-donnees.md` | contrôles DON avant chaque jalon |
 | `${CLAUDE_SKILL_DIR}/references/checklist-normes.md` | contrôles des normes de développement |
 | `${CLAUDE_SKILL_DIR}/references/checklist-infrastructure.md` | contrôles d'infrastructure |
+| `${CLAUDE_SKILL_DIR}/references/formation-architectures-web-mobile.md` | formation : architectures web et mobile (rendu, API, auth, cache, mobile, hors-ligne) |
+| `${CLAUDE_SKILL_DIR}/references/formation-vercel.md` | formation : Vercel (déploiement, régions, coûts, sécurité) et localisation des données, dont client en Algérie |
+| `${CLAUDE_SKILL_DIR}/references/formation-supabase.md` | formation : Supabase (RLS, clés, Auth, Storage, coûts, auto-hébergement, localisation des données) |
+| `${CLAUDE_SKILL_DIR}/references/formation-keycloak.md` | formation : Keycloak (realms, OIDC/SAML, MFA, fédération, déploiement, CVE, intégration Node SSR) |
+| `${CLAUDE_SKILL_DIR}/references/formation-datocms.md` | formation : DatoCMS pour bandeaux et promotions (modèles, i18n/RTL, cache, repli, coûts) comparé à un module natif et aux CMS libres |
 | `${CLAUDE_SKILL_DIR}/references/orchestration.md` | chef d'orchestre seulement : agents du pôle, vagues, essaimage, revues |
 
 ## Garde-fous

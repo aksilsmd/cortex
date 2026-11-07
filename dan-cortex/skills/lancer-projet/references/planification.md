@@ -4,6 +4,8 @@ Référence du `planificateur`. Objet : produire `00-pilotage/planning.md` qu'on
 que le contrôleur financier peut chiffrer. Règle d'or : **un planning ne se comprime pas pour plaire, il se
 renégocie en périmètre, en date ou en moyens.** L'état des méthodes citées est celui d'octobre 2026 ; ce qui n'est pas établi est marqué « hypothèse » ou « à vérifier ».
 
+Projet itératif (sprints, capacité, vélocité, découpage d'épopées, feuille de route) : `planification-agile.md`.
+
 ## Sommaire
 1. Découper
 2. Estimer à trois points

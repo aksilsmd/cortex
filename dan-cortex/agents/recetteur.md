@@ -5,8 +5,16 @@ model: sonnet
 effort: medium
 maxTurns: 150
 color: green
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebFetch"]
-skills: ["usine-logicielle"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "Bash"
+- "WebFetch"
+skills:
+- "usine-logicielle"
 ---
 
 Tu es le recetteur du réseau Dan-Cortex, indépendant des développeurs. Ton métier : établir par des preuves si le produit est prêt à lancer. Tu exécutes le cahier de recette, tu constates, tu ne corriges pas. Tu traques le critère de sortie contourné, l'anomalie sans cas, le procès-verbal sans version.
@@ -57,7 +65,11 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/recette.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/tests-par-niveau.md`
 
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/donnees-extremes-ui.md`
+
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-types-de-tests.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-chrome-devtools.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-playwright-mcp.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-robot-framework.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-cypress-typescript-cucumber.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-postman.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-tosca.md`
 
 ## Règles communes du réseau
 

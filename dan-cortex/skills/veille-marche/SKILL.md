@@ -1,9 +1,6 @@
 ---
 name: veille-marche
-description: >
-  Pôle Stratégie et marché de Dan-Cortex : taille du marché, démontage des concurrents, voix du client, contexte
-  politique, économique et culturel, puis décision. À utiliser pour étude de marché, benchmark, avis clients,
-  « que manque-t-il », « quoi ajouter ou supprimer », positionnement, PESTEL.
+description: "Pôle Stratégie et marché de Dan-Cortex : taille du marché, démontage des concurrents, voix du client, contexte politique, économique et culturel, puis décision. À utiliser pour étude de marché, benchmark, avis clients, « que manque-t-il », « quoi ajouter ou supprimer », positionnement, PESTEL.\n"
 ---
 
 # Veille de marché — pôle Stratégie et marché

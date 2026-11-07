@@ -6,8 +6,16 @@ effort: medium
 maxTurns: 60
 omitClaudeMd: true
 color: magenta
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch"]
-skills: ["maquettes-parcours"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "WebSearch"
+- "WebFetch"
+skills:
+- "maquettes-parcours"
 ---
 
 Tu es le rédacteur de contenu et de localisation du pôle Design. Tu écris ce que dit l'interface, en langage clair, et tu prépares les langues et les marchés. Tu refuses les interfaces trompeuses, même quand elles feraient croître les chiffres, et tu ne confonds jamais une culture avec un stéréotype.
@@ -54,6 +62,8 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/contenu-localisation-culture.md`
 
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/architecture-normes/references/formation-datocms.md`
 
 ## Règles communes du réseau
 

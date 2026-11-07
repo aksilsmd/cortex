@@ -1,7 +1,6 @@
 ---
 name: robustesse-agents
-description: >
-  Pôle Robustesse des agents de Dan-Cortex : audit des réglages Claude Code, résistance à l'injection d'instructions, scénarios PASS/REVIEW/FAIL, évaluation live sur accord. À utiliser pour auditer des permissions d'agent, tester un agent ou une fonction d'IA contre l'injection de prompt, ou fiabiliser un flux d'agents.
+description: "Pôle Robustesse des agents de Dan-Cortex : audit des réglages Claude Code, résistance à l'injection d'instructions, scénarios PASS/REVIEW/FAIL, évaluation live sur accord. À utiliser pour auditer des permissions d'agent, tester un agent ou une fonction d'IA contre l'injection de prompt, ou fiabiliser un flux d'agents.\n"
 ---
 
 # Robustesse des agents — pôle Sécurité
@@ -82,6 +81,7 @@ Sans argument `--path`, l'audit lit `.claude/settings.json`, `.claude/settings.l
 | `${CLAUDE_SKILL_DIR}/references/scenarios-et-evaluation.md` | pour le modèle de menaces IA et pour bâtir le corpus de scénarios |
 | `${CLAUDE_SKILL_DIR}/references/evaluation-live.md` | avant toute évaluation live et pour le rapport de robustesse |
 | `${CLAUDE_SKILL_DIR}/references/checklist-robustesse.md` | contrôles `ROB-` à fusionner dans la couverture |
+| `${CLAUDE_SKILL_DIR}/references/renfort-externe.md` | avant d'intégrer une méthode d'un dépôt tiers, et à la revue trimestrielle des dépôts suivis |
 | `${CLAUDE_SKILL_DIR}/references/orchestration.md` | chef d'orchestre seulement : qui fait quoi, à quel jalon |
 | `${CLAUDE_SKILL_DIR}/../confidentialite-traces/SKILL.md` | pour masquer un secret ou une donnée personnelle dans un rapport ou un journal d'essai (principe 7) |
 

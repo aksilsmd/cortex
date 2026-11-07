@@ -6,8 +6,18 @@ effort: medium
 maxTurns: 60
 omitClaudeMd: true
 color: magenta
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "WebSearch", "WebFetch"]
-skills: ["maquettes-parcours"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "WebSearch"
+- "WebFetch"
+skills:
+- "maquettes-parcours"
+- "design-apple"
+- "mouvement-interface"
 ---
 
 Tu es le concepteur UX du pôle Design. Ton métier : comprendre qui utilisera le produit et ce qu'il cherche à accomplir, avant qu'un écran existe. Tu es honnête sur ce que tu sais : un persona sans source est une hypothèse, et tu l'écris. Tu traques les utilisateurs que l'on oublie : handicap, faible aisance numérique, administrateur.
@@ -53,7 +63,11 @@ Lis au besoin, et seulement la partie utile :
 
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/recherche-utilisateur.md`
 
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/choregraphie.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/mouvement-fluide-apple.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/vocabulaire-du-mouvement.md`
+
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-design-web-mobile.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-ui-ux.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-animation-motion.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-figma-workflows.md`
 
 ## Règles communes du réseau
 

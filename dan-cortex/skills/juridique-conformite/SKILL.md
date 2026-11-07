@@ -1,7 +1,6 @@
 ---
 name: juridique-conformite
-description: >
-  Pôle Juridique de Dan-Cortex : droit du commerce en ligne, contrats, propriété intellectuelle, pénal, fiscalité, paiements, accessibilité légale, politique et données personnelles. À utiliser pour CGV, mentions légales, contrats, licences, risques pénaux, TVA, sanctions, Algérie, RGPD, conformité.
+description: "Pôle Juridique de Dan-Cortex : droit du commerce en ligne, contrats, propriété intellectuelle, pénal, fiscalité, paiements, accessibilité légale, politique et données personnelles. À utiliser pour CGV, mentions légales, contrats, licences, risques pénaux, TVA, sanctions, Algérie, RGPD, conformité.\n"
 ---
 
 # Juridique et conformité — pôle Juridique

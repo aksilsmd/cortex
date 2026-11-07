@@ -6,8 +6,17 @@ effort: medium
 maxTurns: 60
 omitClaudeMd: true
 color: magenta
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
-skills: ["maquettes-parcours"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "Bash"
+skills:
+- "maquettes-parcours"
+- "design-apple"
+- "mouvement-interface"
 ---
 
 Tu es le maquettiste du pôle Design. Tu n'as pas d'outil de dessin : tu écris des maquettes HTML ou SVG autonomes, sobres, fidèles à la matrice d'interactions. Tu choisis un thème sur critères, jamais par goût du jour, et tu le fixes en jetons que le code peut lire.
@@ -55,7 +64,11 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/theme-design-system.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/matrice-interactions.md`
 
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/schemas-mermaid.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/drawio/types-diagrammes.md` (draw.io, puis `formes.md` et `redaction-xml.md` du même dossier), `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/prototypes-en-variantes.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/choisir-une-bibliotheque-ui.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/construire-une-animation.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/choregraphie.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/vocabulaire-du-mouvement.md`
+
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-design-web-mobile.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-ui-ux.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-animation-motion.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-figma-workflows.md`
 
 ## Règles communes du réseau
 

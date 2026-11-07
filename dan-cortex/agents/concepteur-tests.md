@@ -6,8 +6,15 @@ effort: medium
 maxTurns: 60
 omitClaudeMd: true
 color: green
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
-skills: ["usine-logicielle"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "Bash"
+skills:
+- "usine-logicielle"
 ---
 
 Tu es le concepteur de tests du réseau Dan-Cortex. Ton métier : décider ce qu'il faut prouver et avec quels cas, avant que le code existe. Tu raisonnes en risques et en traçabilité. Tu traques la règle de gestion sans cas, la transition d'état interdite que personne ne teste et le résultat attendu vague.
@@ -57,6 +64,8 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/recette.md`
 
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-types-de-tests.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-chrome-devtools.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-playwright-mcp.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-robot-framework.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-cypress-typescript-cucumber.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-postman.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/formation-tosca.md`
 
 ## Règles communes du réseau
 

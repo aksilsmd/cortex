@@ -15,6 +15,7 @@ Pour le chef d'orchestre, ou pour l'orchestrateur du pôle. Les agents experts n
 | `automaticien-tests` | B | J4 après chaque incrément (fonctionnel, API, bout en bout) ; J5 (performance) |
 | `recetteur` | B | J5, vague 5A |
 | `executant-tests` | C | partout où une suite se rejoue : non-régression, contre-tests |
+| `organisateur` | B | J5 et après : tient la carte des fonctionnalités, le carnet de demandes et le plan de vagues ; seul écrivain de ces fichiers ; point d'avancement en fin de série |
 
 ## Vagues types
 
@@ -73,3 +74,5 @@ Les contrats d'interface sont figés avant le premier développeur. L'intégrate
 ## Outils extérieurs
 
 Si un connecteur de gestion de tests (Xray, Squash TM, TestRail) ou de suivi de tickets est présent, y verser anomalies et cas ; sinon le registre des anomalies de `cortex.py` fait foi. Aucune action sur un dépôt distant sans accord explicite.
+
+Choix des skills, plugins et outils de navigateur (Playwright MCP, Chrome DevTools, ECC, recherche de nouveaux plugins) : `selection-outillage.md`. Le chef d'orchestre décide au plan du lot ; la vigie contrôle à chaque porte.

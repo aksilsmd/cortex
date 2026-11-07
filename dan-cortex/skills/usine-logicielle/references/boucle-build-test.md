@@ -50,6 +50,8 @@ Une règle désactivée porte un commentaire justifié. Abaisser un seuil ou ret
 
 Verdict : accepté, accepté avec réserves, refusé. Il constate, il ne modifie rien.
 
+Angles détaillés (échecs silencieux, analyse des tests) : `revue-multi-angles.md` ; preuves TDD et vérification attendues : `discipline-realisation.md`.
+
 ## 4. Définition de « terminé »
 
 Un lot est terminé quand toutes les cases sont vraies, preuves à l'appui :
@@ -125,3 +127,7 @@ Verdict : accepté / accepté avec réserves / refusé. Différence relue : <fic
 - DORA 2025 : https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report
 - Playwright, Test Agents (healer qui peut affaiblir un test) : https://playwright.dev/docs/test-agents
 - ISO/IEC 25010:2023 (maintainability, reliability), état : octobre 2026.
+
+## Processus et serveurs de test
+
+Noter le PID de chaque serveur ou navigateur lancé et n'arrêter que ces PID (`kill <pid>`). Jamais `pkill`, `killall` ni `pgrep -f` par nom ou par motif : d'autres lots tournent en parallèle dans le même environnement (ANO-099 du projet Parapro, 2026-11-07).

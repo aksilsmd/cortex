@@ -1,9 +1,6 @@
 ---
 name: audit-general
-description: >
-  Audit général Dan-Cortex : un super-auditeur indépendant passe le projet en revue à 360°, son rapport est débattu
-  en plénière, puis les corrections sont décidées et recontrôlées. À utiliser avant un lancement, à un jalon, ou
-  pour « audite mon projet », « vérifie que rien n'est oublié », « revue complète », même hors Dan-Cortex.
+description: "Audit général Dan-Cortex : un super-auditeur indépendant passe le projet en revue à 360°, son rapport est débattu en plénière, puis les corrections sont décidées et recontrôlées. À utiliser avant un lancement, à un jalon, ou pour « audite mon projet », « vérifie que rien n'est oublié », « revue complète », même hors Dan-Cortex.\n"
 ---
 
 # Audit général

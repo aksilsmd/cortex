@@ -62,6 +62,8 @@ Arbre d'utilité, scénarios, résultats d'évaluation, fitness functions en pla
 
 Chaque flèche porte un verbe et un protocole. Les frontières de confiance sont tracées et validées par `architecte-securite`.
 
+Règles par niveau, choix du gabarit d'ADR, DDD et hexagonal : `c4-ddd-hexagonal.md`.
+
 ## 4. Gabarit d'une ADR
 
 Une ADR par décision architecturalement significative : langage, framework structurant, base, broker, style, hébergement, tenancy, acheter ou construire, dépendance majeure.

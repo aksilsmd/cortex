@@ -1,12 +1,6 @@
 ---
 name: lancer-projet
-description: >
-  Chef d'orchestre Dan-Cortex : cadre, conçoit, fait réaliser, tester, sécuriser et lancer un projet numérique de
-  bout en bout avec un réseau d'agents experts en parallèle (marché, cahier des charges, spécifications,
-  maquettes, architecture, code, tests, sécurité, juridique, budget, marketing, lancement). À utiliser dès que
-  l'utilisateur veut lancer, créer, refondre ou planifier un site web d'entreprise, une application mobile, un
-  SaaS, un produit de niche, un e-commerce ou un ERP, demande un plan complet de A à Z, une étude à 360° ou de
-  ne rien oublier, même sans citer Dan-Cortex.
+description: "Chef d'orchestre Dan-Cortex : cadre, conçoit, fait réaliser, tester, sécuriser et lancer un projet numérique de bout en bout avec un réseau d'agents experts en parallèle (marché, cahier des charges, spécifications, maquettes, architecture, code, tests, sécurité, juridique, budget, marketing, lancement). À utiliser dès que l'utilisateur veut lancer, créer, refondre ou planifier un site web d'entreprise, une application mobile, un SaaS, un produit de niche, un e-commerce ou un ERP, demande un plan complet de A à Z, une étude à 360° ou de ne rien oublier, même sans citer Dan-Cortex.\n"
 ---
 
 # Dan-Cortex — chef d'orchestre
@@ -196,5 +190,6 @@ les manques et les prochaines actions. Ne rien relire d'autre avant d'en avoir b
 | `${CLAUDE_SKILL_DIR}/../execution-resiliente/SKILL.md` | dès qu'une mission échoue ou qu'un jalon reste bloqué, et avant chaque bilan en `delegue` ou `autonome` : boucle de reprise, vérification avant de conclure |
 | `${CLAUDE_SKILL_DIR}/../confidentialite-traces/SKILL.md` | avant d'écrire un journal, un rapport ou un compte rendu qui touche des secrets ou des données personnelles |
 | `references/planification.md` | pour bâtir ou contrôler un planning ; référence du `planificateur` |
+| `references/planification-agile.md` | projet itératif : sprints, capacité, vélocité, découpage d'épopées, feuille de route |
 | `references/reseau.md` | si l'utilisateur demande comment le réseau fonctionne |
 | `references/profils/<type>.md` | à J0, pour le ou les types du projet |

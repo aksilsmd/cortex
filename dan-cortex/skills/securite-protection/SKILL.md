@@ -1,7 +1,6 @@
 ---
 name: securite-protection
-description: >
-  Pôle Sécurité de Dan-Cortex : analyse de risques, protections (pare-feu, intrusion, virus, piratage), contrôles DevSecOps, tests de sécurité complets, test d'intrusion autorisé, correction, incident. À utiliser pour sécuriser, protéger un site, pare-feu, pentest, audit de sécurité, NIS2.
+description: "Pôle Sécurité de Dan-Cortex : analyse de risques, protections (pare-feu, intrusion, virus, piratage), contrôles DevSecOps, tests de sécurité complets, test d'intrusion autorisé, correction, incident. À utiliser pour sécuriser, protéger un site, pare-feu, pentest, audit de sécurité, NIS2.\n"
 ---
 
 # Sécurité et protection — pôle Sécurité
@@ -56,7 +55,9 @@ Ce pôle fait en sorte que le projet résiste aux intrusions, aux logiciels malv
 | `${CLAUDE_SKILL_DIR}/references/reponse-incident.md` | pour le plan de réponse à incident et les délais de notification |
 | `${CLAUDE_SKILL_DIR}/references/obligations-cyber.md` | pour savoir qui est concerné par NIS2, DORA, CRA, PCI DSS, HDS |
 | `${CLAUDE_SKILL_DIR}/references/checklist-securite.md` | contrôles `SEC-` à fusionner dans la couverture |
+| `${CLAUDE_SKILL_DIR}/references/renforts-securite.md` | renforts `safety` (défensif, activé) et `claude-red` (dépôt externe offensif, consulté au seul niveau de la taxonomie des classes d'attaques à couvrir, écartant l'outillage d'exploitation) |
 | `${CLAUDE_SKILL_DIR}/../robustesse-agents/SKILL.md` | projet `ia`, ou audit des réglages des agents : injection d'instructions, scénarios, évaluation |
+| `${CLAUDE_SKILL_DIR}/references/formation-passi.md` | formation : PASSI v2.2 (activités, niveaux, déroulé, livrables) et préparation d'un audit qualifié ; nos agents ne délivrent aucune qualification |
 | `${CLAUDE_SKILL_DIR}/references/orchestration.md` | chef d'orchestre seulement : agents du pôle, vagues, essaimage, revues |
 
 ## Garde-fous
@@ -66,3 +67,7 @@ Ce pôle fait en sorte que le projet résiste aux intrusions, aux logiciels malv
 - Un test mené par un agent ne remplace pas un prestataire qualifié (en France, PASSI) quand l'enjeu est fort : données sensibles, paiement, exigence d'un régulateur ou d'un acheteur.
 - Les conclusions sur les obligations légales (NIS2, DORA, CRA, HDS) et toute attestation de conformité sont « à valider » par un juriste ou un auditeur qualifié.
 - Le niveau de sécurité visé et l'acceptation d'un risque résiduel sont décidés par l'utilisateur, jamais par le pôle.
+
+## Outils locaux
+
+Pour les empreintes, secrets de test, TOTP de test, lecture de JWT, QR codes et autres outils de développeur, utiliser le skill `boite-outils-it` (IT-Tools en local, aucune donnée envoyée).

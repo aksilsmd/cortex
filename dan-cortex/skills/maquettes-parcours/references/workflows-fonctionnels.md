@@ -79,6 +79,8 @@ Formes : `([Début])` et `([Fin])` arrondis ; `[Action]` rectangle ; `{Décision
 branche par issue ; écran entre doubles crochets `[[EC-003 Mot de passe oublié]]`. Étiqueter chaque flèche qui
 sort d'une décision. Au plus quinze nœuds par schéma : au-delà, découper en sous-workflows.
 
+États, séquences, parcours, BPMN léger, ER, C4 et rendu hors ligne : `schemas-mermaid.md`.
+
 ## 4. Exemple complet
 
 ````markdown

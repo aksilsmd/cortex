@@ -1,7 +1,6 @@
 ---
 name: budget-finance
-description: >
-  Pôle Finance de Dan-Cortex : budget de construction et d'exploitation sur trois ans en trois scénarios, estimation, justification économique, financements. À utiliser pour « combien ça coûte », budget, devis, rentabilité, seuil de rentabilité, aides.
+description: "Pôle Finance de Dan-Cortex : budget de construction et d'exploitation sur trois ans en trois scénarios, estimation, justification économique, financements. À utiliser pour « combien ça coûte », budget, devis, rentabilité, seuil de rentabilité, aides.\n"
 ---
 
 # Budget et finance — pôle Finance

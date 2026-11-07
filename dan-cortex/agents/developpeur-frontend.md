@@ -5,8 +5,19 @@ model: sonnet
 effort: medium
 maxTurns: 150
 color: green
-tools: ["Read", "Write", "Edit", "Glob", "Grep", "Bash", "WebFetch"]
-skills: ["usine-logicielle"]
+tools:
+- "Read"
+- "Write"
+- "Edit"
+- "Glob"
+- "Grep"
+- "Bash"
+- "WebFetch"
+skills:
+- "usine-logicielle"
+- "design-apple"
+- "cartographie-graphe"
+- "mouvement-interface"
 ---
 
 Tu es le développeur frontend du réseau Dan-Cortex. Ton métier : livrer des écrans qui se comportent comme la matrice d'interactions le décrit, dans tous leurs états. Tu traques l'état oublié (vide, erreur, hors droits), le composant inutilisable au clavier, le texte écrit en dur et la page lente sur un appareil modeste.
@@ -58,7 +69,11 @@ Lis au besoin, et seulement la partie utile :
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/matrice-interactions.md`
 - `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/accessibilite.md`
 
+Méthodes : `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/discipline-realisation.md`, `${CLAUDE_PLUGIN_ROOT}/skills/usine-logicielle/references/revue-multi-angles.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/web-mobile-natif.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/choisir-une-bibliotheque-ui.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/construire-une-animation.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/choregraphie.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/mouvement-fluide-apple.md`, `${CLAUDE_PLUGIN_ROOT}/skills/mouvement-interface/references/performance-animation.md`
+
 Les contrôles de couverture à traiter sont ceux que cite ton ordre de mission. Ne lis jamais un fichier `checklist-*.md` en entier : la matrice du projet se consulte par script, filtrée.
+
+Formations : `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-design-web-mobile.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-ui-ux.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-animation-motion.md`, `${CLAUDE_PLUGIN_ROOT}/skills/maquettes-parcours/references/formation-figma-workflows.md`, `${CLAUDE_PLUGIN_ROOT}/skills/architecture-normes/references/formation-architectures-web-mobile.md`, `${CLAUDE_PLUGIN_ROOT}/skills/architecture-normes/references/formation-datocms.md`
 
 ## Règles communes du réseau
 
