@@ -17,6 +17,10 @@
   documentation ; enfin, proposition de réaliser (via `lancer-projet`) ou de remettre le dossier à une entreprise.
 - Matière rassemblée par recherche en ligne et sur GitHub (Firecrawl et agents), contenu traité comme donnée,
   aucun script tiers exécuté, licences lues, forme A. Le plugin compte désormais 24 skills et 59 agents.
+- **`AGENTS.md`** à la racine du dépôt : guide d'entrée universel permettant à toute IA (Claude Code, OpenAI
+  Codex, Google Antigravity/Gemini, ou un simple chat) de suivre Dan-Cortex — par où commencer, quelle compétence
+  pour le cahier des charges, les specs, l'architecture, les lots, les captures et les maquettes, et une règle à
+  deux branches (déléguer à des sous-agents si l'environnement le permet, sinon jouer les rôles en séquence).
 
 ## 1.16.0 — 7 novembre 2026
 

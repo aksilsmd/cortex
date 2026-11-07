@@ -202,6 +202,7 @@ Les retours sont les bienvenus.
 
 | Chemin | Contenu |
 |---|---|
+| `AGENTS.md` | guide d'entrée universel : fait fonctionner Dan-Cortex avec Claude Code, Codex, Antigravity/Gemini ou un chat |
 | `dan-cortex/` | le plugin : 24 skills, 59 agents, 221 fichiers de référence et gabarits, 16 scripts |
 | `dist/dan-cortex.plugin` | le plugin empaqueté pour l'application Claude |
 | `tests/`, `pyproject.toml` | tests du paquet `ccal`, des niveaux d'autonomie, des manifestes et du build ; installation de la commande `ccal` |
