@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*-
 """Dan-Cortex — construit l'archive distribuable dist/dan-cortex.plugin (bibliothèque standard uniquement).
 
-L'archive est reproductible : mêmes fichiers source, mêmes octets. Elle contient les fichiers du dossier
-dan-cortex/ suivis par Git (ou, hors d'un dépôt Git, tous ses fichiers sauf caches et artefacts de build),
-à la racine de l'archive, triés, avec une date fixe.
+L'archive contient les fichiers du dossier dan-cortex/ suivis par Git (ou, hors d'un dépôt Git, tous ses
+fichiers sauf caches et artefacts de build), à la racine de l'archive, triés, avec une date fixe. La
+construction est déterministe (mêmes fichiers source, même liste et mêmes données) ; la vérification compare
+le *contenu* de l'archive (noms et données), car les octets compressés par zlib peuvent varier d'un
+environnement à l'autre (version ou build de la bibliothèque), ce qui rendrait une comparaison binaire
+instable d'une machine de CI à l'autre.
 
 Usage :
   python3 scripts/construire_plugin.py              reconstruit dist/dan-cortex.plugin
@@ -71,6 +74,12 @@ def construire(racine=RACINE, utiliser_git=True):
     return tampon.getvalue()
 
 
+def contenu(octets):
+    """Liste ordonnée (nom, données) de l'archive, indépendante de la compression et des métadonnées."""
+    with zipfile.ZipFile(io.BytesIO(octets)) as archive:
+        return [(nom, archive.read(nom)) for nom in sorted(archive.namelist())]
+
+
 def main():
     p = argparse.ArgumentParser(prog="construire_plugin.py", description=__doc__.splitlines()[0])
     p.add_argument("--verifier", action="store_true", help="vérifier que l'archive est à jour, sans l'écrire")
@@ -81,7 +90,8 @@ def main():
     nombre = len(fichiers_du_plugin())
     if a.verifier:
         actuel = open(cible, "rb").read() if os.path.isfile(cible) else b""
-        if actuel != octets:
+        a_jour = bool(actuel) and contenu(actuel) == contenu(octets)
+        if not a_jour:
             print("%s n'est pas à jour : lancer « python3 scripts/construire_plugin.py »." % a.sortie)
             sys.exit(1)
         print("%s à jour (%d fichiers)." % (a.sortie, nombre))
