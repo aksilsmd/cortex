@@ -104,6 +104,7 @@ Chaque pôle s'utilise aussi directement.
 | `/dan-cortex:crm-twenty` | CRM libre Twenty : auto-hébergement sûr, intégration, applications |
 | `/dan-cortex:cartographie-graphe` | comprendre un code en graphe (Graphify, local) |
 | `/dan-cortex:boite-outils-it` | empreintes, secrets de test, TOTP, JWT, QR codes (IT-Tools, local) |
+| `/dan-cortex:accueil-recueil` | premier contact guidé : besoin brut reformulé et validé, exploration, propositions, entretien, livrables, étude de réalisation, décision de l'utilisateur |
 | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
 | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
@@ -135,7 +136,7 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 24 | `skills/` |
+| Skills | 25 | `skills/` |
 | Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 138 | `skills/*/references/`, `skills/*/assets/` |

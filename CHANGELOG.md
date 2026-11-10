@@ -1,5 +1,20 @@
 # Journal des versions
 
+## 2.0.0 — 10 novembre 2026
+
+- Nouveau skill `accueil-recueil` : chef de parcours du premier contact. Salutation, besoin brut, reformulation
+  validée, exploration du domaine (web et GitHub) **avant** l'entretien, propositions, entretien en neuf thèmes
+  (interview de `recueil-besoin`), parcours en dix étapes jusqu'à la décision de l'utilisateur : réalisation par
+  Dan-Cortex, dossier pour une entreprise, ou startup.
+- Nouveau livrable : étude de réalisation (par IA, par une entreprise tierce, mixte, produit existant), budget
+  sur trois ans en trois scénarios, gains dans le temps, seuil de rentabilité.
+- Table « quel outil, quel skill, quel plugin, à quel moment » et procédure pour aller chercher un outil
+  manquant, toujours avec l'accord écrit de l'utilisateur.
+- Paquet universel `dan-cortex/universel/` : noyau de moins de 8 000 caractères, version complète en un fichier,
+  fichiers de connaissance, skill portable. Construit par `scripts/construire_universel.py`, contrôlé par
+  `tests/test_universel.py`. Complète `AGENTS.md`, qui reste le guide des IA capables de lire le dépôt.
+- `lancer-projet` passe par l'accueil quand le besoin n'est pas encore cadré.
+
 ## 1.17.0 — 7 novembre 2026
 
 - Nouvelle compétence **`traduction-interpretariat`** (FR/AR/EN) : traduire un texte, un livre ou une interface

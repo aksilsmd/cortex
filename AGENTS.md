@@ -21,6 +21,7 @@ Dans les deux cas, la méthode et les livrables sont ceux décrits par les comp�
 
 | Étape | Compétence (`dan-cortex/skills/…/SKILL.md`) | Agents clés (`dan-cortex/agents/…`) | Livrable |
 |---|---|---|---|
+| Premier contact, parcours complet d'un débutant | `accueil-recueil` | chef d'orchestre, puis les pôles | besoin validé, exploration, propositions, livrables, étude de réalisation, décision |
 | Recueillir le besoin (même d'un novice) | `recueil-besoin` | `intervieweur` | besoin reformulé, cahier des charges, option étude approfondie |
 | Cahier des charges et spécifications | `specifications` | `expert-cahier-des-charges`, `redacteur-sfg`, `redacteur-sfd`, `redacteur-specs-techniques` | exigences numérotées + critères d'acceptation ; SFG (fonctions), SFD (règles de gestion, une fonctionnalité par une), specs techniques |
 | Architecture et normes | `architecture-normes` | `architecte-solution`, `architecte-donnees`, `gardien-des-normes` | ADR, pile technique, schéma de données, normes de code, infrastructure |
@@ -55,3 +56,7 @@ Plan → test rouge → développement → tests → contrôle visuel (captures)
 ## 7. Compatibilité des outils
 
 `AGENTS.md` est lu par Codex et Claude Code ; Antigravity lit `AGENTS.md` ou `GEMINI.md`. Les compétences `recueil-besoin`, `atelier-ecriture` et `traduction-interpretariat` sont écrites pour fonctionner **seules**, même sans le reste du réseau. Les chemins `${CLAUDE_SKILL_DIR}` / `${CLAUDE_PLUGIN_ROOT}` sont propres à Claude : ailleurs, les remplacer comme indiqué au §2.
+
+## Paquet universel (IA sans accès au dépôt)
+
+Pour une IA de conversation qui ne lit pas ce dépôt : `dan-cortex/universel/INSTALLATION.md` (noyau à coller dans les instructions, fichiers de connaissance, skill portable).
