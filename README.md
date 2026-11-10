@@ -7,7 +7,7 @@
   <img alt="Version 2.0.0" src="https://img.shields.io/badge/version-2.0.0-2563EB">
   <img alt="25 skills" src="https://img.shields.io/badge/skills-25-0F766E">
   <img alt="59 agents" src="https://img.shields.io/badge/agents-59-0F766E">
-  <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
+  <img alt="803 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-803-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
 </p>
 
@@ -15,7 +15,7 @@ Dan-Cortex est un plugin pour Claude. Il organise 59 agents experts comme les é
 entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique : site web de grande
 entreprise, application mobile, SaaS, produit de niche, e-commerce, ERP. Les agents travaillent en parallèle, se
 relisent entre métiers, débattent des décisions structurantes, et un auditeur indépendant passe tout en revue
-avant le lancement. Une matrice de 784 contrôles garantit que rien n'est oublié : technique,
+avant le lancement. Une matrice de 803 contrôles garantit que rien n'est oublié : technique,
 sécurité, juridique, pénal, financier, marketing, social, culturel, politique.
 
 **Nouveau en 1.0 :** Dan-Cortex peut mener tout le projet **en autonomie** dans un cadre que tu fixes une fois,
@@ -178,7 +178,7 @@ Un système multi-agents coûte plus cher qu'une conversation simple. Dan-Cortex
 
 Cette version est une première version publique. Ce qui a été vérifié :
 
-- structure du plugin validée par `claude plugin validate --strict` ; format des 784 contrôles
+- structure du plugin validée par `claude plugin validate --strict` ; format des 803 contrôles
   vérifié par script ;
 - niveaux d'autonomie, contrôles `ROB-` et paquet `ccal` couverts par des tests automatisés (`tests/`) ;
 - scripts de pilotage testés sur un projet d'essai : matrice de couverture, registres, jalons, traçabilité,
@@ -238,7 +238,7 @@ MIT. Voir [`LICENSE`](LICENSE).
 to scope, design, build, test, secure and launch a digital project: enterprise website, mobile app, SaaS, niche
 product, e-commerce, ERP. Agents work in parallel waves, cross-review each other's deliverables, debate
 structural decisions in bounded written meetings, and an independent auditor reviews everything before launch. A
-coverage matrix of 784 controls makes sure nothing is forgotten, from security and law to budget,
+coverage matrix of 803 controls makes sure nothing is forgotten, from security and law to budget,
 marketing and cultural adaptation.
 
 Version 1.0 adds an **autonomous mode**: after a single qualification round, the network runs the whole scope

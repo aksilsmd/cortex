@@ -18,7 +18,9 @@ sources en fin. Aucune note de travail d'agent, aucun identifiant interne sans s
    doit fournir et pour quand.
 8. Maquettes prévues : écrans clés sur ordinateur et sur téléphone, états (vide, chargement, erreur, succès).
 9. Architecture expliquée simplement : schéma d'ensemble, briques, données, hébergement ; choix et raisons.
-10. Normes de développement : qualité du code, tests, sécurité, accessibilité, performances, langues.
+10. Normes de développement : qualité du code, tests, sécurité, accessibilité, performances, langues, et
+    **reprise par un humain** (documentation d'entrée, nommage par le métier, dépendances déclarées, test de
+    reprise par un développeur qui ne connaît pas le projet).
 11. Exigences non fonctionnelles : sécurité, données personnelles, disponibilité, sauvegardes.
 12. Conformité : obligations légales par pays, « à valider par un professionnel ».
 13. Organisation : étapes, planning macro, rôles, validations attendues de l'utilisateur.

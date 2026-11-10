@@ -52,6 +52,8 @@ Plan → test rouge → développement → tests → contrôle visuel (captures)
 - **Confidentialité** : aucun secret ni donnée personnelle dans le code, les journaux ou les rapports (`dan-cortex/skills/confidentialite-traces/SKILL.md`).
 - **Décisions structurantes** : tracées et validées par la personne (`reunion-decision`).
 - **Sobriété** : livrables utiles, pas de remplissage.
+- **Revues croisées** : personne ne valide son propre travail (code, correctif, cas de test) ; tests unitaires rouges avant le code ; sous-agents recrutés en cas de besoin avec fiche de poste (`usine-logicielle/references/revues-croisees-code-tests.md`, `lancer-projet/references/recrutement-sous-agents.md`).
+- **Code repris par un humain** : le code produit doit pouvoir être repris par un développeur qui ne connaît pas le projet (`dan-cortex/skills/architecture-normes/references/reprise-humaine.md`).
 
 ## 7. Compatibilité des outils
 

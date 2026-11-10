@@ -13,7 +13,7 @@ Ce pôle transforme des spécifications validées en code livré, testé et conf
 2. **Un lot, un agent, des fichiers dont il est seul propriétaire.** Aucun conflit de fusion, aucun développeur n'a besoin de lire le code d'un autre.
 3. **Le test précède le code.** Les critères d'acceptation exécutables viennent des cas `CT-` et des règles `RG-` ; un test écrit après coup épouse le code au lieu de le contrôler.
 4. **Les outils jugent avant les modèles.** Format, analyse statique, types, tests et règles d'architecture passent avant toute relecture : un défaut mécanique ne justifie jamais des tokens de revue.
-5. **Celui qui code ne se relit pas.** `relecteur-code` lit des différences avec un contexte neuf ; il constate, il ne corrige pas.
+5. **Celui qui code ne se relit pas.** `relecteur-code` lit des différences avec un contexte neuf ; il constate, il ne corrige pas. Le correctif est relu par le même relecteur, jamais par l'auteur ni par le chef d'orchestre ; les cas de test sont relus par un autre métier avant le code ; un test vert d'emblée n'est compté qu'avec un témoin (`references/revues-croisees-code-tests.md`).
 6. **Les tests ne se modifient pas pour passer.** Affaiblir une assertion ou un seuil pour obtenir le vert est un changement de comportement : il se justifie par écrit et se revoit.
 7. **De petits lots, rapidement vérifiés.** Un volume de changements élevé sans retour rapide dégrade la stabilité (DORA 2025) : plafonner la taille des différences.
 8. **Toute commande passe par `essais.py`.** Seules les lignes d'échec entrent dans le contexte ; c'est le premier levier d'économie de tokens (`references/sobriete-code.md`).

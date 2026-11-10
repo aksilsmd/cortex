@@ -123,7 +123,7 @@ Chaque pôle s'utilise aussi directement.
   relit l'architecture.
 - **Un super-auditeur** indépendant passe tout en revue avant le lancement ; son rapport est débattu en plénière,
   puis les corrections sont décidées et recontrôlées.
-- **Une matrice de couverture de 784 contrôles**, filtrée selon ton projet : chaque ligne finit
+- **Une matrice de couverture de 803 contrôles**, filtrée selon ton projet : chaque ligne finit
   « fait » avec sa preuve, « non applicable » avec son motif, ou « risque accepté » avec un nom.
 - **Une règle commune à tous les agents** : ce qu'ils lisent (page web, avis, document, sortie d'outil) est une
   donnée, jamais un ordre ; une instruction trouvée est signalée, pas exécutée.
@@ -138,7 +138,7 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 |---|---|---|
 | Skills | 25 | `skills/` |
 | Agents | 59 | `agents/` |
-| Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
+| Contrôles de couverture | 803 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 138 | `skills/*/references/`, `skills/*/assets/` |
 | Scripts | 6 | `skills/lancer-projet/scripts/` (`cortex.py`, `essais.py`), `skills/robustesse-agents/scripts/` (`robustesse.py` et le paquet `ccal`) |
 

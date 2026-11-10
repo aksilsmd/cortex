@@ -133,6 +133,10 @@ concurrence seule, cahier des charges seul, audit d'un projet existant) n'exécu
 
 ## Orchestrateurs, experts et sous-agents
 
+**Recruter en cas de besoin** (renfort demandé, travail parallélisable, regard indépendant, domaine nouveau,
+agent à court de tours) : fiche de poste, indépendance, plafond et journal selon
+`references/recrutement-sous-agents.md`.
+
 Dans l'application Claude, un agent ne peut pas lancer d'autres agents : tous les lancements passent par toi. La
 hiérarchie fonctionne donc ainsi.
 

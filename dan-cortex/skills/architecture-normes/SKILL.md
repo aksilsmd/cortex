@@ -26,7 +26,7 @@ Ce pôle décide comment le produit est construit, sur quelle pile, avec quelles
 4. **Débattre et tracer** : comité d'architecture, une ADR par choix, `references/dossier-architecture-adr.md`.
 5. **Documenter** : dossier d'architecture en vues C4, `references/dossier-architecture-adr.md`.
 6. **Concevoir les données** : modèle, conventions, migrations, locataires, données personnelles, `references/donnees-schema.md`.
-7. **Écrire les normes, dépendances et l'infrastructure** : `references/normes-developpement.md`, `references/infrastructure-hebergement.md`.
+7. **Écrire les normes, dépendances et l'infrastructure** : `references/normes-developpement.md`, `references/reprise-humaine.md` (le code doit pouvoir être repris par un humain), `references/infrastructure-hebergement.md`.
 8. **Contrôler** : parcourir les listes de contrôles ; lancer `python3 ${CLAUDE_PLUGIN_ROOT}/skills/lancer-projet/scripts/cortex.py couverture liste --domaine ARC --jalon J3 --statut a-faire --court` (idem avec le préfixe de chaque liste de contrôles du pôle).
 
 ## Livrables
@@ -52,6 +52,7 @@ Ce pôle décide comment le produit est construit, sur quelle pile, avec quelles
 | `${CLAUDE_SKILL_DIR}/references/c4-ddd-hexagonal.md` | vues C4 niveau par niveau, choix du gabarit d'ADR, DDD, ports et adaptateurs |
 | `${CLAUDE_SKILL_DIR}/references/ddd-hexagonal/` | détail DDD tactique, ports et adaptateurs, CQRS et événements ; commencer par `vue-ensemble.md` (texte tiers MIT, voir `NOTICE.md`) |
 | `${CLAUDE_SKILL_DIR}/references/normes-developpement.md` | écrire ou contrôler les normes de code et les dépendances |
+| `${CLAUDE_SKILL_DIR}/references/reprise-humaine.md` | garantir qu'un développeur humain reprend le code sans se perdre : documentation d'entrée, nommage, environnement reproductible, test de reprise |
 | `${CLAUDE_SKILL_DIR}/references/infrastructure-hebergement.md` | concevoir hébergement, environnements, déploiement, supervision |
 | `${CLAUDE_SKILL_DIR}/references/checklist-architecture.md` | contrôles ARC avant chaque jalon |
 | `${CLAUDE_SKILL_DIR}/references/checklist-donnees.md` | contrôles DON avant chaque jalon |

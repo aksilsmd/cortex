@@ -14,6 +14,18 @@
   fichiers de connaissance, skill portable. Construit par `scripts/construire_universel.py`, contrôlé par
   `tests/test_universel.py`. Complète `AGENTS.md`, qui reste le guide des IA capables de lire le dépôt.
 - `lancer-projet` passe par l'accueil quand le besoin n'est pas encore cadré.
+- Norme de **reprise par un humain** (`architecture-normes/references/reprise-humaine.md`) et dix contrôles
+  NOR-024 à NOR-033 : documentation d'entrée, README par module, nommage par le métier (jamais par lot),
+  dépendances déclarées et verrouillées, traçabilité règle ↔ code ↔ test, test de reprise par un agent sans
+  contexte avant J5 et avant toute remise du code à un tiers.
+- **Revues croisées et tests unitaires** (`usine-logicielle/references/revues-croisees-code-tests.md`) : personne
+  ne valide son propre travail ; le correctif est relu par le même relecteur, jamais par le chef d'orchestre ;
+  contre-relecture et relecture par mutation pour les lots à risque ; tests unitaires écrits et constatés rouges
+  avant le code, témoin obligatoire pour un test vert d'emblée ; cas de test relus par un autre métier avant le
+  code. Contrôles TST-041 à 045, DEV-029, DEV-030.
+- **Recrutement de sous-agents en cas de besoin** (`lancer-projet/references/recrutement-sous-agents.md`) :
+  quand, comment (réseau, agent composé, outil externe avec accord), fiche de poste, indépendance, plafond,
+  journal. Contrôles GOV-033, GOV-034. 803 contrôles.
 
 ## 1.17.0 — 7 novembre 2026
 
