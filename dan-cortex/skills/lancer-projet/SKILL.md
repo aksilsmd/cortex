@@ -39,6 +39,13 @@ réserve-le aux décisions, pas à la lecture de documents entiers.
 
 ## Démarrer : la qualification (jalon J0)
 
+**Premier contact ou besoin non cadré** (première utilisation, idée floue, utilisateur débutant, aucun cahier des
+charges) : commencer par le skill `dan-cortex:accueil-recueil`. Il salue, recueille le besoin brut, le fait
+valider, explore, propose, mène l'entretien (avec `dan-cortex:recueil-besoin`) et conduit jusqu'au cahier des
+charges validé et à la décision de réalisation ; ses étapes correspondent aux jalons J0 à J3 (table dans
+`../accueil-recueil/references/parcours.md`). La qualification ci-dessous s'applique telle quelle quand
+l'utilisateur arrive avec un besoin déjà structuré ou demande explicitement d'aller vite.
+
 1. **Extraire** de la demande : type(s) de projet, cible, objectifs, contraintes, budget, délai, pays visés,
    existant. Lire le profil correspondant dans `${CLAUDE_SKILL_DIR}/references/profils/`
    (`site`, `ecommerce`, `mobile`, `saas`, `niche`, `erp` : les mêmes noms que les types passés au script).

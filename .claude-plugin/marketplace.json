@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Dan-Cortex : le réseau d'agents experts qui lance vos projets numériques avec Claude, en autonomie si tu le veux.",
-    "version": "1.17.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "dan-cortex",
       "source": "./dan-cortex",
       "description": "Un réseau d'agents experts organisé comme une entreprise pour cadrer, concevoir, réaliser, tester, sécuriser et lancer un projet numérique sans rien oublier, en autonomie si tu le veux, avec un pôle de robustesse des agents ; autonomie résiliente et confidentialité des traces.",
-      "version": "1.17.0",
+      "version": "2.0.0",
       "author": {
         "name": "Aksil"
       },
@@ -32,7 +32,51 @@
         "autonomie",
         "robustesse des agents",
         "résilience",
-        "confidentialité"
+        "confidentialité",
+        "injection de prompt",
+        "masquage des secrets",
+        "it-tools",
+        "boîte à outils",
+        "test mobile",
+        "test UX",
+        "carte des fonctionnalités",
+        "campagne de test par vagues",
+        "graphe de code",
+        "graphify",
+        "design Apple",
+        "Human Interface Guidelines",
+        "CRM",
+        "Twenty",
+        "gestion de la relation client",
+        "mouvement d'interface",
+        "animation",
+        "micro-interactions",
+        "prefers-reduced-motion",
+        "données extrêmes",
+        "prototypes en variantes",
+        "React Native",
+        "Swift",
+        "recueil du besoin",
+        "interview",
+        "atelier d'écriture",
+        "roman",
+        "édition",
+        "EPUB",
+        "publication",
+        "maison d'édition",
+        "traduction",
+        "interprétariat",
+        "localisation",
+        "RTL",
+        "OmegaT",
+        "langues",
+        "littérature",
+        "philosophie",
+        "ONIX",
+        "accueil",
+        "universel",
+        "débutant",
+        "étude de réalisation"
       ]
     }
   ]
