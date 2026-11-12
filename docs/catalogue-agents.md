@@ -103,9 +103,9 @@
 
 | Agent | Mission | Niveau | Effort | Outils | Skills préchargés |
 |---|---|---|---|---|---|
-| [`architecte-securite`](../dan-cortex/agents/architecte-securite.md) | architecte sécurité : risques, menaces, protections et réponse à incident. | A — jugement | high | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `safety`, `securite-protection`, `crm-twenty` |
-| [`auditeur-securite`](../dan-cortex/agents/auditeur-securite.md) | auditeur sécurité : tests complets du code, des dépendances et de l'application. | B — production | medium | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `safety`, `securite-protection`, `robustesse-agents`, `cartographie-graphe`, `crm-twenty` |
-| [`testeur-intrusion`](../dan-cortex/agents/testeur-intrusion.md) | testeur d'intrusion : test autorisé sur le périmètre du projet, rapport, contre-test. | B — production | medium | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `safety`, `securite-protection`, `cartographie-graphe` |
+| [`architecte-securite`](../dan-cortex/agents/architecte-securite.md) | architecte sécurité : risques, menaces, protections et réponse à incident. | A — jugement | high | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `securite-protection`, `crm-twenty` |
+| [`auditeur-securite`](../dan-cortex/agents/auditeur-securite.md) | auditeur sécurité : tests complets du code, des dépendances et de l'application. | B — production | medium | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `securite-protection`, `robustesse-agents`, `cartographie-graphe`, `crm-twenty` |
+| [`testeur-intrusion`](../dan-cortex/agents/testeur-intrusion.md) | testeur d'intrusion : test autorisé sur le périmètre du projet, rapport, contre-test. | B — production | medium | Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch | `securite-protection`, `cartographie-graphe` |
 
 ## Juridique et conformité
 
