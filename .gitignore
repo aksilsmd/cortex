@@ -6,3 +6,10 @@ build/
 .venv/
 ccal-results/
 ccal-scenarios.json
+
+# Secrets et réglages locaux — ne jamais publier
+.claude/settings.local.json
+.env
+.env.*
+*.pem
+*.key
