@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 2.0.0" src="https://img.shields.io/badge/version-2.0.0-2563EB">
-  <img alt="25 skills" src="https://img.shields.io/badge/skills-25-0F766E">
+  <img alt="Version 2.1.0" src="https://img.shields.io/badge/version-2.1.0-2563EB">
+  <img alt="43 skills" src="https://img.shields.io/badge/skills-43-0F766E">
   <img alt="59 agents" src="https://img.shields.io/badge/agents-59-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
@@ -156,6 +156,24 @@ flowchart TB
 | Recueil du besoin | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | Atelier d'écriture | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
 | Traduction et interprétariat | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
+| Direction visuelle | `/dan-cortex:conception-interface` | identité visuelle d'une interface hors gabarits par défaut (texte traduit d'Anthropic, Apache-2.0) |
+| Communication interne | `/dan-cortex:communication-interne` | points 3P, lettre d'information, FAQ, incident (texte traduit d'Anthropic, Apache-2.0) |
+| Thèmes de livrables | `/dan-cortex:fabrique-themes` | dix thèmes couleurs et polices, ou thème sur mesure (texte traduit d'Anthropic, Apache-2.0) |
+| Affiches | `/dan-cortex:design-affiche` | visuel artistique PNG ou PDF depuis une philosophie de design (texte traduit d'Anthropic, Apache-2.0) |
+| Vigilance | `/dan-cortex:vigilance-discernement` | questions de suivi pour vérifier une réponse à décision (texte traduit d'Anthropic, Apache-2.0) |
+| Documents Word | `/dan-cortex:docx` | créer, modifier, relire un .docx (scripts Python, LibreOffice) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Documents PDF | `/dan-cortex:pdf` | lire, fusionner, remplir, produire des PDF (scripts Python) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Présentations | `/dan-cortex:pptx` | créer et modifier des .pptx (scripts Python et Node) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Classeurs | `/dan-cortex:xlsx` | créer et recalculer des .xlsx avec formules (scripts Python, LibreOffice) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Création de skills | `/dan-cortex:skill-creator` | écrire, évaluer et améliorer un skill (scripts d'évaluation) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Serveurs MCP | `/dan-cortex:mcp-builder` | concevoir et évaluer un serveur MCP (Python ou TypeScript) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Tests web | `/dan-cortex:webapp-testing` | tester une application web locale avec Playwright (scripts) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Artefacts web | `/dan-cortex:web-artifacts-builder` | artefacts HTML riches (React, Tailwind, shadcn/ui ; scripts) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| GIF animés | `/dan-cortex:slack-gif-creator` | GIF optimisés pour Slack (scripts Python) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Art génératif | `/dan-cortex:algorithmic-art` | art algorithmique p5.js (modèles HTML/JS) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| API Claude | `/dan-cortex:claude-api` | bâtir avec l'API et les SDK Claude, migrations de modèles (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Claude Academy | `/dan-cortex:academy-guide` | orienter vers les cours de Claude Academy (consulte le catalogue en ligne) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| Marque Anthropic (exemple) | `/dan-cortex:brand-guidelines` | règles de marque d'Anthropic, à ne pas appliquer aux projets des clients (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
 
 ## Sobriété en tokens
 

@@ -108,6 +108,26 @@ Chaque pôle s'utilise aussi directement.
 | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
 | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
+| `/dan-cortex:conception-interface` | direction visuelle d'une interface, au-delà des gabarits par défaut (texte traduit d'Anthropic, Apache-2.0) |
+| `/dan-cortex:communication-interne` | points 3P, lettre d'information, FAQ interne, rapport d'incident (texte traduit d'Anthropic, Apache-2.0) |
+| `/dan-cortex:fabrique-themes` | dix thèmes de couleurs et de polices pour habiller un livrable, ou un thème sur mesure (texte traduit d'Anthropic, Apache-2.0) |
+| `/dan-cortex:design-affiche` | affiche ou visuel artistique en PNG ou PDF, de la philosophie de design au canevas (texte traduit d'Anthropic, Apache-2.0) |
+| `/dan-cortex:vigilance-discernement` | questions de suivi pour vérifier faits, raisonnement et contexte d'une réponse à décision (texte traduit d'Anthropic, Apache-2.0) |
+| `/dan-cortex:docx` | créer, modifier, relire un .docx (scripts Python, LibreOffice) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:pdf` | lire, fusionner, remplir, produire des PDF (scripts Python) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:pptx` | créer et modifier des .pptx (scripts Python et Node) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:xlsx` | créer et recalculer des .xlsx avec formules (scripts Python, LibreOffice) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:skill-creator` | écrire, évaluer et améliorer un skill (scripts d'évaluation) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:mcp-builder` | concevoir et évaluer un serveur MCP (Python ou TypeScript) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:webapp-testing` | tester une application web locale avec Playwright (scripts) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:web-artifacts-builder` | artefacts HTML riches (React, Tailwind, shadcn/ui ; scripts) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:slack-gif-creator` | GIF optimisés pour Slack (scripts Python) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:algorithmic-art` | art algorithmique p5.js (modèles HTML/JS) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:claude-api` | bâtir avec l'API et les SDK Claude, migrations de modèles (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:academy-guide` | orienter vers les cours de Claude Academy (consulte le catalogue en ligne) (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+| `/dan-cortex:brand-guidelines` | règles de marque d'Anthropic, à ne pas appliquer aux projets des clients (copié d'Anthropic sans modification, Apache-2.0 ; exception du 12/11/2026) |
+
+Les skills officiels d'Anthropic qui produisent des fichiers (Word, PDF, présentations, tableurs, etc.) : guide dans `skills/lancer-projet/references/skills-officiels-anthropic.md`. Mentions de licence : `NOTICE.md`.
 
 ## Comment ça marche
 
@@ -136,7 +156,7 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 25 | `skills/` |
+| Skills | 43 | `skills/` |
 | Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 138 | `skills/*/references/`, `skills/*/assets/` |

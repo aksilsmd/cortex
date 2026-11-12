@@ -27,6 +27,7 @@ généraliste. À J0, fais l'inventaire de ce que la session offre et décide qu
 | Analyse de sécurité | outils installés dans l'environnement (analyse statique, dépendances, secrets) | `auditeur-securite` | revue manuelle guidée par les listes de contrôle |
 | Revue juridique, conformité | skills juridiques de la session s'il y en a | toi, en complément du `juriste-numerique` | références du skill `juridique-conformite` |
 | Campagnes, contenus, visuels | skills marketing ou de création visuelle de la session | toi, à partir du plan du `stratege-marketing` | contenus Markdown |
+| Skills officiels d'Anthropic à scripts (documents, test web, MCP, API, skill-creator) | `anthropic-skills:<nom>` dans l'application ; plugins `document-skills` et `example-skills` sur Claude Code, installés par l'utilisateur | toi ; guide : `skills-officiels-anthropic.md` | livrer le Markdown ou des cas manuels |
 | Données et tableaux de bord | skills de données de la session | toi, à partir du plan de marquage | spécification du tableau de bord |
 
 ## Quand lancer un agent généraliste

@@ -52,6 +52,7 @@ Chaque document commence par `## Synthèse` (périmètre, nombre d'identifiants,
 | `${CLAUDE_SKILL_DIR}/references/specs-techniques.md` | avant de spécifier une interface, un traitement, un format |
 | `${CLAUDE_SKILL_DIR}/references/tracabilite.md` | dès qu'un identifiant est créé, et avant de rendre : formats lus par le script |
 | `${CLAUDE_SKILL_DIR}/references/checklist-specifications.md` | en fin de rédaction, pour se relire |
+| `${CLAUDE_SKILL_DIR}/references/coredaction-documents.md` | rédiger un document long avec l'utilisateur : contexte, sections, test par un lecteur neuf |
 | `${CLAUDE_SKILL_DIR}/references/orchestration.md` | chef d'orchestre seulement : agents du pôle, vagues, essaimage, revues |
 
 Vocabulaire : MOA (maîtrise d'ouvrage, porte le besoin), MOE (maîtrise d'œuvre, réalise), AMOA (assistance à MOA), recette (VABF en test, VSR en production). En agile, un récit utilisateur correspond à une `EX-` ; ses critères d'acceptation, à la colonne finale ; un scénario Gherkin, à un `CT-`.

@@ -35,6 +35,8 @@ Dans les deux cas, la méthode et les livrables sont ceux décrits par les comp�
 | Réunions et décisions | `reunion-decision` | `rapporteur`, `contradicteur` | décision tracée (positions, contradiction, arbitrage) |
 | Écrire un livre / éditer / publier | `atelier-ecriture` | `architecte-recit`, `plume`, `editeur-litteraire`, `concepteur-univers` | œuvre, édition, EPUB/PDF |
 | Traduire / localiser / interpréter | `traduction-interpretariat` | `traducteur`, `interprete`, `localisateur` | traduction, localisation (RTL, PO/XLIFF), interprétariat |
+| Direction visuelle, thème d'un livrable, affiche | `conception-interface`, `fabrique-themes`, `design-affiche` | `maquettiste` | parti pris visuel, thème appliqué, visuel PNG/PDF |
+| Communication interne, vigilance sur une réponse | `communication-interne`, `vigilance-discernement` | rédacteurs | points 3P, lettre, FAQ ; questions de vérification |
 | Piloter un projet de bout en bout | `lancer-projet` | chef d'orchestre + `orchestrateur-de-pole` | enchaîne tous les pôles, registres, tableau de bord |
 
 ## 4. Parcours type d'un projet numérique

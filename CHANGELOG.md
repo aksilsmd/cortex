@@ -1,5 +1,20 @@
 # Journal des versions
 
+## 2.1.0 — 12 novembre 2026
+
+- Cinq skills traduits en français et adaptés (forme B, Apache-2.0, © Anthropic, PBC, dépôt anthropics/skills, commit
+  `2c5958e`) : `conception-interface`, `communication-interne`, `fabrique-themes` (dix thèmes, sans le PDF),
+  `design-affiche` (sans les polices OFL), `vigilance-discernement` (activation par le chef d'orchestre, plus de
+  déclenchement automatique). Chacun a son `LICENSE.txt` et son `NOTICE.md`.
+- Nouvelle référence de co-rédaction `specifications/references/coredaction-documents.md` (forme A, réécriture).
+- Nouveau guide `lancer-projet/references/skills-officiels-anthropic.md` et ligne dans `routage-skills-outils.md`.
+- Exception du 12/11/2026 (décision d'Aksil) : levée, pour ce seul renfort, de l'interdit des scripts et du réseau
+  (`renfort-externe.md`) pour treize dossiers à copier tels quels. **Ces scripts s'exécutent sur la machine de
+  l'utilisateur.** Treize skills copiés sans modification avec leur `LICENSE.txt` et un `NOTICE.md` : `docx`, `pdf`,
+  `pptx`, `xlsx`, `skill-creator`, `mcp-builder`, `webapp-testing`, `web-artifacts-builder`, `slack-gif-creator`,
+  `algorithmic-art`, `claude-api`, `academy-guide`, `brand-guidelines` (description préfixée : exemple d'Anthropic, à
+  ne pas appliquer aux projets des clients). `THIRD_PARTY_NOTICES.md` amont ajouté à la racine du plugin.
+
 ## 2.0.0 — 10 novembre 2026
 
 - Nouveau skill `accueil-recueil` : chef de parcours du premier contact. Salutation, besoin brut, reformulation
