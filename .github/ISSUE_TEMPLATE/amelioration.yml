@@ -1,0 +1,49 @@
+name: Demande d'amélioration
+description: Proposer un contrôle, un skill, un agent, un profil de projet ou une amélioration de la documentation.
+title: "[Amélioration] "
+labels: ["amélioration"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de demande
+      options:
+        - Contrôle oublié dans la matrice de couverture
+        - Nouveau skill ou nouvel agent
+        - Nouveau type de projet (profil)
+        - Amélioration d'un livrable ou d'un gabarit
+        - Sobriété en tokens
+        - Documentation
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Le manque constaté
+      description: Quel projet ou quelle situation a révélé ce manque ? Qu'est-ce qui a été oublié ou mal fait ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Ce que tu proposes
+      description: Pour un contrôle, donne le domaine (SEC, RGP, JUR…), le jalon, la criticité et la formulation.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Norme, texte officiel, documentation ou retour d'expérience qui justifient la demande.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives envisagées
+  - type: checkboxes
+    id: limites
+    attributes:
+      label: Garde-fous
+      options:
+        - label: La proposition ne retire aucune limite dure et n'ajoute ni hook, ni script tiers, ni appel réseau automatique.
+          required: true

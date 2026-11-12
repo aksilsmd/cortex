@@ -1,0 +1,58 @@
+name: Correction de droit ou de norme
+description: Signaler une règle de droit, une norme, un seuil, une date ou une version d'outil inexact ou dépassé.
+title: "[Droit/norme] "
+labels: ["droit-norme"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Les références de Dan-Cortex sont à l'état d'octobre 2026, France et Union européenne d'abord. Une
+        correction n'est retenue qu'avec une **source primaire** (texte officiel, journal officiel, norme,
+        documentation de l'éditeur).
+  - type: input
+    id: fichier
+    attributes:
+      label: Fichier et passage concernés
+      placeholder: "dan-cortex/skills/juridique-conformite/references/… , contrôle JUR-031"
+    validations:
+      required: true
+  - type: dropdown
+    id: territoire
+    attributes:
+      label: Territoire
+      options:
+        - France
+        - Union européenne
+        - Royaume-Uni
+        - États-Unis
+        - Algérie
+        - Maroc
+        - Tunisie
+        - International / norme
+        - Autre
+    validations:
+      required: true
+  - type: textarea
+    id: actuel
+    attributes:
+      label: Ce que dit le fichier
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Ce qui est exact
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source primaire
+      description: Lien vers le texte officiel ou la norme, avec sa date ou sa version.
+    validations:
+      required: true
+  - type: input
+    id: date-effet
+    attributes:
+      label: Date d'entrée en vigueur
+      placeholder: "2027-01-01"

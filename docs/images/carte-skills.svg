@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1212 904" width="1212" height="904" role="img" aria-labelledby="titre desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif">
+  <!-- Généré par scripts/generer_catalogues.py : ne pas modifier à la main. -->
+  <title id="titre">Carte des skills de Dan-Cortex par famille</title>
+  <desc id="desc">Les 43 skills de Dan-Cortex rangés en 9 familles : Pilotage et décision (lancer-projet, accueil-recueil, reunion-decision, audit-general, execution-resiliente, vigilance-discernement) ; Besoin et marché (recueil-besoin, veille-marche, specifications) ; Design et expérience (maquettes-parcours, design-apple, mouvement-interface, conception-interface, fabrique-themes, design-affiche) ; Architecture et réalisation (architecture-normes, usine-logicielle, cartographie-graphe, boite-outils-it, crm-twenty, webapp-testing) ; Sécurité et confiance (securite-protection, robustesse-agents, confidentialite-traces) ; Droit, finance et mise sur le marché (juridique-conformite, budget-finance, marketing-commercial, lancement-exploitation) ; Contenus et langues (atelier-ecriture, traduction-interpretariat, communication-interne) ; Documents et médias (docx, pdf, pptx, xlsx, algorithmic-art, slack-gif-creator, brand-guidelines) ; Écosystème Claude (claude-api, mcp-builder, skill-creator, web-artifacts-builder, academy-guide). La couleur indique l'origine du skill.</desc>
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <text x="24" y="44" font-size="26" fill="#0F172A" font-weight="700" text-anchor="start">Carte des skills par famille</text>
+  <text x="24" y="72" font-size="15" fill="#475569" font-weight="normal" text-anchor="start">43 skills · 9 familles · commande : /dan-cortex:&lt;nom&gt;</text>
+  <g>
+  <rect x="24" y="96" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="40" y="128" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Pilotage et décision (6)</text>
+  <line x1="40" y1="140" x2="380" y2="140" stroke="#CBD5E1"/>
+  <rect x="42" y="154" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="164" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">lancer-projet</text>
+  <rect x="42" y="178" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="188" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">accueil-recueil</text>
+  <rect x="42" y="202" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="212" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">reunion-decision</text>
+  <rect x="42" y="226" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="236" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">audit-general</text>
+  <rect x="42" y="250" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="260" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">execution-resiliente</text>
+  <rect x="42" y="274" width="10" height="10" rx="2" fill="#0F766E"/>
+  <text x="62" y="284" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">vigilance-discernement</text>
+  </g>
+  <g>
+  <rect x="420" y="96" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="436" y="128" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Besoin et marché (3)</text>
+  <line x1="436" y1="140" x2="776" y2="140" stroke="#CBD5E1"/>
+  <rect x="438" y="154" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="164" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">recueil-besoin</text>
+  <rect x="438" y="178" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="188" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">veille-marche</text>
+  <rect x="438" y="202" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="212" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">specifications</text>
+  </g>
+  <g>
+  <rect x="816" y="96" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="832" y="128" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Design et expérience (6)</text>
+  <line x1="832" y1="140" x2="1172" y2="140" stroke="#CBD5E1"/>
+  <rect x="834" y="154" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="164" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">maquettes-parcours</text>
+  <rect x="834" y="178" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="188" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">design-apple</text>
+  <rect x="834" y="202" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="212" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">mouvement-interface</text>
+  <rect x="834" y="226" width="10" height="10" rx="2" fill="#0F766E"/>
+  <text x="854" y="236" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">conception-interface</text>
+  <rect x="834" y="250" width="10" height="10" rx="2" fill="#0F766E"/>
+  <text x="854" y="260" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">fabrique-themes</text>
+  <rect x="834" y="274" width="10" height="10" rx="2" fill="#0F766E"/>
+  <text x="854" y="284" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">design-affiche</text>
+  </g>
+  <g>
+  <rect x="24" y="352" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="40" y="384" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Architecture et réalisation (6)</text>
+  <line x1="40" y1="396" x2="380" y2="396" stroke="#CBD5E1"/>
+  <rect x="42" y="410" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="420" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">architecture-normes</text>
+  <rect x="42" y="434" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="444" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">usine-logicielle</text>
+  <rect x="42" y="458" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="468" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">cartographie-graphe</text>
+  <rect x="42" y="482" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="492" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">boite-outils-it</text>
+  <rect x="42" y="506" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="516" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">crm-twenty</text>
+  <rect x="42" y="530" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="62" y="540" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">webapp-testing</text>
+  </g>
+  <g>
+  <rect x="420" y="352" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="436" y="384" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Sécurité et confiance (3)</text>
+  <line x1="436" y1="396" x2="776" y2="396" stroke="#CBD5E1"/>
+  <rect x="438" y="410" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="420" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">securite-protection</text>
+  <rect x="438" y="434" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="444" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">robustesse-agents</text>
+  <rect x="438" y="458" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="458" y="468" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">confidentialite-traces</text>
+  </g>
+  <g>
+  <rect x="816" y="352" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="832" y="384" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Droit, finance et mise sur le marché (4)</text>
+  <line x1="832" y1="396" x2="1172" y2="396" stroke="#CBD5E1"/>
+  <rect x="834" y="410" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="420" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">juridique-conformite</text>
+  <rect x="834" y="434" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="444" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">budget-finance</text>
+  <rect x="834" y="458" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="468" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">marketing-commercial</text>
+  <rect x="834" y="482" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="854" y="492" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">lancement-exploitation</text>
+  </g>
+  <g>
+  <rect x="24" y="608" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="40" y="640" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Contenus et langues (3)</text>
+  <line x1="40" y1="652" x2="380" y2="652" stroke="#CBD5E1"/>
+  <rect x="42" y="666" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="676" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">atelier-ecriture</text>
+  <rect x="42" y="690" width="10" height="10" rx="2" fill="#1D4ED8"/>
+  <text x="62" y="700" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">traduction-interpretariat</text>
+  <rect x="42" y="714" width="10" height="10" rx="2" fill="#0F766E"/>
+  <text x="62" y="724" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">communication-interne</text>
+  </g>
+  <g>
+  <rect x="420" y="608" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="436" y="640" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Documents et médias (7)</text>
+  <line x1="436" y1="652" x2="776" y2="652" stroke="#CBD5E1"/>
+  <rect x="438" y="666" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="676" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">docx</text>
+  <rect x="438" y="690" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="700" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">pdf</text>
+  <rect x="438" y="714" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="724" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">pptx</text>
+  <rect x="438" y="738" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="748" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">xlsx</text>
+  <rect x="438" y="762" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="772" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">algorithmic-art</text>
+  <rect x="438" y="786" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="796" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">slack-gif-creator</text>
+  <rect x="438" y="810" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="458" y="820" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">brand-guidelines</text>
+  </g>
+  <g>
+  <rect x="816" y="608" width="372" height="232" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="832" y="640" font-size="17" fill="#0F172A" font-weight="700" text-anchor="start">Écosystème Claude (5)</text>
+  <line x1="832" y1="652" x2="1172" y2="652" stroke="#CBD5E1"/>
+  <rect x="834" y="666" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="854" y="676" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">claude-api</text>
+  <rect x="834" y="690" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="854" y="700" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">mcp-builder</text>
+  <rect x="834" y="714" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="854" y="724" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">skill-creator</text>
+  <rect x="834" y="738" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="854" y="748" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">web-artifacts-builder</text>
+  <rect x="834" y="762" width="10" height="10" rx="2" fill="#B45309"/>
+  <text x="854" y="772" font-size="15" fill="#0F172A" font-weight="normal" text-anchor="start">academy-guide</text>
+  </g>
+  <rect x="24" y="871" width="12" height="12" rx="2" fill="#1D4ED8"/>
+  <text x="44" y="882" font-size="14" fill="#475569" font-weight="normal" text-anchor="start">écrit pour Dan-Cortex</text>
+  <rect x="222" y="871" width="12" height="12" rx="2" fill="#0F766E"/>
+  <text x="242" y="882" font-size="14" fill="#475569" font-weight="normal" text-anchor="start">traduit d'Anthropic</text>
+  <rect x="404" y="871" width="12" height="12" rx="2" fill="#B45309"/>
+  <text x="424" y="882" font-size="14" fill="#475569" font-weight="normal" text-anchor="start">copié d'Anthropic sans modification</text>
+</svg>
