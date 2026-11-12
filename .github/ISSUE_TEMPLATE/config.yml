@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Signaler une faille de sécurité (en privé)
+    url: https://github.com/aksilsmd/cortex/security/advisories/new
+    about: Ne publie jamais une faille dans un ticket public. Voir SECURITY.md.
+  - name: Questions fréquentes
+    url: https://github.com/aksilsmd/cortex/blob/main/docs/faq.md
+    about: Consulte la FAQ avant d'ouvrir un ticket.

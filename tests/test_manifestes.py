@@ -23,7 +23,7 @@ class ManifestesTests(unittest.TestCase):
         self.assertRegex(version, r"^\d+\.\d+\.\d+$")
         self.assertEqual(self.entree["version"], version)
         self.assertEqual(self.marketplace["metadata"]["version"], version)
-        premiere = re.search(r"^## (\d+\.\d+\.\d+)", lire(ROOT / "CHANGELOG.md"), re.M).group(1)
+        premiere = re.search(r"^## \[?(\d+\.\d+\.\d+)\]?", lire(ROOT / "CHANGELOG.md"), re.M).group(1)
         self.assertEqual(premiere, version, "la première entrée du CHANGELOG doit être la version publiée")
         self.assertIn("badge/version-%s-" % version, lire(ROOT / "README.md"))
 
@@ -35,7 +35,7 @@ class ManifestesTests(unittest.TestCase):
             self.assertEqual(len(mots), len(set(mots)))
 
     def test_changelog_sans_entree_en_double(self):
-        versions = re.findall(r"^## (\d+\.\d+\.\d+)", lire(ROOT / "CHANGELOG.md"), re.M)
+        versions = re.findall(r"^## \[?(\d+\.\d+\.\d+)\]?", lire(ROOT / "CHANGELOG.md"), re.M)
         self.assertEqual(len(versions), len(set(versions)))
 
 
