@@ -162,21 +162,26 @@ Détail : [`docs/securite-et-robustesse.md`](docs/securite-et-robustesse.md). Si
 
 | Document | Contenu |
 |---|---|
+| [Index de la documentation](docs/README.md) | parcours de lecture selon ce que tu veux faire, liste de tous les documents et schémas |
 | [Guide de démarrage](docs/guide-demarrage.md) | installation, premier projet, modes, reprise d'un projet |
 | [Architecture](docs/architecture.md) | pôles, chef d'orchestre, agents, jalons, registres, matrice de contrôles, scripts |
+| [Bibliothèque à la demande](docs/bibliotheque.md) | 173 compétences tierces ouvertes une à une par un skill-pivot, garde-fous |
 | [Catalogue des skills](docs/catalogue-skills.md) · [des agents](docs/catalogue-agents.md) | listes générées par `scripts/generer_catalogues.py` |
 | [Sécurité et robustesse](docs/securite-et-robustesse.md) | limites dures, injection d'instructions, confidentialité, scripts tiers |
 | [FAQ](docs/faq.md) | questions fréquentes |
 | [Rapport d'expertise](docs/expertise.md) · [Essai à blanc](docs/essai-a-blanc.md) | sources de la méthode, essai réel du jalon J1 |
+| [Audit du dépôt](docs/audit-depot.md) | organisation, sobriété, publication : constats et plan d'action |
 | [Journal des versions](CHANGELOG.md) | historique, au format Keep a Changelog |
+
+![Carte du dépôt](docs/images/carte-depot.svg)
 
 ```
 .
 ├── .claude-plugin/marketplace.json   catalogue du plugin
 ├── .github/                          CI, modèles d'issue et de pull request
-├── dan-cortex/                       le plugin : skills/, agents/, universel/, NOTICE.md
+├── dan-cortex/                       le plugin : skills/, agents/, bibliotheque/, universel/, NOTICE.md
 ├── dist/dan-cortex.plugin            archive reproductible pour l'application Claude
-├── docs/                             documentation, catalogues générés, images/
+├── docs/                             documentation (index : docs/README.md), catalogues générés, images/
 ├── scripts/                          construction du plugin, du paquet universel et des catalogues
 ├── tests/                            tests automatisés (unittest)
 └── AGENTS.md                         guide d'entrée pour toute IA

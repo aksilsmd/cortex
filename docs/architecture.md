@@ -15,6 +15,7 @@ jalons, registres, matrice de contrôles et scripts. Les fichiers qui font foi s
 8. [La matrice de contrôles](#8-la-matrice-de-contrôles)
 9. [Les scripts](#9-les-scripts)
 10. [Organisation du dépôt](#10-organisation-du-dépôt)
+11. [La bibliothèque à la demande](#11-la-bibliothèque-à-la-demande)
 
 ## 1. Vue d'ensemble
 
@@ -248,6 +249,22 @@ copiés d'Anthropic).
 
 ## 10. Organisation du dépôt
 
+![Carte du dépôt](images/carte-depot.svg)
+
+| Dossier | Rôle | Modifier à la main ? |
+|---|---|---|
+| `dan-cortex/skills/` | skills du plugin (un dossier par skill : `SKILL.md`, `references/`, parfois `scripts/`, `assets/`) | oui |
+| `dan-cortex/agents/` | agents experts (un fichier par agent) | oui |
+| `dan-cortex/bibliotheque/` | compétences tierces copiées telles quelles, chargées à la demande (§11) | non : copies fidèles ; index générés |
+| `dan-cortex/universel/` | paquet pour les IA sans accès au dépôt | **non** : généré par `scripts/construire_universel.py` |
+| `docs/catalogue-*.md`, `docs/images/carte-*.svg` | catalogues et cartes | **non** : générés par `scripts/generer_catalogues.py` |
+| `dist/dan-cortex.plugin` | archive à téléverser dans l'application Claude | **non** : générée par `scripts/construire_plugin.py` |
+| `scripts/`, `tests/`, `.github/` | générateurs, tests, CI et modèles de contribution | oui |
+
+### Chaîne de génération
+
+![De la modification à l'installation](images/chaine-generation.svg)
+
 ```mermaid
 flowchart LR
   subgraph Sources
@@ -259,7 +276,24 @@ flowchart LR
   SK & AG --> CP[scripts/construire_plugin.py] --> DI[dist/dan-cortex.plugin]
   AR --> CU[scripts/construire_universel.py] --> UN[dan-cortex/universel/]
   DC & DI & UN --> T[tests/ et CI]
+  T --> PU[main sur GitHub<br/>marketplace cortex-projets]
 ```
 
 Les fichiers générés sont versionnés et la CI échoue s'ils ne sont pas à jour : après toute modification d'un
 skill ou d'un agent, relancer les trois scripts (voir [`CONTRIBUTING.md`](../CONTRIBUTING.md)).
+
+## 11. La bibliothèque à la demande
+
+![Chargement à la demande](images/chargement-a-la-demande.svg)
+
+`dan-cortex/bibliotheque/` range 173 compétences tierces (licence MIT) hors de `skills/`, pour qu'elles ne coûtent
+aucun token tant qu'elles ne servent pas. Cinq skills-pivots y mènent :
+
+| Pivot | Ouvre | Pour |
+|---|---|---|
+| `studio-3d-jeu` | `scenario-labs/index/dcc-*.md`, `game-engines-*.md` | Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox |
+| `creation-medias-ia` | `scenario-labs/index/plateforme-scenario.md` | images, vidéo, audio, textures, assets 3D générés |
+| `web-3d-immersif` | `scroll-world/SKILL.md` | page « vol à travers un monde » |
+| `plateforme-elearning`, `reconstruction-salle-blanche` | aucune copie (méthode réécrite, sources GPL ou AGPL) | LMS, reconstruction d'un produit observé |
+
+Principe, garde-fous et ajout d'une source : [`bibliotheque.md`](bibliotheque.md).

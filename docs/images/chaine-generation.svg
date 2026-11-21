@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" width="1240" height="560" role="img" aria-labelledby="titre desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif">
+  <title id="titre">De la modification à l'installation</title>
+  <desc id="desc">Chaîne de génération en cinq colonnes reliées par des flèches animées, de gauche à droite. 1, Sources : skills/, agents/ et accueil-recueil/references/. 2, Générateurs : generer_catalogues.py, construire_universel.py et construire_plugin.py. 3, Fichiers générés : catalogues et cartes SVG, paquet universel, archive .plugin. 4, Contrôles : tests unittest, option --verifier des trois scripts, cortex.py plugin verifier, audit de robustesse, matrice Python 3.11 à 3.13. 5, Publication : branche main sur GitHub, puis marketplace cortex-projets pour Claude Code ; l'archive est à téléverser dans l'application Claude. Sous la chaîne, la règle : après toute modification d'un skill ou d'un agent, relancer les trois scripts, puis les tests. Chaque fichier généré est vérifié par la CI avant publication.</desc>
+  <style>
+.flux{stroke-dasharray:8 8;animation:defile 8s linear infinite}
+@keyframes defile{to{stroke-dashoffset:-64}}
+.seq{animation:seq 8s ease-in-out infinite}
+@keyframes seq{0%{stroke:#94A3B8}5%,18%{stroke:#0F766E}26%,100%{stroke:#94A3B8}}
+.col{animation:col 8s ease-in-out infinite}
+@keyframes col{0%{opacity:.55}5%,18%{opacity:1}26%{opacity:.55}30%,100%{opacity:1}}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0F766E"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <text x="32" y="48" font-size="26" fill="#0F172A" font-weight="700" text-anchor="start">De la modification à l'installation</text>
+  <text x="32" y="76" font-size="15" fill="#475569" font-weight="400" text-anchor="start">Chaque fichier généré est vérifié par la CI avant publication</text>
+  <g class="col" style="animation-delay:0.0s">
+  <rect x="32" y="104" width="192" height="344" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <path d="M32,152 v-38 a10,10 0 0 1 10,-10 h172 a10,10 0 0 1 10,10 v36 z" fill="#475569"/>
+  <text x="46" y="135" font-size="18" fill="#FFFFFF" font-weight="800" text-anchor="start">1</text>
+  <text x="68" y="135" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Sources</text>
+  <rect x="44" y="166" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="54" y="188" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">skills/</text>
+  <rect x="44" y="208" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="54" y="230" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">agents/</text>
+  <rect x="44" y="250" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="54" y="272" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">accueil-recueil/</text>
+  <text x="54" y="291" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">references/</text>
+  </g>
+  <line class="flux seq" style="animation-delay:0.0s" x1="230" y1="276" x2="270" y2="276" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <g class="col" style="animation-delay:1.5s">
+  <rect x="278" y="104" width="192" height="344" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <path d="M278,152 v-38 a10,10 0 0 1 10,-10 h172 a10,10 0 0 1 10,10 v36 z" fill="#1D4ED8"/>
+  <text x="292" y="135" font-size="18" fill="#FFFFFF" font-weight="800" text-anchor="start">2</text>
+  <text x="314" y="135" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Générateurs</text>
+  <rect x="290" y="166" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="300" y="188" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">generer_catalogues.py</text>
+  <rect x="290" y="208" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="300" y="230" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">construire_universel.py</text>
+  <rect x="290" y="250" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="300" y="272" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">construire_plugin.py</text>
+  </g>
+  <line class="flux seq" style="animation-delay:1.5s" x1="476" y1="276" x2="516" y2="276" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <g class="col" style="animation-delay:3.0s">
+  <rect x="524" y="104" width="192" height="344" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <path d="M524,152 v-38 a10,10 0 0 1 10,-10 h172 a10,10 0 0 1 10,10 v36 z" fill="#B45309"/>
+  <text x="538" y="135" font-size="18" fill="#FFFFFF" font-weight="800" text-anchor="start">3</text>
+  <text x="560" y="135" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Fichiers générés</text>
+  <rect x="536" y="166" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="546" y="188" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">catalogues docs/</text>
+  <text x="546" y="207" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">+ cartes SVG</text>
+  <rect x="536" y="227" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="546" y="249" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">paquet universel</text>
+  <rect x="536" y="269" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="546" y="291" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">archive .plugin</text>
+  </g>
+  <line class="flux seq" style="animation-delay:3.0s" x1="722" y1="276" x2="762" y2="276" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <g class="col" style="animation-delay:4.5s">
+  <rect x="770" y="104" width="192" height="344" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <path d="M770,152 v-38 a10,10 0 0 1 10,-10 h172 a10,10 0 0 1 10,10 v36 z" fill="#0F766E"/>
+  <text x="784" y="135" font-size="18" fill="#FFFFFF" font-weight="800" text-anchor="start">4</text>
+  <text x="806" y="135" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Contrôles</text>
+  <rect x="782" y="166" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="792" y="188" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">tests unittest</text>
+  <rect x="782" y="208" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="792" y="230" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">--verifier des</text>
+  <text x="792" y="249" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">3 scripts</text>
+  <rect x="782" y="269" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="792" y="291" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">cortex.py plugin</text>
+  <text x="792" y="310" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">verifier</text>
+  <rect x="782" y="330" width="168" height="33" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="792" y="352" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">audit robustesse</text>
+  <rect x="782" y="372" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="792" y="394" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">matrice Python</text>
+  <text x="792" y="413" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">3.11 à 3.13</text>
+  </g>
+  <line class="flux seq" style="animation-delay:4.5s" x1="968" y1="276" x2="1008" y2="276" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <g class="col" style="animation-delay:6.0s">
+  <rect x="1016" y="104" width="192" height="344" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <path d="M1016,152 v-38 a10,10 0 0 1 10,-10 h172 a10,10 0 0 1 10,10 v36 z" fill="#475569"/>
+  <text x="1030" y="135" font-size="18" fill="#FFFFFF" font-weight="800" text-anchor="start">5</text>
+  <text x="1052" y="135" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Publication</text>
+  <rect x="1028" y="166" width="168" height="52" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="1038" y="188" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">branche main</text>
+  <text x="1038" y="207" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">sur GitHub</text>
+  <rect x="1028" y="227" width="168" height="71" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="1038" y="249" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">marketplace</text>
+  <text x="1038" y="268" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">cortex-projets</text>
+  <text x="1038" y="287" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">pour Claude Code</text>
+  <rect x="1028" y="307" width="168" height="71" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="1038" y="329" font-size="13" fill="#0F172A" font-weight="600" text-anchor="start">archive à téléverser</text>
+  <text x="1038" y="348" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">dans l'application</text>
+  <text x="1038" y="367" font-size="13" fill="#0F172A" font-weight="400" text-anchor="start">Claude</text>
+  </g>
+  <rect x="32" y="476" width="1176" height="56" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="1.5"/>
+  <text x="620" y="510" font-size="16" fill="#0F172A" font-weight="700" text-anchor="middle">Règle : après toute modification d'un skill ou d'un agent, relancer les trois scripts, puis les tests.</text>
+</svg>
