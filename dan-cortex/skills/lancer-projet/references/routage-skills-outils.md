@@ -42,3 +42,16 @@ Le choix du langage, des frameworks, de la base de données, de l'hébergement, 
 test du projet n'est pas un routage de session : c'est une décision d'architecture, instruite par
 `architecte-solution` et `gardien-des-normes`, tranchée en comité d'architecture (voir le skill
 `architecture-normes`) et inscrite dans une décision d'architecture.
+
+## Skills spécialisés du plugin (renfort du 2026-11-21)
+
+Chargés seulement quand le projet en a besoin ; chacun ouvre à son tour la bibliothèque vendorisée (`${CLAUDE_PLUGIN_ROOT}/bibliotheque/`), un `SKILL.md` à la fois.
+
+| Besoin du projet | Skill | Agents qui s'en servent |
+|---|---|---|
+| Modèles 3D, rendu, animation (Blender, Maya, ZBrush), jeu vidéo (Godot, Unity, Unreal, Roblox), terrain et cartes dans Blender | `studio-3d-jeu` | `developpeur-frontend`, `developpeur-mobile`, `maquettiste`, `architecte-solution` |
+| Scène 3D ou effet WebGL sur un site, page « vol à travers un monde », portfolio 3D | `web-3d-immersif` | `developpeur-frontend`, `maquettiste`, `testeur-visuel` |
+| Images, vidéos, sons, textures ou assets 3D générés par IA (Scenario, compte requis) | `creation-medias-ia` | toi, à partir du plan du `stratege-marketing` ou du `maquettiste` ; devis montré avant toute génération |
+| Plateforme de formation en ligne (Canvas LMS ou autre), LTI, API | `plateforme-elearning` | `architecte-solution`, `integrateur`, `ingenieur-devops`, `delegue-protection-donnees` |
+| Refaire sa propre version d'un site, d'une app ou d'un jeu observé, sans rien copier | `reconstruction-salle-blanche` | `collecteur-web`, `analyste-concurrence` (observation) ; `developpeur-frontend` (construction) ; `juriste-numerique` |
+

@@ -196,6 +196,7 @@ les manques et les prochaines actions. Ne rien relire d'autre avant d'en avoir b
 | `references/autonomie.md` | à J0 si l'utilisateur veut que le réseau avance seul ; en entier avant le mode `autonome` |
 | `${CLAUDE_SKILL_DIR}/../execution-resiliente/SKILL.md` | dès qu'une mission échoue ou qu'un jalon reste bloqué, et avant chaque bilan en `delegue` ou `autonome` : boucle de reprise, vérification avant de conclure |
 | `${CLAUDE_SKILL_DIR}/../confidentialite-traces/SKILL.md` | avant d'écrire un journal, un rapport ou un compte rendu qui touche des secrets ou des données personnelles |
+| `references/routage-skills-outils.md` (section « Skills spécialisés ») | projet 3D, jeu vidéo, WebGL, médias générés par IA, e-learning ou reconstruction d'un produit observé : `studio-3d-jeu`, `web-3d-immersif`, `creation-medias-ia`, `plateforme-elearning`, `reconstruction-salle-blanche` |
 | `references/planification.md` | pour bâtir ou contrôler un planning ; référence du `planificateur` |
 | `references/planification-agile.md` | projet itératif : sprints, capacité, vélocité, découpage d'épopées, feuille de route |
 | `references/reseau.md` | si l'utilisateur demande comment le réseau fonctionne |

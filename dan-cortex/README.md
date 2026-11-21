@@ -108,6 +108,11 @@ Chaque pôle s'utilise aussi directement.
 | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
 | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
+| `/dan-cortex:studio-3d-jeu` | Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox ; MCP pour Blender ; terrain et cartes (BlenderGIS) |
+| `/dan-cortex:web-3d-immersif` | three.js, React Three Fiber, pages « scroll-world », fluide WebGL, portfolio 3D ; performance et accessibilité |
+| `/dan-cortex:creation-medias-ia` | images, vidéo, audio, textures et assets 3D via Scenario, devis avant génération |
+| `/dan-cortex:plateforme-elearning` | choisir, déployer et intégrer un LMS (Canvas LMS, LTI 1.3, API) |
+| `/dan-cortex:reconstruction-salle-blanche` | étudier un produit existant et construire sa propre version sans rien copier |
 
 ## Comment ça marche
 
@@ -136,7 +141,8 @@ Le détail est dans `skills/lancer-projet/references/reseau.md`.
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 25 | `skills/` |
+| Skills | 30 | `skills/` |
+| Skills vendorisés (bibliothèque, chargés à la demande) | 173 | `bibliotheque/` |
 | Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 138 | `skills/*/references/`, `skills/*/assets/` |

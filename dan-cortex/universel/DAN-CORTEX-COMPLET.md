@@ -445,6 +445,7 @@ installés. Écrire le résultat en cinq lignes dans la fiche projet. Tout le re
 | Marché, concurrents, avis | skill `veille-marche` | — |
 | Cahier des charges, spécifications | skill `specifications` | — |
 | Parcours, workflows, maquettes | skill `maquettes-parcours` ; qualité visuelle : `design-apple`, `mouvement-interface` | outil de design connecté si l'utilisateur le nomme |
+| 3D, jeu vidéo, WebGL, médias générés, e-learning, refaire un produit observé | skills `studio-3d-jeu`, `web-3d-immersif`, `creation-medias-ia`, `plateforme-elearning`, `reconstruction-salle-blanche` | logiciel installé (Blender, moteur de jeu) ou compte Scenario, avec l'accord de l'utilisateur |
 | Choix techniques, données, normes | skill `architecture-normes` | — |
 | Droit, données personnelles | skill `juridique-conformite` | — |
 | Budget, rentabilité | skill `budget-finance` + tableur | calcul par code |

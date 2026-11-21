@@ -1,5 +1,29 @@
 # Journal des versions
 
+## 2.1.0 — 21 novembre 2026
+
+- **Bibliothèque de compétences vendorisées** (`dan-cortex/bibliotheque/`) : copie fidèle, licence MIT, de
+  [scenario-labs/skills](https://github.com/scenario-labs/skills) (172 skills : Blender, Maya, ZBrush, Godot,
+  Unity, Unreal, Roblox, et 85 skills de la plateforme Scenario pour images, vidéo, audio, textures et 3D) et de
+  [oso95/scroll-world](https://github.com/oso95/scroll-world). Rangée hors de `skills/` : rien ne se charge
+  d'office, un skill-pivot ouvre l'index de la famille puis un seul `SKILL.md`. Aucun script n'est exécuté sans
+  lecture et accord explicite. Notices et textes de licence dans chaque dossier.
+- Cinq nouveaux skills-pivots :
+  - **`studio-3d-jeu`** : création 3D et jeu vidéo, pilotage de Blender (ligne de commande, bpy, MCP pour Blender
+    d'ahujasid, Scenario for Blender), SIG dans Blender (BlenderGIS), choix et routage des moteurs de jeu.
+  - **`web-3d-immersif`** : three.js, React Three Fiber, simulation de fluide WebGL, pages « scroll-world »,
+    architecture d'un portfolio 3D ; performance, repli sans WebGL et accessibilité.
+  - **`creation-medias-ia`** : routage vers les skills de la plateforme Scenario, avec devis avant toute
+    génération, droits, données envoyées à un tiers et contrôle qualité.
+  - **`plateforme-elearning`** : choisir, déployer et intégrer un LMS, Canvas LMS en référence (LTI 1.3, API
+    REST, obligations AGPL, données des apprenants).
+  - **`reconstruction-salle-blanche`** : étudier un site, une app ou un jeu, puis faire construire sa propre
+    version sans rien copier (méthode inspirée de Craft Anything, cadre juridique).
+- Blender et BlenderGIS (GPL), Canvas LMS (AGPL) et 3d-portfolio (sans licence) : forme A seulement, aucun texte ni
+  code repris. Registre des sources : `robustesse-agents/references/renfort-externe.md` §8.
+- Branchements : chef d'orchestre (`lancer-projet`, table de routage) et accueil (`outils-quand`). Le plugin
+  compte désormais 30 skills et 59 agents.
+
 ## 2.0.0 — 10 novembre 2026
 
 - Nouveau skill `accueil-recueil` : chef de parcours du premier contact. Salutation, besoin brut, reformulation

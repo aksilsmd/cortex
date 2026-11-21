@@ -4,8 +4,8 @@
 
 <p align="center">
   <img alt="Plugin pour Claude" src="https://img.shields.io/badge/Claude-plugin-D97757">
-  <img alt="Version 2.0.0" src="https://img.shields.io/badge/version-2.0.0-2563EB">
-  <img alt="25 skills" src="https://img.shields.io/badge/skills-25-0F766E">
+  <img alt="Version 2.1.0" src="https://img.shields.io/badge/version-2.1.0-2563EB">
+  <img alt="30 skills" src="https://img.shields.io/badge/skills-30-0F766E">
   <img alt="59 agents" src="https://img.shields.io/badge/agents-59-0F766E">
   <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
   <img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280">
@@ -28,6 +28,8 @@ et éprouve les fonctions d'IA contre l'injection d'instructions.
 **Nouveau en 1.16.0 :** recueil du besoin par interview (du brut au cahier des charges, même pour un novice) et atelier d'écriture / maison d'édition (livres, romans, édition, publication) ; cette version amène aussi au dépôt les skills ajoutés depuis la 1.4.0 (design Apple, CRM Twenty, cartographie de code, mouvement d'interface, boîte à outils IT, renforts d'audit de sécurité).
 
 **Nouveau en 1.3.0 :** deux skills transversaux renforcent l'exécution résiliente (récupération après erreur et vérification des résultats) et la confidentialité (masquage des secrets et données personnelles), sans contourner les permissions ni falsifier les journaux d'audit.
+
+**Nouveau en 2.1 :** une **bibliothèque de 173 compétences** chargées à la demande ([`dan-cortex/bibliotheque/`](dan-cortex/bibliotheque/README.md) : Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox, plateforme Scenario, scroll-world) et cinq skills-pivots : studio 3D et jeu vidéo, 3D web immersive (three.js, React Three Fiber), médias générés par IA, plateforme e-learning (Canvas LMS) et reconstruction en salle blanche.
 
 **Nouveau en 2.0 :** un **accueil guidé** (`/dan-cortex:accueil-recueil`) : Dan-Cortex salue, recueille le besoin même en vrac, le reformule et le fait valider, explore le domaine sur le web et GitHub, revient avec des propositions, mène l'entretien à réponses suggérées, puis remet cahier des charges, étude de marché, conception, planning, stratégie de test et **étude de réalisation** (par IA ou par une entreprise, budget et gains) avant de laisser l'utilisateur décider. Et un **paquet universel** ([`dan-cortex/universel/`](dan-cortex/universel/INSTALLATION.md)) : un noyau de moins de 8 000 caractères à coller dans une autre IA.
 
@@ -156,6 +158,11 @@ flowchart TB
 | Recueil du besoin | `/dan-cortex:recueil-besoin` | interview adaptée au profil, du besoin brut au cahier des charges, schémas et maquettes |
 | Atelier d'écriture | `/dan-cortex:atelier-ecriture` | écrire et éditer livres et romans, publier (EPUB/PDF), ou coder un outil d'aide à l'écriture |
 | Traduction et interprétariat | `/dan-cortex:traduction-interpretariat` | traduire (FR/AR/EN), localiser (RTL, PO/XLIFF), interprétariat ; outils CAT libres |
+| Studio 3D et jeu vidéo | `/dan-cortex:studio-3d-jeu` | Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox ; MCP pour Blender ; terrain et cartes (BlenderGIS) |
+| 3D web immersive | `/dan-cortex:web-3d-immersif` | three.js, React Three Fiber, pages « scroll-world », fluide WebGL, portfolio 3D ; performance et accessibilité |
+| Médias générés par IA | `/dan-cortex:creation-medias-ia` | images, vidéo, audio, textures et assets 3D via Scenario, devis avant génération |
+| Plateforme e-learning | `/dan-cortex:plateforme-elearning` | choisir, déployer et intégrer un LMS (Canvas LMS, LTI 1.3, API) |
+| Reconstruction en salle blanche | `/dan-cortex:reconstruction-salle-blanche` | étudier un produit existant et construire sa propre version sans rien copier |
 
 ## Sobriété en tokens
 
