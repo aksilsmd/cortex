@@ -26,6 +26,7 @@ class ManifestesTests(unittest.TestCase):
         premiere = re.search(r"^## \[?(\d+\.\d+\.\d+)\]?", lire(ROOT / "CHANGELOG.md"), re.M).group(1)
         self.assertEqual(premiere, version, "la première entrée du CHANGELOG doit être la version publiée")
         self.assertIn("badge/version-%s-" % version, lire(ROOT / "README.md"))
+        self.assertRegex(lire(ROOT / "pyproject.toml"), r'(?m)^version = "%s"$' % re.escape(version))
 
     def test_source_marketplace_existe(self):
         self.assertEqual((ROOT / self.entree["source"]).resolve(), PLUGIN.resolve())

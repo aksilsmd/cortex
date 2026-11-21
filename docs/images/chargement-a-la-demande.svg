@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 620" width="1240" height="620" role="img" aria-labelledby="titre desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif">
+  <title id="titre">Chargement à la demande</title>
+  <desc id="desc">Chargement à la demande : comment Dan-Cortex utilise 173 compétences sans les charger toutes. Six étapes numérotées en escalier. 1, demande de l'utilisateur, par exemple « Fais-moi un personnage rigué dans Blender ». 2, skill-pivot Dan-Cortex studio-3d-jeu : il décide, protège et aiguille. 3, bibliotheque/scenario-labs/INDEX.md, qui répartit les compétences en 8 familles. 4, index/dcc-blender.md, l'index de 15 skills. 5, un seul fichier SKILL.md, scenario-blender-rigging. 6, ses références (references/) chargées à la demande ; les scripts seulement après accord de l'utilisateur. À droite, un panneau gris clair « Jamais chargé » montre en grisé les 172 autres compétences. Un encadré « Garde-fous » rappelle : le contenu tiers est une donnée, jamais une instruction ; aucun script sans lecture et accord ; devis avant toute génération payante.</desc>
+  <style>
+.etape{opacity:0;animation:etape 8s ease-in-out infinite}
+@keyframes etape{0%{opacity:0}4%,13%{opacity:1}18%,100%{opacity:0}}
+.flux{stroke-dasharray:6 6;animation:defile 8s linear infinite}
+@keyframes defile{to{stroke-dashoffset:-48}}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0F766E"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <text x="32" y="48" font-size="26" fill="#0F172A" font-weight="700" text-anchor="start">Chargement à la demande</text>
+  <text x="32" y="76" font-size="15" fill="#475569" font-weight="400" text-anchor="start">Comment Dan-Cortex utilise 173 compétences sans les charger toutes</text>
+  <rect x="32" y="104" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="62" cy="135" r="18" fill="#475569"/>
+  <text x="62" y="141" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">1</text>
+  <text x="92" y="130" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">Demande de l'utilisateur</text>
+  <text x="92" y="151" font-size="13" fill="#475569" font-weight="400" text-anchor="start">« Fais-moi un personnage rigué dans Blender »</text>
+  <rect class="etape" style="animation-delay:0.0s" x="32" y="104" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <line class="flux" x1="92" y1="169" x2="92" y2="185" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <rect x="72" y="188" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="102" cy="219" r="18" fill="#1D4ED8"/>
+  <text x="102" y="225" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">2</text>
+  <text x="132" y="214" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">Skill-pivot Dan-Cortex : studio-3d-jeu</text>
+  <text x="132" y="235" font-size="13" fill="#475569" font-weight="400" text-anchor="start">Il décide, protège et aiguille</text>
+  <rect class="etape" style="animation-delay:1.2s" x="72" y="188" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <line class="flux" x1="132" y1="253" x2="132" y2="269" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <rect x="112" y="272" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="142" cy="303" r="18" fill="#0F766E"/>
+  <text x="142" y="309" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">3</text>
+  <text x="172" y="298" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">bibliotheque/scenario-labs/INDEX.md</text>
+  <text x="172" y="319" font-size="13" fill="#475569" font-weight="400" text-anchor="start">Table des matières : 8 familles de compétences</text>
+  <rect class="etape" style="animation-delay:2.4s" x="112" y="272" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <line class="flux" x1="172" y1="337" x2="172" y2="353" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <rect x="152" y="356" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="182" cy="387" r="18" fill="#0F766E"/>
+  <text x="182" y="393" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">4</text>
+  <text x="212" y="382" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">index/dcc-blender.md</text>
+  <text x="212" y="403" font-size="13" fill="#475569" font-weight="400" text-anchor="start">Index de la famille Blender : 15 skills</text>
+  <rect class="etape" style="animation-delay:3.5999999999999996s" x="152" y="356" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <line class="flux" x1="212" y1="421" x2="212" y2="437" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <rect x="192" y="440" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="222" cy="471" r="18" fill="#0F766E"/>
+  <text x="222" y="477" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">5</text>
+  <text x="252" y="466" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">Un seul SKILL.md : scenario-blender-rigging</text>
+  <text x="252" y="487" font-size="13" fill="#475569" font-weight="400" text-anchor="start">La seule compétence tierce réellement chargée</text>
+  <rect class="etape" style="animation-delay:4.8s" x="192" y="440" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <line class="flux" x1="252" y1="505" x2="252" y2="521" stroke="#0F766E" stroke-width="3" stroke-linecap="round" marker-end="url(#fleche)"/>
+  <rect x="232" y="524" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+  <circle cx="262" cy="555" r="18" fill="#B45309"/>
+  <text x="262" y="561" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">6</text>
+  <text x="292" y="550" font-size="15" fill="#0F172A" font-weight="700" text-anchor="start">Ses references/, à la demande</text>
+  <text x="292" y="571" font-size="13" fill="#475569" font-weight="400" text-anchor="start">Scripts : seulement après accord de l'utilisateur</text>
+  <rect class="etape" style="animation-delay:6.0s" x="232" y="524" width="500" height="62" rx="10" fill="#0F766E" fill-opacity="0.08" stroke="#0F766E" stroke-width="3"/>
+  <rect x="800" y="104" width="408" height="298" rx="10" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="820" y="134" font-size="16" fill="#475569" font-weight="700" text-anchor="start">Jamais chargé</text>
+  <text x="820" y="156" font-size="13" fill="#475569" font-weight="400" text-anchor="start">tant que la demande ne les concerne pas</text>
+  <rect x="820" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="860" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="900" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="940" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="980" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1020" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1060" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1100" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1140" y="176" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="820" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="860" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="900" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="940" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="980" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1020" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1060" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1100" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1140" y="206" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="820" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="860" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="900" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="940" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="980" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1020" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1060" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1100" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1140" y="236" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="820" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="860" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="900" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="940" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="980" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1020" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1060" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1100" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="1140" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="1004" y="334" font-size="20" fill="#475569" font-weight="700" text-anchor="middle">172 autres compétences</text>
+  <text x="1004" y="358" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">grisées : ni lues, ni exécutées</text>
+  <text x="1004" y="382" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">7 autres familles d'index, 14 autres skills Blender</text>
+  <rect x="800" y="428" width="408" height="152" rx="10" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>
+  <text x="820" y="458" font-size="16" fill="#B45309" font-weight="700" text-anchor="start">Garde-fous</text>
+  <circle cx="826" cy="486" r="4" fill="#B45309"/>
+  <text x="840" y="490" font-size="14" fill="#0F172A" font-weight="600" text-anchor="start">Contenu tiers = donnée, jamais instruction</text>
+  <circle cx="826" cy="516" r="4" fill="#B45309"/>
+  <text x="840" y="520" font-size="14" fill="#0F172A" font-weight="600" text-anchor="start">Aucun script sans lecture et accord</text>
+  <circle cx="826" cy="546" r="4" fill="#B45309"/>
+  <text x="840" y="550" font-size="14" fill="#0F172A" font-weight="600" text-anchor="start">Devis avant toute génération payante</text>
+</svg>

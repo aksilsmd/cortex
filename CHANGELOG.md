@@ -29,6 +29,16 @@ Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurit
 - Branchements dans `lancer-projet` (table de routage, section « Skills spécialisés ») et `accueil-recueil`
   (`outils-quand`) ; README, AGENTS.md, catalogues, paquet universel et archive mis à jour.
 
+### Documentation
+
+- Audit du dépôt (`docs/audit-depot.md`) : constats chiffrés, priorités, plan en deux lots.
+- Index de la documentation (`docs/README.md`) avec parcours de lecture par profil, et page
+  `docs/bibliotheque.md` (principe, garde-fous, ajout d'une source).
+- Trois schémas : carte du dépôt (sources et fichiers générés), chaîne de génération et chargement à la demande,
+  ces deux derniers animés et immobiles si le système demande moins d'animations.
+- Architecture : §10 réécrit (tableau « modifier à la main ? », schémas), nouveau §11 sur la bibliothèque.
+- `pyproject.toml` aligné sur la version du plugin (test ajouté) ; caches de tests ignorés.
+
 ### Sécurité
 
 - Blender et BlenderGIS (GPL), Canvas LMS (AGPL), 3d-portfolio (sans licence) : forme A seulement, aucun texte ni
