@@ -27,6 +27,7 @@ généraliste. À J0, fais l'inventaire de ce que la session offre et décide qu
 | Analyse de sécurité | outils installés dans l'environnement (analyse statique, dépendances, secrets) | `auditeur-securite` | revue manuelle guidée par les listes de contrôle |
 | Revue juridique, conformité | skills juridiques de la session s'il y en a | toi, en complément du `juriste-numerique` | références du skill `juridique-conformite` |
 | Campagnes, contenus, visuels | skills marketing ou de création visuelle de la session | toi, à partir du plan du `stratege-marketing` | contenus Markdown |
+| Skills officiels d'Anthropic à scripts (documents, test web, MCP, API, skill-creator) | `anthropic-skills:<nom>` dans l'application ; plugins `document-skills` et `example-skills` sur Claude Code, installés par l'utilisateur | toi ; guide : `skills-officiels-anthropic.md` | livrer le Markdown ou des cas manuels |
 | Données et tableaux de bord | skills de données de la session | toi, à partir du plan de marquage | spécification du tableau de bord |
 
 ## Quand lancer un agent généraliste
@@ -42,3 +43,16 @@ Le choix du langage, des frameworks, de la base de données, de l'hébergement, 
 test du projet n'est pas un routage de session : c'est une décision d'architecture, instruite par
 `architecte-solution` et `gardien-des-normes`, tranchée en comité d'architecture (voir le skill
 `architecture-normes`) et inscrite dans une décision d'architecture.
+
+## Skills spécialisés du plugin (renfort du 2026-11-21)
+
+Chargés seulement quand le projet en a besoin ; chacun ouvre à son tour la bibliothèque vendorisée (`${CLAUDE_PLUGIN_ROOT}/bibliotheque/`), un `SKILL.md` à la fois.
+
+| Besoin du projet | Skill | Agents qui s'en servent |
+|---|---|---|
+| Modèles 3D, rendu, animation (Blender, Maya, ZBrush), jeu vidéo (Godot, Unity, Unreal, Roblox), terrain et cartes dans Blender | `studio-3d-jeu` | `developpeur-frontend`, `developpeur-mobile`, `maquettiste`, `architecte-solution` |
+| Scène 3D ou effet WebGL sur un site, page « vol à travers un monde », portfolio 3D | `web-3d-immersif` | `developpeur-frontend`, `maquettiste`, `testeur-visuel` |
+| Images, vidéos, sons, textures ou assets 3D générés par IA (Scenario, compte requis) | `creation-medias-ia` | toi, à partir du plan du `stratege-marketing` ou du `maquettiste` ; devis montré avant toute génération |
+| Plateforme de formation en ligne (Canvas LMS ou autre), LTI, API | `plateforme-elearning` | `architecte-solution`, `integrateur`, `ingenieur-devops`, `delegue-protection-donnees` |
+| Refaire sa propre version d'un site, d'une app ou d'un jeu observé, sans rien copier | `reconstruction-salle-blanche` | `collecteur-web`, `analyste-concurrence` (observation) ; `developpeur-frontend` (construction) ; `juriste-numerique` |
+

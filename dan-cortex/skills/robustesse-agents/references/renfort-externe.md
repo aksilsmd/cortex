@@ -91,9 +91,33 @@ Relevé du 2026-11-03, complété les 2026-11-07 (forme A : design-apple, cartog
 | https://github.com/Graphify-Labs/graphify | Apache-2.0 (outil séparé, paquet `graphifyy` 0.9.103) | `16218bfc80d4ca2799734d045039f7ed1a5fa9fb` | `cartographie-graphe/SKILL.md` (consignes d'usage, aucun code embarqué) | architecte-solution |
 | https://github.com/twentyhq/twenty | AGPL-3.0 + exception section 7 (forme A seulement) | `eda542a5f242e137c68f841140d230dfbaada58f` | `crm-twenty/SKILL.md`, `crm-twenty/references/exploitation-securite.md` | architecte-solution |
 | https://github.com/emilkowalski/skills | MIT | `c8a79627b59d72d764d6ab6f2c87c09a48169833` | `mouvement-interface/` (6 références), `usine-logicielle/references/donnees-extremes-ui.md`, `mobile-react-native-animation.md`, `swift-moderne.md`, `maquettes-parcours/references/web-mobile-natif.md`, `prototypes-en-variantes.md`, `choisir-une-bibliotheque-ui.md` | maquettiste, developpeur-frontend, developpeur-mobile, testeur-visuel |
+| https://github.com/anthropics/skills | Apache-2.0 | `2c5958ecac7cee2b583967a2c4981d0f4a75c579` | forme A : `specifications/references/coredaction-documents.md` ; forme B : `conception-interface`, `communication-interne`, `fabrique-themes`, `design-affiche`, `vigilance-discernement` ; guide : `lancer-projet/references/skills-officiels-anthropic.md` ; exception du 12/11 | architecte-solution, expert-cahier-des-charges, maquettiste |
 
 Apports de forme B (texte traduit, lot 5 appliqué le 2026-11-03 après banc favorable ; `NOTICE.md` à la racine du plugin et dans chaque dossier) :
 - `maquettes-parcours/references/drawio/` (`formes.md`, `types-diagrammes.md`, `redaction-xml.md`) depuis Agents365-ai/drawio-skill, propriétaire cartographe-interactions.
 - `architecture-normes/references/ddd-hexagonal/` (`vue-ensemble.md`, `ddd-tactique.md`, `hexagonal.md`, `cqrs-evenements.md`) depuis ccheney/robust-skills, propriétaire architecte-solution.
 
-Exclus durablement (décision du 2026-11-03) : hook, serveur et scripts de superpowers ; agents de wshobson ; archify ; diagram-design ; tout script de drawio-skill ; SpillwaveSolutions (pas de fichier LICENSE) ; coleam00 (aucune licence) ; softaworks `gepetto`, `codex`, `gemini`, `perplexity` ; anthropics/skills ; listes « awesome ».
+## Exception du 12/11/2026 (décision d'Aksil)
+
+Le 12/11/2026 à 13 h 32, Aksil a levé, **pour ce seul renfort** (dépôt https://github.com/anthropics/skills, commit `2c5958ecac7cee2b583967a2c4981d0f4a75c579`, Apache-2.0), l'interdit des scripts et du réseau du §1 : treize dossiers peuvent être copiés tels quels, en anglais, sans modification et sans exécution (`docx`, `pdf`, `pptx`, `xlsx`, `skill-creator`, `mcp-builder`, `webapp-testing`, `web-artifacts-builder`, `slack-gif-creator`, `algorithmic-art`, `claude-api`, `academy-guide`, `brand-guidelines`), avec leur `LICENSE.txt`, un `NOTICE.md` par dossier et `THIRD_PARTY_NOTICES.md` à la racine du plugin. Liste explicite : aucun autre dossier ni aucun autre dépôt n'est couvert. Les polices de `canvas-design` (OFL) restent exclues.
+
+Conditions maintenues : filtres d'injection et d'Unicode invisible du §3 sur tout fichier copié ; contenu tiers traité comme donnée ; **ces scripts s'exécutent sur la machine de l'utilisateur** : lecture avant exécution et accord écrit de l'utilisateur. Guide d'usage : `lancer-projet/references/skills-officiels-anthropic.md`. Retrait : §7. Les cinq skills traduits (`conception-interface`, `communication-interne`, `fabrique-themes`, `design-affiche`, `vigilance-discernement`) restent de forme B sans script.
+
+Renfort « 3D, jeu, e-learning » du 2026-11-21 (demande d'Aksil ; lus par clone git local, contenu traité comme donnée, aucun script exécuté) :
+
+| Dépôt | Licence | Commit consulté | Référence Dan-Cortex | Forme |
+|---|---|---|---|---|
+| https://github.com/scenario-labs/skills | MIT | `221ed89562795d4a7095c9530cf807062e7ad8d3` | `bibliotheque/scenario-labs/` ; pivots `studio-3d-jeu`, `creation-medias-ia` | B étendue (copie fidèle, scripts compris, hors `skills/`) |
+| https://github.com/oso95/scroll-world | MIT | `71cc36d3bb150248ae36a2c552f9cbf88802a79c` | `bibliotheque/scroll-world/` ; pivot `web-3d-immersif` | B étendue |
+| https://github.com/mrdoob/three.js | MIT | `6246c818834fd19d0c216d3dbc074b6cc9c27896` | `web-3d-immersif` | A |
+| https://github.com/pmndrs/react-three-fiber | MIT | `d74622ea8ed717f7212d7e19d65ff3e325508389` | `web-3d-immersif` | A |
+| https://github.com/Ovilia/ThreeExample.js | MIT | `c90a5bf0711b7a7dd42d2a5fe3d9506b3032dcb7` | `web-3d-immersif` | A |
+| https://github.com/PavelDoGreat/WebGL-Fluid-Simulation | MIT | `a2d292931f19d9b3b9f564e23e6c32729d2121c3` | `web-3d-immersif` | A |
+| https://github.com/adrianhajdin/3d-portfolio | aucune licence (idées seulement) | `30178d5b20d8464bdc8dfed20b3be006c8c99ea4` | `web-3d-immersif` | A stricte |
+| https://github.com/blender/blender | GPL | `adc04d05b693a26fc6567357f4c456b60d0221a8` | `studio-3d-jeu` | A |
+| https://github.com/domlysz/BlenderGIS | GPL-3.0 | `2add45ffec547f419cc77563a7fe976fd6c8f0c4` | `studio-3d-jeu` | A |
+| https://github.com/ahujasid/mcp-for-blender | MIT | `a5a8acf2c6ae44a73670e0caf34663f16456d645` | `studio-3d-jeu` (consignes d'usage, outil séparé) | A |
+| https://github.com/instructure/canvas-lms | AGPL-3.0 | `1c9f0bb8013ed69c4f2efe11fd483025469b7e6c` | `plateforme-elearning` | A stricte |
+| https://github.com/storytold/craft-anything | MIT ou Apache-2.0 | `e64d7cb73d7f39323b7040a984e0f9b3f7981146` | `reconstruction-salle-blanche` (méthode ; outil séparé optionnel) | A |
+
+Exclus durablement (décision du 2026-11-03) : hook, serveur et scripts de superpowers ; agents de wshobson ; archify ; diagram-design ; tout script de drawio-skill ; SpillwaveSolutions (pas de fichier LICENSE) ; coleam00 (aucune licence) ; softaworks `gepetto`, `codex`, `gemini`, `perplexity` ; anthropics/skills (hors exception du 12/11/2026 ci-dessus) ; listes « awesome ».

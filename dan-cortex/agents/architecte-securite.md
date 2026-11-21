@@ -16,7 +16,6 @@ tools:
 - "WebSearch"
 - "WebFetch"
 skills:
-- "safety"
 - "securite-protection"
 - "crm-twenty"
 ---

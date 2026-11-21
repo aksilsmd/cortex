@@ -1,0 +1,75 @@
+name: Bogue
+description: Un comportement du plugin, d'un script ou d'un skill ne correspond pas à ce qui est documenté.
+title: "[Bogue] "
+labels: ["bogue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler un problème. N'inclus **aucun secret, aucune donnée personnelle et
+        aucune invite privée** : remplace-les par des valeurs fictives. Pour une faille de sécurité, utilise le
+        signalement privé (voir `SECURITY.md`).
+  - type: input
+    id: version
+    attributes:
+      label: Version de Dan-Cortex
+      description: Champ `version` de `dan-cortex/.claude-plugin/plugin.json`.
+      placeholder: "2.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: environnement
+    attributes:
+      label: Environnement
+      options:
+        - Claude Code
+        - Application Claude (web ou bureau)
+        - Autre IA (AGENTS.md ou paquet universel)
+        - Scripts du dépôt (tests, construction)
+    validations:
+      required: true
+  - type: input
+    id: element
+    attributes:
+      label: Skill, agent ou script concerné
+      placeholder: "/dan-cortex:lancer-projet, cortex.py jalon verifier, agent verificateur…"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      description: Commande exacte, mode, niveau d'autonomie, et ce que tu as fait ensuite.
+      placeholder: |
+        1. /dan-cortex:lancer-projet … (mode eclair)
+        2. …
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Résultat obtenu
+      description: Message d'erreur, extrait de journal (sans secret), capture.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Version de Python et système
+      placeholder: "Python 3.12, macOS 15"
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: Vérifications
+      options:
+        - label: J'ai lu la FAQ et cherché un ticket existant.
+          required: true
+        - label: Ce ticket ne contient ni secret ni donnée personnelle.
+          required: true
