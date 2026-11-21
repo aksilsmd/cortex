@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-labelledby="titre desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif">
+  <title id="titre">Dan-Cortex</title>
+  <desc id="desc">Bannière du projet : le nom Dan-Cortex, la phrase « Le réseau d'agents experts qui lance vos projets numériques », les six verbes du parcours, et à droite un réseau de nœuds reliés autour d'un nœud central.</desc>
+  <defs>
+    <marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#0F172A"/>
+  <line x1="1040" y1="160" x2="1155" y2="191" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="1096" y2="253" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="1005" y2="260" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="934" y2="209" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="925" y2="129" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="984" y2="67" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="1075" y2="60" stroke="#334155" stroke-width="2"/>
+  <line x1="1040" y1="160" x2="1146" y2="111" stroke="#334155" stroke-width="2"/>
+  <line x1="1155" y1="191" x2="1096" y2="253" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1096" y1="253" x2="1005" y2="260" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1005" y1="260" x2="934" y2="209" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="934" y1="209" x2="925" y2="129" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="925" y1="129" x2="984" y2="67" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="984" y1="67" x2="1075" y2="60" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1075" y1="60" x2="1146" y2="111" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1146" y1="111" x2="1155" y2="191" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1244" y1="174" x2="1155" y2="191" stroke="#334155" stroke-width="1.2"/>
+  <line x1="1206" y1="242" x2="1155" y2="191" stroke="#334155" stroke-width="1.2"/>
+  <line x1="1124" y1="288" x2="1096" y2="253" stroke="#334155" stroke-width="1.2"/>
+  <line x1="920" y1="274" x2="934" y2="209" stroke="#334155" stroke-width="1.2"/>
+  <line x1="853" y1="218" x2="934" y2="209" stroke="#334155" stroke-width="1.2"/>
+  <line x1="836" y1="146" x2="925" y2="129" stroke="#334155" stroke-width="1.2"/>
+  <line x1="874" y1="78" x2="925" y2="129" stroke="#334155" stroke-width="1.2"/>
+  <line x1="956" y1="32" x2="984" y2="67" stroke="#334155" stroke-width="1.2"/>
+  <line x1="1160" y1="46" x2="1146" y2="111" stroke="#334155" stroke-width="1.2"/>
+  <line x1="1227" y1="102" x2="1146" y2="111" stroke="#334155" stroke-width="1.2"/>
+  <circle cx="1244" cy="174" r="6" fill="#64748B"/>
+  <circle cx="1206" cy="242" r="6" fill="#64748B"/>
+  <circle cx="1124" cy="288" r="6" fill="#64748B"/>
+  <circle cx="920" cy="274" r="6" fill="#64748B"/>
+  <circle cx="853" cy="218" r="6" fill="#64748B"/>
+  <circle cx="836" cy="146" r="6" fill="#64748B"/>
+  <circle cx="874" cy="78" r="6" fill="#64748B"/>
+  <circle cx="956" cy="32" r="6" fill="#64748B"/>
+  <circle cx="1160" cy="46" r="6" fill="#64748B"/>
+  <circle cx="1227" cy="102" r="6" fill="#64748B"/>
+  <circle cx="1155" cy="191" r="12" fill="#38BDF8"/>
+  <circle cx="1096" cy="253" r="12" fill="#2DD4BF"/>
+  <circle cx="1005" cy="260" r="12" fill="#60A5FA"/>
+  <circle cx="934" cy="209" r="12" fill="#FBBF24"/>
+  <circle cx="925" cy="129" r="12" fill="#38BDF8"/>
+  <circle cx="984" cy="67" r="12" fill="#2DD4BF"/>
+  <circle cx="1075" cy="60" r="12" fill="#60A5FA"/>
+  <circle cx="1146" cy="111" r="12" fill="#FBBF24"/>
+  <circle cx="1040" cy="160" r="30" fill="#2563EB" stroke="#93C5FD" stroke-width="3"/>
+  <circle cx="1040" cy="160" r="10" fill="#EFF6FF"/>
+  <text x="64" y="138" font-size="76" fill="#FFFFFF" font-weight="800" text-anchor="start">Dan-Cortex</text>
+  <text x="66" y="186" font-size="26" fill="#E2E8F0" font-weight="normal" text-anchor="start">Le réseau d'agents experts qui lance vos projets numériques</text>
+  <text x="66" y="228" font-size="20" fill="#93C5FD" font-weight="600" text-anchor="start">Cadrer · Concevoir · Réaliser · Tester · Sécuriser · Lancer</text>
+  <rect x="66" y="252" width="372" height="36" rx="18" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="84" y="276" font-size="15" fill="#CBD5E1" font-weight="normal" text-anchor="start">Plugin pour Claude · code ouvert sous licence MIT</text>
+</svg>
