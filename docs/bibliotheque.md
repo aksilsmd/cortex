@@ -8,7 +8,7 @@ garde-fous et la procédure pour ajouter une source.
 ## Principe
 
 Claude lit au démarrage de chaque session la description de **tous** les skills rangés dans
-`dan-cortex/skills/`. Y ranger 173 compétences coûterait des dizaines de milliers de tokens à chaque session et
+`dan-cortex/skills/`. Y ranger 252 compétences coûterait des dizaines de milliers de tokens à chaque session et
 brouillerait le choix du bon skill. La bibliothèque les range donc à part, dans `dan-cortex/bibliotheque/`, où
 Claude ne les voit pas d'office.
 
@@ -28,9 +28,10 @@ Un **skill-pivot** Dan-Cortex (rangé, lui, dans `skills/`) fait le lien :
 | `bibliotheque/cli-anything/` | 70 compétences pour piloter un logiciel en ligne de commande (Blender, FreeCAD, GIMP, Krita, Inkscape, Audacity, Kdenlive, OBS, QGIS, OpenRefine, Obsidian, Zotero, LibreOffice, PM2, n8n, Ollama…) | `pilotage-outils-cli` | Apache-2.0, © 2026 HKUDS |
 | `bibliotheque/understand-anything/` | 9 compétences pour comprendre un dépôt de code : carte, domaines, dépendances, graphe de connaissances, revue de différences, arrivée d'un nouveau venu, lecture d'une maquette Figma | `comprendre-un-code` | MIT, © 2026 Yuxiang Lin et Infinite Universe, Inc. |
 
-Les index (`scenario-labs/INDEX.md` et `scenario-labs/index/*.md`) sont générés à partir des en-têtes des
-`SKILL.md` ; les compétences elles-mêmes sont des copies fidèles, non traduites, avec leur commit d'origine dans
-chaque `NOTICE.md`.
+Chaque source de plus d'une dizaine de compétences a son `INDEX.md`. Ceux de `scenario-labs/` (`INDEX.md` et
+`index/*.md`) sont générés à partir des en-têtes des `SKILL.md` ; ceux de `cli-anything/` et
+`understand-anything/` sont écrits à la main. Les compétences elles-mêmes sont des copies fidèles, non
+traduites, avec leur commit d'origine dans chaque `NOTICE.md`.
 
 ## Garde-fous
 

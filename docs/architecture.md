@@ -286,14 +286,28 @@ skill ou d'un agent, relancer les trois scripts (voir [`CONTRIBUTING.md`](../CON
 
 ![Chargement à la demande](images/chargement-a-la-demande.svg)
 
-`dan-cortex/bibliotheque/` range 173 compétences tierces (licence MIT) hors de `skills/`, pour qu'elles ne coûtent
-aucun token tant qu'elles ne servent pas. Cinq skills-pivots y mènent :
+`dan-cortex/bibliotheque/` range **252 compétences tierces** hors de `skills/`, pour qu'elles ne coûtent aucun
+token tant qu'elles ne servent pas. Quatre sources, chacune avec sa `LICENSE`, sa `NOTICE.md` et son commit
+d'origine :
+
+| Source | Compétences | Licence |
+|---|---|---|
+| `scenario-labs/` | 172 : création 3D et moteurs de jeu (87), plateforme Scenario (85) | MIT |
+| `scroll-world/` | 1 : page web immersive pilotée par le défilement | MIT |
+| `cli-anything/` | 70 : piloter un logiciel depuis le terminal, aucun script embarqué | Apache-2.0 |
+| `understand-anything/` | 9 : comprendre un dépôt de code, 20 scripts d'analyse locale | MIT |
+
+Cinq skills-pivots y mènent :
 
 | Pivot | Ouvre | Pour |
 |---|---|---|
 | `studio-3d-jeu` | `scenario-labs/index/dcc-*.md`, `game-engines-*.md` | Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox |
 | `creation-medias-ia` | `scenario-labs/index/plateforme-scenario.md` | images, vidéo, audio, textures, assets 3D générés |
 | `web-3d-immersif` | `scroll-world/SKILL.md` | page « vol à travers un monde » |
-| `plateforme-elearning`, `reconstruction-salle-blanche` | aucune copie (méthode réécrite, sources GPL ou AGPL) | LMS, reconstruction d'un produit observé |
+| `pilotage-outils-cli` | `cli-anything/INDEX.md` | 70 logiciels pilotés en ligne de commande |
+| `comprendre-un-code` | `understand-anything/INDEX.md` | architecture, domaines, dépendances, graphe, revue de différences |
+
+`plateforme-elearning` et `reconstruction-salle-blanche` ne sont pas des pivots : leurs sources (GPL ou AGPL)
+ne sont reprises qu'en méthode réécrite, sans copie dans la bibliothèque.
 
 Principe, garde-fous et ajout d'une source : [`bibliotheque.md`](bibliotheque.md).
