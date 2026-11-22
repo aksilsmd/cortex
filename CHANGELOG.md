@@ -36,10 +36,10 @@ Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurit
   un arbre de travail sale.
 - Un contrôle de plus : les liens vers une section (`#une-ancre`) doivent viser un titre qui existe. Ils sont
   tous valides aujourd'hui ; le test empêche qu'un renommage de titre les casse en silence.
-- Suite de l'audit du dépôt : étiquette `v2.2.0` posée, et suppression des branches `audit-structure-depot`,
-  `renfort-3d-jeu-elearning` et `v2.1-skills-anthropic`, dont les sommets étaient exactement ceux des pull
-  requests 4, 3 et 2, fusionnées. `dan-cortex` et `v2.0-universel` sont conservées : leur fusion n'est pas
-  démontrable.
+- `docs/audit-depot.md` dit l'état réel du plan d'action. La fusion des branches `audit-structure-depot`,
+  `renfort-3d-jeu-elearning` et `v2.1-skills-anthropic` est vérifiée — leurs sommets sont exactement ceux des
+  pull requests 4, 3 et 2 —, donc leur suppression ne perdra rien ; `dan-cortex` et `v2.0-universel` sont à
+  garder, leur fusion n'étant pas démontrable.
 
 ## [2.2.0] - 2026-11-21
 
