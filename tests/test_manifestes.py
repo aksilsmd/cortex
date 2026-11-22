@@ -59,7 +59,7 @@ class SkillsTests(unittest.TestCase):
 
     def test_compte_des_skills_dans_la_documentation(self):
         n = len(self.dossiers)
-        self.assertIn("badge/skills-%d-" % n, lire(ROOT / "README.md"))
+        self.assertIn("**%d skills**" % n, lire(ROOT / "README.md"))
         self.assertIn("| Skills | %d |" % n, lire(PLUGIN / "README.md"))
 
     def test_chaque_skill_est_documente(self):

@@ -1,0 +1,11 @@
+# Le plugin n'a aucune dépendance applicative : Python 3, bibliothèque standard uniquement.
+# Seules les actions GitHub de l'intégration continue sont suivies.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"
+    open-pull-requests-limit: 5

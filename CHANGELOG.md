@@ -7,6 +7,34 @@ dossier projet, mineure pour un skill, un agent ou une capacité en plus, correc
 
 Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurité**, **Documentation**.
 
+## [Non publié]
+
+### Corrigé
+
+- **Affichage du `README` sur mobile.** L'application mobile de GitHub en tronquait la fin et les images
+  tardaient. Deux causes : le diagramme `mermaid` était dessiné par le navigateur *après* le chargement, ce qui
+  change la hauteur de la page une fois celle-ci déjà mesurée ; et onze images devenaient onze requêtes séparées
+  servies par le proxy d'images de GitHub. Le diagramme faisait double emploi avec `vague-agents.svg`, déjà dans
+  `docs/architecture.md` ; la carte du dépôt précédait la même arborescence en texte. Il reste six images et
+  aucun diagramme rendu par le navigateur.
+- Les compteurs de skills, d'agents et de contrôles passent des badges au texte : quatre requêtes externes de
+  moins, et les mêmes chiffres restent vérifiés contre le plugin par les tests.
+- Le résumé « In English » annonçait encore la version 2.1.0.
+
+### Ajouté
+
+- `Makefile` : point d'entrée unique, aligné sur la CI (`make verify`) et sur la chaîne de régénération de
+  `CONTRIBUTING.md` (`make build`).
+- `CLAUDE.md` : les règles de travail du dépôt pour Claude Code, qui ne lit pas `AGENTS.md` de lui-même.
+- `SUPPORT.md`, `.github/CODEOWNERS`, `.github/dependabot.yml`, `.editorconfig`, `.gitattributes` — l'archive et
+  les catalogues y sont marqués comme générés, la bibliothèque comme vendorisée.
+- Deux contrôles automatiques : six images au plus dans le `README`, et aucun `mermaid`.
+
+### Modifié
+
+- L'intégration continue annule les exécutions dépassées, nomme ses étapes, va au bout de la matrice et refuse
+  un arbre de travail sale.
+
 ## [2.2.0] - 2026-11-21
 
 ### Ajouté

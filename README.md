@@ -5,11 +5,12 @@
 <p align="center">
   <a href="https://github.com/aksilsmd/cortex/actions/workflows/tests.yml"><img alt="Tests" src="https://github.com/aksilsmd/cortex/actions/workflows/tests.yml/badge.svg"></a>
   <img alt="Version 2.2.0" src="https://img.shields.io/badge/version-2.2.0-2563EB">
-  <img alt="48 skills" src="https://img.shields.io/badge/skills-48-0F766E">
-  <img alt="59 agents" src="https://img.shields.io/badge/agents-59-0F766E">
-  <img alt="784 contrôles" src="https://img.shields.io/badge/contr%C3%B4les-784-0F766E">
-  <img alt="Python 3.11 ou plus" src="https://img.shields.io/badge/python-3.11%2B-475569">
   <a href="LICENSE"><img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280"></a>
+</p>
+
+<p align="center">
+  <strong>48 skills</strong> · <strong>59 agents experts</strong> · <strong>784 contrôles</strong> ·
+  bibliothèque de <strong>173 compétences</strong> à la demande · Python 3.11 ou plus
 </p>
 
 <p align="center"><a href="#in-english">English summary below</a></p>
@@ -79,19 +80,6 @@ Trois modes règlent l'ampleur et le coût : `eclair` (3 à 4 agents par vague),
 
 ## Comment ça marche
 
-```mermaid
-flowchart LR
-  U([Toi]) <--> C[Chef d'orchestre]
-  C ==>|vague parallèle| A1[Experts marché] & A2[Experts spécifications] & A3[Experts design] & A4[Experts technique]
-  A1 -.-> S[Sous-agents de collecte]
-  A1 & A2 & A3 & A4 & S --> D[(Dossier projet<br/>livrables, registres,<br/>matrice de couverture)]
-  D --> R[Revues croisées]
-  R --> J{Jalon vérifié<br/>par script}
-  J --> AU[Super-auditeur]
-  AU -->|constats| M[Réunion de décision]
-  M -->|corrections| C
-  D -.->|comptes rendus de 150 mots| C
-```
 
 - **Un chef d'orchestre** parle avec toi et lance les agents par vagues parallèles ; il ne lit que des comptes
   rendus courts.
@@ -173,8 +161,6 @@ Détail : [`docs/securite-et-robustesse.md`](docs/securite-et-robustesse.md). Si
 | [Audit du dépôt](docs/audit-depot.md) | organisation, sobriété, publication : constats et plan d'action |
 | [Journal des versions](CHANGELOG.md) | historique, au format Keep a Changelog |
 
-![Carte du dépôt](docs/images/carte-depot.svg)
-
 ```
 .
 ├── .claude-plugin/marketplace.json   catalogue du plugin
@@ -235,4 +221,4 @@ Install in Claude Code with `/plugin marketplace add aksilsmd/cortex` then
 Add from a repository (`aksilsmd/cortex`). The plugin content is written in French, with French and EU law first.
 Thirteen skills are copied unchanged from anthropics/skills and five are translated from it (Apache-2.0); the
 rest is MIT. Dan-Cortex prepares and checks; it does not replace a lawyer, an accountant or a qualified security
-auditor. See [CHANGELOG.md](CHANGELOG.md) for the version history (current: 2.1.0).
+auditor. See [CHANGELOG.md](CHANGELOG.md) for the version history (current: 2.2.0).

@@ -1,0 +1,23 @@
+# Le dépôt est en LF.
+* text=auto eol=lf
+
+*.py   text diff=python
+*.md   text diff=markdown
+*.json text
+*.yml  text
+Makefile text
+
+# Fichiers générés et binaires : pas de diff ligne à ligne.
+dist/dan-cortex.plugin binary linguist-generated
+*.plugin binary
+*.png binary
+docs/images/*.svg linguist-generated
+
+# Dépendances vendorisées : hors des statistiques de langage et du diff par défaut.
+dan-cortex/bibliotheque/** linguist-vendored
+dan-cortex/universel/**    linguist-vendored
+dan-cortex/skills/*/scripts/office/schemas/** linguist-vendored
+
+# Catalogues générés par scripts/generer_catalogues.py.
+docs/catalogue-skills.md linguist-generated
+docs/catalogue-agents.md linguist-generated

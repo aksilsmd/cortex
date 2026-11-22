@@ -5,10 +5,18 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+# Une seule exécution par branche : les poussées successives annulent la précédente.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
+    name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
+      fail-fast: false
       matrix:
         python-version: ['3.11', '3.12', '3.13']
     steps:
@@ -21,3 +29,6 @@ jobs:
       - run: python scripts/generer_catalogues.py --verifier
       - run: python scripts/construire_plugin.py --verifier
       - run: python -I dan-cortex/skills/robustesse-agents/scripts/robustesse.py audit-config --path dan-cortex/skills/robustesse-agents/assets/reglages-autonomes.json
+
+      - name: Aucun fichier généré ne doit différer
+        run: git diff --exit-code
