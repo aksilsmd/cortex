@@ -14,9 +14,9 @@ Deux lectures, selon ce que tu fais.
    (`scripts/generer_catalogues.py`), paquet universel (`scripts/construire_universel.py`), archive
    `dist/dan-cortex.plugin` (`scripts/construire_plugin.py`). L'archive se bâtit sur les fichiers **suivis par
    Git** : `git add -A` avant. `make build` fait la chaîne entière.
-3. La version s'écrit à quatre endroits qui doivent concorder : `dan-cortex/.claude-plugin/plugin.json`, les deux
-   champs de `.claude-plugin/marketplace.json`, la première entrée du `CHANGELOG.md`, le badge
-   `badge/version-<x.y.z>-` du `README.md`.
+3. La version s'écrit à **cinq** endroits qui doivent concorder : `dan-cortex/.claude-plugin/plugin.json`, les
+   deux champs de `.claude-plugin/marketplace.json`, `version` dans `pyproject.toml`, la première entrée du
+   `CHANGELOG.md`, le badge `badge/version-<x.y.z>-` du `README.md`.
 4. Les chiffres annoncés par le `README.md` sont vérifiés contre le plugin : compteurs de skills, d'agents et de
    contrôles, en français comme dans le résumé « In English ».
 5. La page d'accueil reste légère : six images au plus, et aucun diagramme `mermaid` — il est rendu par le

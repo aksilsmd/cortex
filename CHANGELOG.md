@@ -7,7 +7,28 @@ dossier projet, mineure pour un skill, un agent ou une capacité en plus, correc
 
 Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurité**, **Documentation**.
 
-## [Non publié]
+## [2.3.0] - 2026-11-22
+
+### Ajouté
+
+- **Deux skills-pivots** vers de nouvelles compétences vendorisées, chargées à la demande :
+  - `pilotage-outils-cli` ouvre `bibliotheque/cli-anything/` — **70 compétences** pour piloter un logiciel
+    depuis le terminal : 3D et CAO (Blender, FreeCAD, CloudCompare), image et son (GIMP, Krita, Inkscape,
+    Audacity, MuseScore), vidéo (Kdenlive, Shotcut, OBS), notes et documents (Obsidian, Joplin, Zotero,
+    Calibre, LibreOffice), données et cartes (QGIS, OpenRefine, ChromaDB), infrastructure et réseau (PM2, n8n,
+    Ollama, AdGuard Home, WireMock), navigateur et terminal. Copie fidèle de
+    [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) (Apache-2.0, commit `34f5195`), dossier
+    `skills/` seul : **aucun script embarqué**.
+  - `comprendre-un-code` ouvre `bibliotheque/understand-anything/` — **9 compétences** pour comprendre un dépôt
+    qu'on n'a pas écrit : carte de l'architecture, domaines métier, dépendances, graphe de connaissances, revue
+    de différences, parcours d'arrivée, lecture d'une maquette Figma. Copie fidèle de
+    [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) (MIT, commit `17550ef`),
+    dossier `skills/` seul, avec ses 20 scripts d'analyse **locale** (aucun appel réseau, vérifié).
+- La bibliothèque passe de 173 à **252 compétences** vendorisées. Elles ne se chargent toujours pas d'office :
+  le coût en tokens d'une session ne bouge pas, seuls deux descriptifs de pivots s'ajoutent.
+- Notices, registre des sources (`renfort-externe.md` §8) et exception du 22/11/2026 : contrôles du §3 passés
+  fichier par fichier, et motif du **refus d'un troisième dépôt**, `Twigpine/openclaude`, dont le `LICENSE`
+  indique qu'il redistribue du code propriétaire d'Anthropic sans autorisation.
 
 ### Corrigé
 

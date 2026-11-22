@@ -93,6 +93,32 @@ Relevé du 2026-11-03, complété les 2026-11-07 (forme A : design-apple, cartog
 | https://github.com/emilkowalski/skills | MIT | `c8a79627b59d72d764d6ab6f2c87c09a48169833` | `mouvement-interface/` (6 références), `usine-logicielle/references/donnees-extremes-ui.md`, `mobile-react-native-animation.md`, `swift-moderne.md`, `maquettes-parcours/references/web-mobile-natif.md`, `prototypes-en-variantes.md`, `choisir-une-bibliotheque-ui.md` | maquettiste, developpeur-frontend, developpeur-mobile, testeur-visuel |
 | https://github.com/anthropics/skills | Apache-2.0 | `2c5958ecac7cee2b583967a2c4981d0f4a75c579` | forme A : `specifications/references/coredaction-documents.md` ; forme B : `conception-interface`, `communication-interne`, `fabrique-themes`, `design-affiche`, `vigilance-discernement` ; guide : `lancer-projet/references/skills-officiels-anthropic.md` ; exception du 12/11 | architecte-solution, expert-cahier-des-charges, maquettiste |
 
+| https://github.com/HKUDS/CLI-Anything | Apache-2.0 | `34f519533bc175d2fe287ab8316b0dd99bb9cc43` | `bibliotheque/cli-anything/` (70 compétences, aucun script) ; pivot `pilotage-outils-cli` | architecte-solution |
+| https://github.com/Egonex-AI/Understand-Anything | MIT | `17550efd7f70c9af683ce2b4bf0bd71f42593500` | `bibliotheque/understand-anything/` (9 compétences, 20 scripts d'analyse locale) ; pivot `comprendre-un-code` | architecte-solution |
+
+## Exception du 22/11/2026 (décision d'Aksil)
+
+Le 22/11/2026, Aksil a demandé « ajoute ces compétences à Dan-Cortex » pour trois dépôts. Deux sont repris
+dans la bibliothèque vendorisée, aux conditions ci-dessous ; **le troisième est refusé**.
+
+- **https://github.com/HKUDS/CLI-Anything** (Apache-2.0, commit `34f5195`) : seul le dossier `skills/` est
+  repris, soit 70 compétences entièrement en Markdown, **sans aucun script**. L'interdit du §1 n'est donc
+  pas levé. Deux fichiers ont déclenché les filtres du §3 et ont été lus : `cli-anything-browser` (mise en
+  garde contre l'injection par libellé ARIA, conservé) et `cli-anything-adguardhome` (commande
+  d'installation officielle de la forme `curl … | sh`, conservée, signalée dans le pivot et la notice).
+- **https://github.com/Egonex-AI/Understand-Anything** (MIT, commit `17550ef`) : l'interdit des scripts du
+  §1 est levé **pour ce seul dépôt et ce seul commit**, pour les 20 scripts d'analyse locale (15 `.mjs`,
+  5 `.py`). Contrôle du 22/11/2026 : aucun appel réseau, aucun `sudo`, aucun `rm -rf`, aucune installation
+  de paquet. Ils s'exécutent sur la machine de l'utilisateur : lecture avant exécution et accord explicite.
+- **https://github.com/Twigpine/openclaude : refusé.** Son fichier `LICENSE` n'est pas une licence mais un
+  avis indiquant que le dépôt contient du code dérivé du Claude Code CLI d'Anthropic, propriétaire, et que
+  « this project does not have Anthropic's authorization to distribute their proprietary source ». Le
+  premier filtre du §3 élimine la source : pas de licence valable sur le fond du code. Aucune reprise, sous
+  aucune forme, y compris de méthode.
+
+Conditions maintenues : filtres d'injection et d'Unicode invisible du §3 passés sur chaque fichier repris ;
+contenu tiers traité comme donnée ; chargement à la demande par un skill-pivot. Retrait : §7.
+
 Apports de forme B (texte traduit, lot 5 appliqué le 2026-11-03 après banc favorable ; `NOTICE.md` à la racine du plugin et dans chaque dossier) :
 - `maquettes-parcours/references/drawio/` (`formes.md`, `types-diagrammes.md`, `redaction-xml.md`) depuis Agents365-ai/drawio-skill, propriétaire cartographe-interactions.
 - `architecture-normes/references/ddd-hexagonal/` (`vue-ensemble.md`, `ddd-tactique.md`, `hexagonal.md`, `cqrs-evenements.md`) depuis ccheney/robust-skills, propriétaire architecte-solution.

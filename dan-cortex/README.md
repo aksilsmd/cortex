@@ -120,7 +120,9 @@ Chaque skill s'utilise aussi directement, rangé ici par famille.
 | `/dan-cortex:architecture-normes` | langage et pile, architecture, schéma de données, normes, infrastructure |
 | `/dan-cortex:usine-logicielle` | réalisation par lots, tests unitaires, fonctionnels, d'API, de bout en bout, recette |
 | `/dan-cortex:cartographie-graphe` | comprendre un code en graphe (Graphify, local) |
+| `/dan-cortex:comprendre-un-code` | comprendre un dépôt qu'on n'a pas écrit : carte, domaines, dépendances, revue de différences ³ |
 | `/dan-cortex:boite-outils-it` | empreintes, secrets de test, TOTP, JWT, QR codes (IT-Tools, local) |
+| `/dan-cortex:pilotage-outils-cli` | piloter 70 logiciels depuis le terminal : 3D, image, son, vidéo, notes, données, infrastructure ³ |
 | `/dan-cortex:crm-twenty` | CRM libre Twenty : auto-hébergement sûr, intégration, applications |
 | `/dan-cortex:webapp-testing` | tester une application web locale avec Playwright ² |
 
@@ -159,7 +161,7 @@ Chaque skill s'utilise aussi directement, rangé ici par famille.
 | `/dan-cortex:plateforme-elearning` | choisir, déployer et intégrer un LMS (Canvas LMS, LTI 1.3, API) |
 | `/dan-cortex:reconstruction-salle-blanche` | étudier un produit existant et construire sa propre version sans rien copier |
 
-³ Ouvre à la demande la bibliothèque `bibliotheque/` (173 compétences vendorisées, MIT).
+³ Ouvre à la demande la bibliothèque `bibliotheque/` (252 compétences vendorisées ; MIT et Apache-2.0).
 
 **Documents et médias**
 
@@ -214,8 +216,8 @@ Le détail est dans `skills/lancer-projet/references/reseau.md` et `skills/lance
 
 | Élément | Nombre | Où |
 |---|---|---|
-| Skills | 48 | `skills/` |
-| Skills vendorisés (bibliothèque, chargés à la demande) | 173 | `bibliotheque/` |
+| Skills | 50 | `skills/` |
+| Skills vendorisés (bibliothèque, chargés à la demande) | 252 | `bibliotheque/` |
 | Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
 | Fichiers de référence et gabarits | 231 | `skills/*/references/`, `skills/*/assets/` |

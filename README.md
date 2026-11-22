@@ -4,13 +4,13 @@
 
 <p align="center">
   <a href="https://github.com/aksilsmd/cortex/actions/workflows/tests.yml"><img alt="Tests" src="https://github.com/aksilsmd/cortex/actions/workflows/tests.yml/badge.svg"></a>
-  <img alt="Version 2.2.0" src="https://img.shields.io/badge/version-2.2.0-2563EB">
+  <img alt="Version 2.3.0" src="https://img.shields.io/badge/version-2.3.0-2563EB">
   <a href="LICENSE"><img alt="Licence MIT" src="https://img.shields.io/badge/licence-MIT-6B7280"></a>
 </p>
 
 <p align="center">
-  <strong>48 skills</strong> · <strong>59 agents experts</strong> · <strong>784 contrôles</strong> ·
-  bibliothèque de <strong>173 compétences</strong> à la demande · Python 3.11 ou plus
+  <strong>50 skills</strong> · <strong>59 agents experts</strong> · <strong>784 contrôles</strong> ·
+  bibliothèque de <strong>252 compétences</strong> à la demande · Python 3.11 ou plus
 </p>
 
 <p align="center"><a href="#in-english">English summary below</a></p>
@@ -101,7 +101,7 @@ Chaque skill s'appelle aussi seul. Le [catalogue des skills](docs/catalogue-skil
 | Pilotage et décision | `/dan-cortex:lancer-projet` · `/dan-cortex:accueil-recueil` · `/dan-cortex:reunion-decision` · `/dan-cortex:audit-general` · `/dan-cortex:execution-resiliente` · `/dan-cortex:vigilance-discernement`¹ |
 | Besoin et marché | `/dan-cortex:recueil-besoin` · `/dan-cortex:veille-marche` · `/dan-cortex:specifications` |
 | Design et expérience | `/dan-cortex:maquettes-parcours` · `/dan-cortex:design-apple` · `/dan-cortex:mouvement-interface` · `/dan-cortex:conception-interface`¹ · `/dan-cortex:fabrique-themes`¹ · `/dan-cortex:design-affiche`¹ |
-| Architecture et réalisation | `/dan-cortex:architecture-normes` · `/dan-cortex:usine-logicielle` · `/dan-cortex:cartographie-graphe` · `/dan-cortex:boite-outils-it` · `/dan-cortex:crm-twenty` · `/dan-cortex:webapp-testing`² |
+| Architecture et réalisation | `/dan-cortex:architecture-normes` · `/dan-cortex:usine-logicielle` · `/dan-cortex:cartographie-graphe` · `/dan-cortex:comprendre-un-code`³ · `/dan-cortex:boite-outils-it` · `/dan-cortex:pilotage-outils-cli`³ · `/dan-cortex:crm-twenty` · `/dan-cortex:webapp-testing`² |
 | Sécurité et confiance | `/dan-cortex:securite-protection` · `/dan-cortex:robustesse-agents` · `/dan-cortex:confidentialite-traces` |
 | Droit, finance et mise sur le marché | `/dan-cortex:juridique-conformite` · `/dan-cortex:budget-finance` · `/dan-cortex:marketing-commercial` · `/dan-cortex:lancement-exploitation` |
 | Contenus et langues | `/dan-cortex:atelier-ecriture` · `/dan-cortex:traduction-interpretariat` · `/dan-cortex:communication-interne`¹ |
@@ -111,7 +111,7 @@ Chaque skill s'appelle aussi seul. Le [catalogue des skills](docs/catalogue-skil
 
 ¹ Texte traduit et adapté d'[anthropics/skills](https://github.com/anthropics/skills) (Apache-2.0).
 ² Copié d'anthropics/skills sans modification (Apache-2.0) ; **ses scripts s'exécutent sur ta machine**.
-³ S'appuie sur la [bibliothèque](dan-cortex/bibliotheque/README.md) de 173 compétences vendorisées (scenario-labs/skills, scroll-world, MIT), chargés à la demande.
+³ S'appuie sur la [bibliothèque](dan-cortex/bibliotheque/README.md) de 252 compétences vendorisées (scenario-labs/skills, scroll-world, CLI-Anything, Understand-Anything ; MIT et Apache-2.0), chargées à la demande.
 Mentions complètes : [`dan-cortex/NOTICE.md`](dan-cortex/NOTICE.md).
 
 ![Carte des skills par famille](docs/images/carte-skills.svg)
@@ -153,7 +153,7 @@ Détail : [`docs/securite-et-robustesse.md`](docs/securite-et-robustesse.md). Si
 | [Index de la documentation](docs/README.md) | parcours de lecture selon ce que tu veux faire, liste de tous les documents et schémas |
 | [Guide de démarrage](docs/guide-demarrage.md) | installation, premier projet, modes, reprise d'un projet |
 | [Architecture](docs/architecture.md) | pôles, chef d'orchestre, agents, jalons, registres, matrice de contrôles, scripts |
-| [Bibliothèque à la demande](docs/bibliotheque.md) | 173 compétences tierces ouvertes une à une par un skill-pivot, garde-fous |
+| [Bibliothèque à la demande](docs/bibliotheque.md) | 252 compétences tierces ouvertes une à une par un skill-pivot, garde-fous |
 | [Catalogue des skills](docs/catalogue-skills.md) · [des agents](docs/catalogue-agents.md) | listes générées par `scripts/generer_catalogues.py` |
 | [Sécurité et robustesse](docs/securite-et-robustesse.md) | limites dures, injection d'instructions, confidentialité, scripts tiers |
 | [FAQ](docs/faq.md) | questions fréquentes |
@@ -199,7 +199,7 @@ licence Apache-2.0, avec leur `LICENSE.txt` ; les autres contenus tiers sont lis
 
 **Dan-Cortex** is a Claude plugin that organises **59 expert agents** into 13 departments, like a real company,
 to scope, design, build, test, secure and launch a digital project: enterprise website, mobile app, SaaS, niche
-product, e-commerce, ERP. It ships **48 skills**, plus an on-demand library of 173 vendored third-party skills (3D, game engines, Scenario). Agents work in parallel waves, cross-review each other's
+product, e-commerce, ERP. It ships **50 skills**, plus an on-demand library of 252 vendored third-party skills (3D, game engines, Scenario, 70 command-line tools, codebase understanding). Agents work in parallel waves, cross-review each other's
 deliverables, debate structural decisions in bounded written meetings, and an independent auditor reviews
 everything before launch. A coverage matrix of **784 controls** makes sure nothing is forgotten, from security and
 law to budget, marketing and cultural context.
