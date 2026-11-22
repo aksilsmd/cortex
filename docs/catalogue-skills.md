@@ -2,9 +2,9 @@
 
 # Catalogue des skills
 
-48 skills, rangés en 10 familles. Chaque skill s'appelle par `/dan-cortex:<nom>` dans Claude Code ou dans l'application Claude. Les descriptions sont celles des fichiers `SKILL.md` (celles des skills copiés d'Anthropic sont restées en anglais).
+50 skills, rangés en 10 familles. Chaque skill s'appelle par `/dan-cortex:<nom>` dans Claude Code ou dans l'application Claude. Les descriptions sont celles des fichiers `SKILL.md` (celles des skills copiés d'Anthropic sont restées en anglais).
 
-Origines : 30 écrits pour Dan-Cortex, 5 traduits d'Anthropic, 13 copiés d'Anthropic sans modification (licence Apache-2.0, voir [`dan-cortex/NOTICE.md`](../dan-cortex/NOTICE.md)).
+Origines : 32 écrits pour Dan-Cortex, 5 traduits d'Anthropic, 13 copiés d'Anthropic sans modification (licence Apache-2.0, voir [`dan-cortex/NOTICE.md`](../dan-cortex/NOTICE.md)).
 
 ![Carte des skills par famille](images/carte-skills.svg)
 
@@ -13,7 +13,7 @@ Origines : 30 écrits pour Dan-Cortex, 5 traduits d'Anthropic, 13 copiés d'Anth
 - [Pilotage et décision](#pilotage-et-décision) (6)
 - [Besoin et marché](#besoin-et-marché) (3)
 - [Design et expérience](#design-et-expérience) (6)
-- [Architecture et réalisation](#architecture-et-réalisation) (6)
+- [Architecture et réalisation](#architecture-et-réalisation) (8)
 - [Sécurité et confiance](#sécurité-et-confiance) (3)
 - [Droit, finance et mise sur le marché](#droit-finance-et-mise-sur-le-marché) (4)
 - [Contenus et langues](#contenus-et-langues) (3)
@@ -58,7 +58,9 @@ Origines : 30 écrits pour Dan-Cortex, 5 traduits d'Anthropic, 13 copiés d'Anth
 | [`/dan-cortex:architecture-normes`](../dan-cortex/skills/architecture-normes/SKILL.md) | Pôle Architecture et normes de Dan-Cortex : choix tracés du langage, des frameworks, de la base de données, de la structure et des outils ; schéma de données ; normes de code ; infrastructure. À utiliser pour « quelle techno … | Dan-Cortex | 28 | 0 |
 | [`/dan-cortex:usine-logicielle`](../dan-cortex/skills/usine-logicielle/SKILL.md) | Pôle Réalisation et qualité de Dan-Cortex : construit le code lot par lot en autonomie, puis enchaîne tests unitaires, fonctionnels, d'API, de bout en bout, recette, sécurité et intrusion, avec corrections. À utiliser pour coder … | Dan-Cortex | 31 | 0 |
 | [`/dan-cortex:cartographie-graphe`](../dan-cortex/skills/cartographie-graphe/SKILL.md) | Cartographie du code en graphe de connaissances avec Graphify (Graphify-Labs/graphify, Apache-2.0, outil séparé) : carte des modules, dépendances, appels et communautés, interrogée au lieu de parcourir les fichiers (« qu'est-ce … | Dan-Cortex | 0 | 0 |
+| [`/dan-cortex:comprendre-un-code`](../dan-cortex/skills/comprendre-un-code/SKILL.md) | Comprendre un dépôt de code qu'on n'a pas écrit : carte de l'architecture, domaines métier, dépendances entre modules, graphe de connaissances, explication d'un fichier ou d'un flux, revue d'une série de modifications, parcours … | Dan-Cortex | 0 | 0 |
 | [`/dan-cortex:boite-outils-it`](../dan-cortex/skills/boite-outils-it/SKILL.md) | Boîte à outils IT de Dan-Cortex, bâtie sur IT-Tools (CorentinTh/it-tools, GPL-3.0) servi en local : empreintes et sommes de contrôle, jetons et secrets, UUID, Base64, encodage d'URL, lecture de JWT, codes TOTP de test, entropie … | Dan-Cortex | 1 | 3 |
+| [`/dan-cortex:pilotage-outils-cli`](../dan-cortex/skills/pilotage-outils-cli/SKILL.md) | Piloter un logiciel depuis le terminal plutôt qu'à la main : création 3D et CAO (Blender, FreeCAD, CloudCompare), image et son (GIMP, Krita, Inkscape, Audacity, MuseScore), montage vidéo (Kdenlive, Shotcut, OBS), notes et … | Dan-Cortex | 0 | 0 |
 | [`/dan-cortex:crm-twenty`](../dan-cortex/skills/crm-twenty/SKILL.md) | CRM libre Twenty (twentyhq/twenty, AGPL-3.0 avec exception pour les applications) : décider s'il répond au besoin, l'auto-héberger proprement (Docker Compose, PostgreSQL, Redis, secrets, sauvegardes, mises à jour), l'intégrer par … | Dan-Cortex | 3 | 0 |
 | [`/dan-cortex:webapp-testing`](../dan-cortex/skills/webapp-testing/SKILL.md) | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs. | copié d'Anthropic (Apache-2.0) | 0 | 1 |
 
@@ -123,6 +125,6 @@ Origines : 30 écrits pour Dan-Cortex, 5 traduits d'Anthropic, 13 copiés d'Anth
 
 | Élément | Nombre |
 |---|---:|
-| Skills | 48 |
+| Skills | 50 |
 | Fichiers de référence et gabarits (`references/`, `assets/`) | 251 |
 | Fichiers sous `scripts/` | 200 |

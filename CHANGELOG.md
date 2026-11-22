@@ -7,6 +7,61 @@ dossier projet, mineure pour un skill, un agent ou une capacité en plus, correc
 
 Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurité**, **Documentation**.
 
+## [2.3.0] - 2026-11-22
+
+### Ajouté
+
+- **Deux skills-pivots** vers de nouvelles compétences vendorisées, chargées à la demande :
+  - `pilotage-outils-cli` ouvre `bibliotheque/cli-anything/` — **70 compétences** pour piloter un logiciel
+    depuis le terminal : 3D et CAO (Blender, FreeCAD, CloudCompare), image et son (GIMP, Krita, Inkscape,
+    Audacity, MuseScore), vidéo (Kdenlive, Shotcut, OBS), notes et documents (Obsidian, Joplin, Zotero,
+    Calibre, LibreOffice), données et cartes (QGIS, OpenRefine, ChromaDB), infrastructure et réseau (PM2, n8n,
+    Ollama, AdGuard Home, WireMock), navigateur et terminal. Copie fidèle de
+    [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) (Apache-2.0, commit `34f5195`), dossier
+    `skills/` seul : **aucun script embarqué**.
+  - `comprendre-un-code` ouvre `bibliotheque/understand-anything/` — **9 compétences** pour comprendre un dépôt
+    qu'on n'a pas écrit : carte de l'architecture, domaines métier, dépendances, graphe de connaissances, revue
+    de différences, parcours d'arrivée, lecture d'une maquette Figma. Copie fidèle de
+    [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) (MIT, commit `17550ef`),
+    dossier `skills/` seul, avec ses 20 scripts d'analyse **locale** (aucun appel réseau, vérifié).
+- La bibliothèque passe de 173 à **252 compétences** vendorisées. Elles ne se chargent toujours pas d'office :
+  le coût en tokens d'une session ne bouge pas, seuls deux descriptifs de pivots s'ajoutent.
+- Notices, registre des sources (`renfort-externe.md` §8) et exception du 22/11/2026 : contrôles du §3 passés
+  fichier par fichier, et motif du **refus d'un troisième dépôt**, `Twigpine/openclaude`, dont le `LICENSE`
+  indique qu'il redistribue du code propriétaire d'Anthropic sans autorisation.
+
+### Corrigé
+
+- **Affichage du `README` sur mobile.** L'application mobile de GitHub en tronquait la fin et les images
+  tardaient. Deux causes : le diagramme `mermaid` était dessiné par le navigateur *après* le chargement, ce qui
+  change la hauteur de la page une fois celle-ci déjà mesurée ; et onze images devenaient onze requêtes séparées
+  servies par le proxy d'images de GitHub. Le diagramme faisait double emploi avec `vague-agents.svg`, déjà dans
+  `docs/architecture.md` ; la carte du dépôt précédait la même arborescence en texte. Il reste six images et
+  aucun diagramme rendu par le navigateur.
+- Les compteurs de skills, d'agents et de contrôles passent des badges au texte : quatre requêtes externes de
+  moins, et les mêmes chiffres restent vérifiés contre le plugin par les tests.
+- Le résumé « In English » annonçait encore la version 2.1.0.
+
+### Ajouté
+
+- `Makefile` : point d'entrée unique, aligné sur la CI (`make verify`) et sur la chaîne de régénération de
+  `CONTRIBUTING.md` (`make build`).
+- `CLAUDE.md` : les règles de travail du dépôt pour Claude Code, qui ne lit pas `AGENTS.md` de lui-même.
+- `SUPPORT.md`, `.github/CODEOWNERS`, `.github/dependabot.yml`, `.editorconfig`, `.gitattributes` — l'archive et
+  les catalogues y sont marqués comme générés, la bibliothèque comme vendorisée.
+- Deux contrôles automatiques : six images au plus dans le `README`, et aucun `mermaid`.
+
+### Modifié
+
+- L'intégration continue annule les exécutions dépassées, nomme ses étapes, va au bout de la matrice et refuse
+  un arbre de travail sale.
+- Un contrôle de plus : les liens vers une section (`#une-ancre`) doivent viser un titre qui existe. Ils sont
+  tous valides aujourd'hui ; le test empêche qu'un renommage de titre les casse en silence.
+- `docs/audit-depot.md` dit l'état réel du plan d'action. La fusion des branches `audit-structure-depot`,
+  `renfort-3d-jeu-elearning` et `v2.1-skills-anthropic` est vérifiée — leurs sommets sont exactement ceux des
+  pull requests 4, 3 et 2 —, donc leur suppression ne perdra rien ; `dan-cortex` et `v2.0-universel` sont à
+  garder, leur fusion n'étant pas démontrable.
+
 ## [2.2.0] - 2026-11-21
 
 ### Ajouté

@@ -25,6 +25,8 @@ Un **skill-pivot** Dan-Cortex (rangé, lui, dans `skills/`) fait le lien :
 |---|---|---|---|
 | `bibliotheque/scenario-labs/` | 87 compétences de création 3D et de moteurs de jeu (Blender, Maya, ZBrush, Godot, Unity, Unreal, Roblox) et 85 compétences de la plateforme Scenario (images, vidéo, audio, textures, assets 3D) | `studio-3d-jeu`, `creation-medias-ia` | MIT, © 2026 Scenario Inc. |
 | `bibliotheque/scroll-world/` | page d'atterrissage « vol à travers un monde » pilotée par le défilement | `web-3d-immersif` | MIT, © 2026 cyw |
+| `bibliotheque/cli-anything/` | 70 compétences pour piloter un logiciel en ligne de commande (Blender, FreeCAD, GIMP, Krita, Inkscape, Audacity, Kdenlive, OBS, QGIS, OpenRefine, Obsidian, Zotero, LibreOffice, PM2, n8n, Ollama…) | `pilotage-outils-cli` | Apache-2.0, © 2026 HKUDS |
+| `bibliotheque/understand-anything/` | 9 compétences pour comprendre un dépôt de code : carte, domaines, dépendances, graphe de connaissances, revue de différences, arrivée d'un nouveau venu, lecture d'une maquette Figma | `comprendre-un-code` | MIT, © 2026 Yuxiang Lin et Infinite Universe, Inc. |
 
 Les index (`scenario-labs/INDEX.md` et `scenario-labs/index/*.md`) sont générés à partir des en-têtes des
 `SKILL.md` ; les compétences elles-mêmes sont des copies fidèles, non traduites, avec leur commit d'origine dans
