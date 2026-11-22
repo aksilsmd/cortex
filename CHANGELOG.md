@@ -34,6 +34,12 @@ Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurit
 
 - L'intégration continue annule les exécutions dépassées, nomme ses étapes, va au bout de la matrice et refuse
   un arbre de travail sale.
+- Un contrôle de plus : les liens vers une section (`#une-ancre`) doivent viser un titre qui existe. Ils sont
+  tous valides aujourd'hui ; le test empêche qu'un renommage de titre les casse en silence.
+- Suite de l'audit du dépôt : étiquette `v2.2.0` posée, et suppression des branches `audit-structure-depot`,
+  `renfort-3d-jeu-elearning` et `v2.1-skills-anthropic`, dont les sommets étaient exactement ceux des pull
+  requests 4, 3 et 2, fusionnées. `dan-cortex` et `v2.0-universel` sont conservées : leur fusion n'est pas
+  démontrable.
 
 ## [2.2.0] - 2026-11-21
 

@@ -72,6 +72,37 @@ class LiensTests(unittest.TestCase):
                     self.assertTrue((doc.parent / cible).exists())
 
 
+def ancre(titre):
+    """L'ancre que GitHub fabrique à partir d'un titre Markdown."""
+    titre = titre.replace("`", "").strip().lower()
+    return "".join(c for c in titre if c.isalnum() or c in " -_").strip().replace(" ", "-")
+
+
+class AncresTests(unittest.TestCase):
+    """Un lien vers #une-section morte ne casse rien, mais fait tourner en rond celui qui le suit."""
+
+    def test_ancres_resolues(self):
+        titres = re.compile(r"(?m)^#{1,6} +(.+?)\s*$")
+        liens = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
+        vus = 0
+        for doc in DOCUMENTS:
+            texte = re.sub(r"```.*?```", "", lire(doc), flags=re.S)
+            for cible in liens.findall(texte):
+                if cible.startswith(("http://", "https://", "mailto:")):
+                    continue
+                fichier, _, fragment = cible.partition("#")
+                if not fragment:
+                    continue
+                vise = (doc.parent / fichier) if fichier else doc
+                if vise.suffix != ".md" or not vise.exists():
+                    continue
+                vus += 1
+                with self.subTest(document=doc.relative_to(ROOT).as_posix(), lien=cible):
+                    self.assertIn(fragment, {ancre(x) for x in titres.findall(lire(vise))},
+                                  "aucun titre de %s ne donne l'ancre #%s" % (vise.name, fragment))
+        self.assertGreater(vus, 10, "le contrôle des ancres ne voit presque rien : vérifier l'expression")
+
+
 class ChiffresTests(unittest.TestCase):
     def setUp(self):
         self.readme = lire(ROOT / "README.md")
