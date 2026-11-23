@@ -72,3 +72,32 @@ class ArchivePluginTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ValidationImportTests(unittest.TestCase):
+    """Limites de validation de l'import constatées le 23/11/2026 : 500 caractères pour la description du plugin,
+    1 024 pour celle d'un skill ou d'un agent, 64 pour un nom."""
+
+    def test_description_du_plugin(self):
+        import json
+        manifeste = json.loads((PLUGIN / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))
+        self.assertLessEqual(len(manifeste["description"]), 500)
+
+    def test_descriptions_et_noms_des_skills_et_agents(self):
+        import re
+        fichiers = sorted(PLUGIN.glob("skills/*/SKILL.md")) + sorted(PLUGIN.glob("agents/*.md"))
+        self.assertTrue(fichiers)
+        for fichier in fichiers:
+            with self.subTest(fichier=fichier.relative_to(PLUGIN).as_posix()):
+                texte = fichier.read_text(encoding="utf-8")
+                entete = re.match(r"---\n(.*?)\n---", texte, re.S)
+                self.assertIsNotNone(entete)
+                try:
+                    import yaml
+                except ImportError:  # bibliothèque standard seule : contrôle prudent sur le texte brut
+                    brut = re.search(r"(?ms)^description:(.*?)(?=^[\w-]+:|\Z)", entete.group(1))
+                    self.assertLessEqual(len(brut.group(1).strip()), 1024 + 40)
+                    continue
+                donnees = yaml.safe_load(entete.group(1))
+                self.assertLessEqual(len(donnees.get("description", "")), 1024)
+                self.assertLessEqual(len(str(donnees.get("name", ""))), 64)

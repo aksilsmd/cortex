@@ -15,6 +15,7 @@ une 2.3.1.
 
 ### Corrigé
 
+- **Import dans l'application Claude refusé.** Trois limites de validation de l'éditeur, constatées le 23/11/2026 en important `dist/dan-cortex.plugin` par « Téléverser un plugin » : chemins de plus de 12 dossiers (famille Roblox de `scenario-labs` remontée), description du plugin de plus de 500 caractères (`plugin.json` ramené à moins de 500 ; la présentation complète reste dans le `README.md`), description de skill de plus de 1 024 caractères (`claude-api`, raccourcie, modification notée dans `NOTICE.md`). `tests/test_archive.py` les vérifie désormais.
 - Le résumé « In English » annonçait encore la version 2.2.0 : la correction notée en 2.3.0 s'était arrêtée à
   mi-chemin. Il annonce 2.3.0 et cite la licence Apache-2.0 de CLI-Anything.
 - La bibliothèque compte **252** compétences (MIT et Apache-2.0), pas 173 (MIT) : `AGENTS.md`,
