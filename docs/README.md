@@ -30,6 +30,7 @@ Point d'entrée de la documentation : par où commencer selon ce que tu veux fai
 | [expertise.md](expertise.md) | état de l'art et sources de la méthode | main |
 | [essai-a-blanc.md](essai-a-blanc.md) | essai réel du jalon J1 | main |
 | [audit-depot.md](audit-depot.md) | audit de l'organisation du dépôt et plan d'action | main |
+| [audit-coherence-2026-11-22.md](audit-coherence-2026-11-22.md) | audit de cohérence : versions, compteurs, renvois, fiches d'agents, licences | main |
 
 ## Schémas
 

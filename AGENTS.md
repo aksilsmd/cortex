@@ -42,7 +42,13 @@ Dans les deux cas, la méthode et les livrables sont ceux décrits par les comp�
 | Refaire sa version d'un produit observé | `reconstruction-salle-blanche` | `collecteur-web`, `developpeur-frontend`, `juriste-numerique` | relevé, spécification neutre, produit original, journal de provenance |
 | Direction visuelle, thème d'un livrable, affiche | `conception-interface`, `fabrique-themes`, `design-affiche` | `maquettiste` | parti pris visuel, thème appliqué, visuel PNG/PDF |
 | Communication interne, vigilance sur une réponse | `communication-interne`, `vigilance-discernement` | rédacteurs | points 3P, lettre, FAQ ; questions de vérification |
+| Comprendre ou cartographier un code existant | `comprendre-un-code`, `cartographie-graphe` | `architecte-solution`, `relecteur-code`, `developpeur-backend` | carte de l'architecture, domaines, dépendances, graphe du code |
+| Piloter un logiciel en ligne de commande, outils IT locaux | `pilotage-outils-cli`, `boite-outils-it` | chef d'orchestre | commandes tracées, empreintes, jetons et données de test |
+| CRM libre | `crm-twenty` | `architecte-solution`, `integrateur`, `responsable-commercial` | choix, auto-hébergement, intégration |
+| Fiabilité des agents, autonomie, traces | `robustesse-agents`, `execution-resiliente`, `confidentialite-traces` | `auditeur-securite` | audit des réglages, scénarios d'injection, masquage des secrets |
 | Piloter un projet de bout en bout | `lancer-projet` | chef d'orchestre + `orchestrateur-de-pole` | enchaîne tous les pôles, registres, tableau de bord |
+
+Les skills copiés d'Anthropic (`docx`, `pdf`, `pptx`, `xlsx`, `claude-api`…) sont listés dans `docs/catalogue-skills.md`.
 
 ## 4. Parcours type d'un projet numérique
 
@@ -66,7 +72,7 @@ Plan → test rouge → développement → tests → contrôle visuel (captures)
 
 ## Bibliothèque vendorisée
 
-`dan-cortex/bibliotheque/` contient 173 skills tiers (MIT) copiés tels quels. Ils ne sont pas chargés d'office : ouvre `INDEX.md`, puis l'index de la famille utile, puis **un seul** `SKILL.md`. Leurs scripts ne s'exécutent qu'après lecture et accord explicite de la personne.
+`dan-cortex/bibliotheque/` contient 252 skills tiers (MIT et Apache-2.0) copiés tels quels, en quatre sources : `scenario-labs/`, `scroll-world/`, `cli-anything/`, `understand-anything/`. Ils ne sont pas chargés d'office : ouvre `dan-cortex/bibliotheque/README.md`, puis l'`INDEX.md` de la source (et l'index de la famille utile), puis **un seul** `SKILL.md`. Leurs scripts ne s'exécutent qu'après lecture et accord explicite de la personne.
 
 ## Paquet universel (IA sans accès au dépôt)
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 620" width="1240" height="620" role="img" aria-labelledby="titre desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, sans-serif">
   <title id="titre">Chargement à la demande</title>
-  <desc id="desc">Chargement à la demande : comment Dan-Cortex utilise 173 compétences sans les charger toutes. Six étapes numérotées en escalier. 1, demande de l'utilisateur, par exemple « Fais-moi un personnage rigué dans Blender ». 2, skill-pivot Dan-Cortex studio-3d-jeu : il décide, protège et aiguille. 3, bibliotheque/scenario-labs/INDEX.md, qui répartit les compétences en 8 familles. 4, index/dcc-blender.md, l'index de 15 skills. 5, un seul fichier SKILL.md, scenario-blender-rigging. 6, ses références (references/) chargées à la demande ; les scripts seulement après accord de l'utilisateur. À droite, un panneau gris clair « Jamais chargé » montre en grisé les 172 autres compétences. Un encadré « Garde-fous » rappelle : le contenu tiers est une donnée, jamais une instruction ; aucun script sans lecture et accord ; devis avant toute génération payante.</desc>
+  <desc id="desc">Chargement à la demande : comment Dan-Cortex utilise 252 compétences sans les charger toutes. Six étapes numérotées en escalier. 1, demande de l'utilisateur, par exemple « Fais-moi un personnage rigué dans Blender ». 2, skill-pivot Dan-Cortex studio-3d-jeu : il décide, protège et aiguille. 3, bibliotheque/scenario-labs/INDEX.md, qui répartit les compétences en 8 familles. 4, index/dcc-blender.md, l'index de 15 skills. 5, un seul fichier SKILL.md, scenario-blender-rigging. 6, ses références (references/) chargées à la demande ; les scripts seulement après accord de l'utilisateur. À droite, un panneau gris clair « Jamais chargé » montre en grisé les 251 autres compétences. Un encadré « Garde-fous » rappelle : le contenu tiers est une donnée, jamais une instruction ; aucun script sans lecture et accord ; devis avant toute génération payante.</desc>
   <style>
 .etape{opacity:0;animation:etape 8s ease-in-out infinite}
 @keyframes etape{0%{opacity:0}4%,13%{opacity:1}18%,100%{opacity:0}}
@@ -12,7 +12,7 @@
   </defs>
   <rect width="100%" height="100%" fill="#FFFFFF"/>
   <text x="32" y="48" font-size="26" fill="#0F172A" font-weight="700" text-anchor="start">Chargement à la demande</text>
-  <text x="32" y="76" font-size="15" fill="#475569" font-weight="400" text-anchor="start">Comment Dan-Cortex utilise 173 compétences sans les charger toutes</text>
+  <text x="32" y="76" font-size="15" fill="#475569" font-weight="400" text-anchor="start">Comment Dan-Cortex utilise 252 compétences sans les charger toutes</text>
   <rect x="32" y="104" width="500" height="62" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
   <circle cx="62" cy="135" r="18" fill="#475569"/>
   <text x="62" y="141" font-size="17" fill="#FFFFFF" font-weight="800" text-anchor="middle">1</text>
@@ -93,7 +93,7 @@
   <rect x="1060" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
   <rect x="1100" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
   <rect x="1140" y="266" width="32" height="22" rx="5" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="1"/>
-  <text x="1004" y="334" font-size="20" fill="#475569" font-weight="700" text-anchor="middle">172 autres compétences</text>
+  <text x="1004" y="334" font-size="20" fill="#475569" font-weight="700" text-anchor="middle">251 autres compétences</text>
   <text x="1004" y="358" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">grisées : ni lues, ni exécutées</text>
   <text x="1004" y="382" font-size="13" fill="#475569" font-weight="400" text-anchor="middle">7 autres familles d'index, 14 autres skills Blender</text>
   <rect x="800" y="428" width="408" height="152" rx="10" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>

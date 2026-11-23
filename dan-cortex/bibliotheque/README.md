@@ -1,6 +1,6 @@
 # Bibliothèque de compétences vendorisées
 
-Compétences tierces copiées **sans modification** (licence MIT), rangées hors de `skills/` pour qu'elles ne se chargent jamais d'office. Un skill-pivot Dan-Cortex les ouvre au cas par cas : index de la famille → **un seul** `SKILL.md` → ses `references/` à la demande.
+Compétences tierces copiées **sans modification** (licences MIT et Apache-2.0), rangées hors de `skills/` pour qu'elles ne se chargent jamais d'office. Un skill-pivot Dan-Cortex les ouvre au cas par cas : index de la famille → **un seul** `SKILL.md` → ses `references/` à la demande.
 
 | Dossier | Contenu | Skills-pivots qui l'ouvrent | Licence |
 |---|---|---|---|

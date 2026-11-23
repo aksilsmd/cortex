@@ -80,7 +80,6 @@ Trois modes règlent l'ampleur et le coût : `eclair` (3 à 4 agents par vague),
 
 ## Comment ça marche
 
-
 - **Un chef d'orchestre** parle avec toi et lance les agents par vagues parallèles ; il ne lit que des comptes
   rendus courts.
 - **59 agents experts** répartis en 13 pôles, chacun avec les seuls outils de son métier et le skill de son pôle.
@@ -220,5 +219,6 @@ Install in Claude Code with `/plugin marketplace add aksilsmd/cortex` then
 `/plugin install dan-cortex@cortex-projets`; in the Claude app, use Customize → Plugins → Add → Add marketplace →
 Add from a repository (`aksilsmd/cortex`). The plugin content is written in French, with French and EU law first.
 Thirteen skills are copied unchanged from anthropics/skills and five are translated from it (Apache-2.0); the
-rest is MIT. Dan-Cortex prepares and checks; it does not replace a lawyer, an accountant or a qualified security
-auditor. See [CHANGELOG.md](CHANGELOG.md) for the version history (current: 2.2.0).
+vendored CLI-Anything library is Apache-2.0; the rest is MIT. Dan-Cortex prepares and checks; it does not replace
+a lawyer, an accountant or a qualified security auditor. See [CHANGELOG.md](CHANGELOG.md) for the version
+history (current: 2.3.0).

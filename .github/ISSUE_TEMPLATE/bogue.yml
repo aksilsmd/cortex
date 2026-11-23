@@ -14,7 +14,7 @@ body:
     attributes:
       label: Version de Dan-Cortex
       description: Champ `version` de `dan-cortex/.claude-plugin/plugin.json`.
-      placeholder: "2.1.0"
+      placeholder: "2.3.0"
     validations:
       required: true
   - type: dropdown

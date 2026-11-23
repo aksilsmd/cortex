@@ -95,7 +95,7 @@ autorisations permanentes écrites à J0. Ne relance pas un ancien paquet de mis
 ## 7. Publier une version
 
 1. Choisir le numéro selon le [versionnage sémantique](https://semver.org/lang/fr/).
-2. Le reporter dans `dan-cortex/.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` (deux champs) et
-   le badge `version` du README.
+2. Le reporter dans `dan-cortex/.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` (deux champs),
+   `version` dans `pyproject.toml` et le badge `version` du README.
 3. Ouvrir la section `## [x.y.z] - AAAA-MM-JJ` en tête de `CHANGELOG.md` (les tests l'exigent).
 4. Relancer les contrôles de la section 4, puis ouvrir la pull request.

@@ -7,6 +7,46 @@ dossier projet, mineure pour un skill, un agent ou une capacité en plus, correc
 
 Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurité**, **Documentation**.
 
+## [Non publié]
+
+Corrections de cohérence relevées par l'audit du 22/11/2026 (`docs/audit-coherence-2026-11-22.md`). Le numéro
+de version ne change pas : il se choisit à la publication (`CONTRIBUTING.md` §7), et ces correctifs donneront
+une 2.3.1.
+
+### Corrigé
+
+- **Import dans l'application Claude refusé.** Trois limites de validation de l'éditeur, constatées le 23/11/2026 en important `dist/dan-cortex.plugin` par « Téléverser un plugin » : chemins de plus de 12 dossiers (famille Roblox de `scenario-labs` remontée), description du plugin de plus de 500 caractères (`plugin.json` ramené à moins de 500 ; la présentation complète reste dans le `README.md`), description de skill de plus de 1 024 caractères (`claude-api`, raccourcie, modification notée dans `NOTICE.md`). `tests/test_archive.py` les vérifie désormais.
+- Le résumé « In English » annonçait encore la version 2.2.0 : la correction notée en 2.3.0 s'était arrêtée à
+  mi-chemin. Il annonce 2.3.0 et cite la licence Apache-2.0 de CLI-Anything.
+- La bibliothèque compte **252** compétences (MIT et Apache-2.0), pas 173 (MIT) : `AGENTS.md`,
+  `docs/architecture.md`, `docs/bibliotheque.md`, `plugin.json`, `bibliotheque/README.md` et les schémas
+  `carte-depot.svg` (qui comptait aussi 48 skills au lieu de 50) et `chargement-a-la-demande.svg`.
+- `docs/architecture.md` §11 : les pivots `pilotage-outils-cli` et `comprendre-un-code` manquaient ;
+  `plateforme-elearning` et `reconstruction-salle-blanche` y figuraient à tort comme pivots.
+- `AGENTS.md` renvoyait à un `INDEX.md` absent de la racine de la bibliothèque, et omettait six skills maison
+  de sa table d'orientation.
+- `outils-par-agent.md` se disait généré mais ne l'était pas : 13 agents sur 59 manquaient et 18 lignes ne
+  suivaient plus les skills préchargés des fiches. Le tableau est repris des fiches.
+- `dan-cortex/README.md` : 251 fichiers de référence et gabarits (pas 231), 11 scripts maison dont 3 scripts
+  Node (pas 10 et 2).
+- `CONTRIBUTING.md` §7 oubliait `pyproject.toml` parmi les endroits où s'écrit la version ; le modèle de ticket
+  proposait 2.1.0 comme exemple.
+- L'entrée 2.3.0 de ce journal portait deux sections « Ajouté » : elles sont fusionnées.
+- L'import de `dan-cortex.plugin` par « Téléverser un plugin » était refusé : « Zip file contains path more
+  than 12 folders deep ». Le gabarit `arena` de `scenario-roblox-architecture` descendait à 13 segments. La
+  famille Roblox de `bibliotheque/scenario-labs/` passe d'un bloc de `skills/game-engines/roblox/` à
+  `game-engines-roblox/`, contenu inchangé : 11 segments au plus. Index, pivot `studio-3d-jeu` et notices
+  suivent (audit, constat A29).
+
+### Ajouté
+
+- `tests/test_coherence.py` : douze contrôles qui auraient détecté ces écarts (version du résumé anglais,
+  compteur de la bibliothèque partout, licence et notice de chaque source, pivots, inventaire du plugin,
+  chemins `${CLAUDE_SKILL_DIR}` et `${CLAUDE_PLUGIN_ROOT}`, noms `dan-cortex:…`, fiches d'agents).
+- `tests/test_archive.py` et un contrôle dans `scripts/construire_plugin.py` : l'archive est refusée si un
+  chemin dépasse 11 segments, si le plugin dépasse 5 000 fichiers ou 200 Mo, s'il a un `bin/` à sa racine ou
+  s'il perd `.claude-plugin/plugin.json`.
+
 ## [2.3.0] - 2026-11-22
 
 ### Ajouté
@@ -29,6 +69,12 @@ Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurit
 - Notices, registre des sources (`renfort-externe.md` §8) et exception du 22/11/2026 : contrôles du §3 passés
   fichier par fichier, et motif du **refus d'un troisième dépôt**, `Twigpine/openclaude`, dont le `LICENSE`
   indique qu'il redistribue du code propriétaire d'Anthropic sans autorisation.
+- `Makefile` : point d'entrée unique, aligné sur la CI (`make verify`) et sur la chaîne de régénération de
+  `CONTRIBUTING.md` (`make build`).
+- `CLAUDE.md` : les règles de travail du dépôt pour Claude Code, qui ne lit pas `AGENTS.md` de lui-même.
+- `SUPPORT.md`, `.github/CODEOWNERS`, `.github/dependabot.yml`, `.editorconfig`, `.gitattributes` — l'archive et
+  les catalogues y sont marqués comme générés, la bibliothèque comme vendorisée.
+- Deux contrôles automatiques : six images au plus dans le `README`, et aucun `mermaid`.
 
 ### Corrigé
 
@@ -41,15 +87,6 @@ Catégories : **Ajouté**, **Modifié**, **Corrigé**, **Supprimé**, **Sécurit
 - Les compteurs de skills, d'agents et de contrôles passent des badges au texte : quatre requêtes externes de
   moins, et les mêmes chiffres restent vérifiés contre le plugin par les tests.
 - Le résumé « In English » annonçait encore la version 2.1.0.
-
-### Ajouté
-
-- `Makefile` : point d'entrée unique, aligné sur la CI (`make verify`) et sur la chaîne de régénération de
-  `CONTRIBUTING.md` (`make build`).
-- `CLAUDE.md` : les règles de travail du dépôt pour Claude Code, qui ne lit pas `AGENTS.md` de lui-même.
-- `SUPPORT.md`, `.github/CODEOWNERS`, `.github/dependabot.yml`, `.editorconfig`, `.gitattributes` — l'archive et
-  les catalogues y sont marqués comme générés, la bibliothèque comme vendorisée.
-- Deux contrôles automatiques : six images au plus dans le `README`, et aucun `mermaid`.
 
 ### Modifié
 

@@ -1,6 +1,6 @@
 # Index de la bibliothèque Scenario Labs (172 skills)
 
-Copie fidèle de github.com/scenario-labs/skills (MIT, voir `NOTICE.md`). Ces skills ne sont **pas** chargés automatiquement : un skill-pivot Dan-Cortex ouvre d'abord l'index de la famille utile, puis **un seul** `SKILL.md`, puis ses `references/` à la demande. Chemins relatifs à `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/`.
+Copie fidèle de github.com/scenario-labs/skills (MIT, voir `NOTICE.md`). Ces skills ne sont **pas** chargés automatiquement : un skill-pivot Dan-Cortex ouvre d'abord l'index de la famille utile, puis **un seul** `SKILL.md`, puis ses `references/` à la demande. Chemins relatifs à `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/`. Les familles vivent sous `skills/`, sauf `game-engines/roblox`, rangée dans `game-engines-roblox/` (profondeur de chemin limitée à l'import du plugin, voir `NOTICE.md`).
 
 | Famille | Skills | Index |
 |---|---|---|

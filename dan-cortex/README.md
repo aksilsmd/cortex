@@ -220,8 +220,8 @@ Le détail est dans `skills/lancer-projet/references/reseau.md` et `skills/lance
 | Skills vendorisés (bibliothèque, chargés à la demande) | 252 | `bibliotheque/` |
 | Agents | 59 | `agents/` |
 | Contrôles de couverture | 784 | `skills/*/references/checklist-*.md` |
-| Fichiers de référence et gabarits | 231 | `skills/*/references/`, `skills/*/assets/` |
-| Scripts maison | 10 | `skills/lancer-projet/scripts/` (`cortex.py`, `essais.py`), `skills/robustesse-agents/scripts/` (`robustesse.py` et les 5 modules du paquet `ccal`), `skills/boite-outils-it/scripts/` (2 scripts Node) ; les skills copiés d'Anthropic apportent les leurs |
+| Fichiers de référence et gabarits | 251 | `skills/*/references/`, `skills/*/assets/` |
+| Scripts maison | 11 | `skills/lancer-projet/scripts/` (`cortex.py`, `essais.py`), `skills/robustesse-agents/scripts/` (`robustesse.py` et les 5 modules du paquet `ccal`), `skills/boite-outils-it/scripts/` (3 scripts Node) ; les skills copiés d'Anthropic apportent les leurs |
 
 ## Sobriété en tokens
 

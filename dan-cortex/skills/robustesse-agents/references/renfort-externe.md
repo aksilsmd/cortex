@@ -133,7 +133,7 @@ Renfort « 3D, jeu, e-learning » du 2026-11-21 (demande d'Aksil ; lus par clone
 
 | Dépôt | Licence | Commit consulté | Référence Dan-Cortex | Forme |
 |---|---|---|---|---|
-| https://github.com/scenario-labs/skills | MIT | `221ed89562795d4a7095c9530cf807062e7ad8d3` | `bibliotheque/scenario-labs/` ; pivots `studio-3d-jeu`, `creation-medias-ia` | B étendue (copie fidèle, scripts compris, hors `skills/`) |
+| https://github.com/scenario-labs/skills | MIT | `221ed89562795d4a7095c9530cf807062e7ad8d3` | `bibliotheque/scenario-labs/` ; pivots `studio-3d-jeu`, `creation-medias-ia` | B étendue (copie fidèle, scripts compris, hors `skills/` ; famille Roblox déplacée d'un bloc le 2026-11-23, contenu inchangé) |
 | https://github.com/oso95/scroll-world | MIT | `71cc36d3bb150248ae36a2c552f9cbf88802a79c` | `bibliotheque/scroll-world/` ; pivot `web-3d-immersif` | B étendue |
 | https://github.com/mrdoob/three.js | MIT | `6246c818834fd19d0c216d3dbc074b6cc9c27896` | `web-3d-immersif` | A |
 | https://github.com/pmndrs/react-three-fiber | MIT | `d74622ea8ed717f7212d7e19d65ff3e325508389` | `web-3d-immersif` | A |
