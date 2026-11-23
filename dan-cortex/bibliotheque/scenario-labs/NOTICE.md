@@ -10,7 +10,18 @@ Copie **fidèle et non traduite** (forme B étendue, décision d'Aksil du 2026-1
 | Commit | `221ed89562795d4a7095c9530cf807062e7ad8d3` |
 | Fichiers repris | tout le dossier `skills/` (172 `SKILL.md`, leurs `references/`, `scripts/`, `assets/`) et `LICENSE` |
 
-Modifications : aucune dans les fichiers repris. Ajouts Dan-Cortex : ce `NOTICE.md`, `INDEX.md` et `index/` (sommaires générés, descriptions d'origine abrégées).
+Modifications : aucune dans le **contenu** des fichiers repris. Un seul écart de **rangement** (2026-11-23) :
+la famille Roblox, `skills/game-engines/roblox/` dans le dépôt amont, est rangée ici dans `game-engines-roblox/`.
+Ses 14 compétences, leur `README.md` et tous leurs fichiers sont déplacés d'un bloc, octet pour octet. Raison :
+l'import par « Téléverser un plugin » de l'application Claude refuse une archive dont un chemin dépasse
+12 dossiers (« Zip file contains path more than 12 folders deep ») ; le gabarit `arena` de
+`scenario-roblox-architecture` descendait à 13 segments depuis la racine du plugin. Le déplacement en retire deux,
+et Dan-Cortex se tient à 11 segments au plus (test `ArchivePluginTests`). Les renvois internes à la famille
+(`HERE.parents[1] / "scenario-roblox-expert"`, `require("../../../../scenario-roblox-expert/…")`, gabarit
+`scripts/templates/arena/`) restent valides, car la famille garde sa forme. Les liens du `README.md` de la famille
+vers `../../../tests/…` visaient le dossier `tests/` amont, qui n'a jamais été copié : ils restaient morts avant le
+déplacement et le restent. Le commit d'origine ci-dessus ne change pas. Une recopie depuis l'amont doit refaire ce
+déplacement. Ajouts Dan-Cortex : ce `NOTICE.md`, `INDEX.md` et `index/` (sommaires générés, descriptions d'origine abrégées).
 
 Règles d'usage dans Dan-Cortex :
 - Ces skills ne sont **pas** dans `skills/` : ils ne se chargent pas automatiquement et ne coûtent aucun token tant qu'un skill-pivot ne les ouvre pas.

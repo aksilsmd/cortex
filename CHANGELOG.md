@@ -31,12 +31,20 @@ une 2.3.1.
 - `CONTRIBUTING.md` §7 oubliait `pyproject.toml` parmi les endroits où s'écrit la version ; le modèle de ticket
   proposait 2.1.0 comme exemple.
 - L'entrée 2.3.0 de ce journal portait deux sections « Ajouté » : elles sont fusionnées.
+- L'import de `dan-cortex.plugin` par « Téléverser un plugin » était refusé : « Zip file contains path more
+  than 12 folders deep ». Le gabarit `arena` de `scenario-roblox-architecture` descendait à 13 segments. La
+  famille Roblox de `bibliotheque/scenario-labs/` passe d'un bloc de `skills/game-engines/roblox/` à
+  `game-engines-roblox/`, contenu inchangé : 11 segments au plus. Index, pivot `studio-3d-jeu` et notices
+  suivent (audit, constat A29).
 
 ### Ajouté
 
 - `tests/test_coherence.py` : douze contrôles qui auraient détecté ces écarts (version du résumé anglais,
   compteur de la bibliothèque partout, licence et notice de chaque source, pivots, inventaire du plugin,
   chemins `${CLAUDE_SKILL_DIR}` et `${CLAUDE_PLUGIN_ROOT}`, noms `dan-cortex:…`, fiches d'agents).
+- `tests/test_archive.py` et un contrôle dans `scripts/construire_plugin.py` : l'archive est refusée si un
+  chemin dépasse 11 segments, si le plugin dépasse 5 000 fichiers ou 200 Mo, s'il a un `bin/` à sa racine ou
+  s'il perd `.claude-plugin/plugin.json`.
 
 ## [2.3.0] - 2026-11-22
 

@@ -32,6 +32,9 @@ qui porte sur l'organisation du dépôt et la publication : les deux ne se recou
 - Douze tests ajoutés (`tests/test_coherence.py`) : sur le commit audité, ils relèvent 15 échecs ; corrigés, ils
   passent.
 - Version inchangée (2.3.0) ; corrections consignées sous « Non publié » dans le `CHANGELOG.md`.
+- Ajout du 23/11/2026 (A29) : l'archive était **refusée à l'import** par « Téléverser un plugin » (chemin de
+  13 segments). La famille Roblox de `scenario-labs/` est remontée de deux niveaux, d'un bloc ; profondeur
+  maximale 11 ; un test et le script d'archive bloquent désormais tout dépassement.
 
 ## Constats
 
@@ -69,7 +72,38 @@ une liste est incomplète), **mineur** (forme).
 | A27 | mineur | `dan-cortex/agents/suivi-avancement.md:9` | `tools` écrit en liste en ligne, les 58 autres fiches en liste à tirets | lecture | **à décider** (D6) : YAML valide, forme seule |
 | A28 | mineur | `accueil-recueil` ↔ `recueil-besoin` | Doublon apparent vérifié : pas un doublon. L'accueil est le parcours en dix étapes ; le recueil est l'entretien qu'il appelle à l'étape 4 | `accueil-recueil/SKILL.md:78` | aucun skill supprimé ; voir D2 pour les déclencheurs |
 
-A28 n'est pas un constat mais une vérification demandée, sans écart : le décompte porte sur A01 à A27.
+| A29 | erreur | `dist/dan-cortex.plugin` | Import refusé par « Téléverser un plugin » : « Zip file contains path more than 12 folders deep » (capture de l'utilisateur, 23/11/2026). 44 entrées de l'archive dépassent 11 segments (38 fichiers, 6 dossiers) ; 12 fichiers en ont 13, tous dans le gabarit `arena` de `bibliotheque/scenario-labs/skills/game-engines/roblox/scenario-roblox-architecture/scripts/templates/` | mesure des noms de l'archive : profondeurs 11 (116), 12 (26), 13 (12) ; 2 579 fichiers, 34,9 Mo décompressés, pas de `bin/` | famille Roblox déplacée d'un bloc vers `scenario-labs/game-engines-roblox/` ; maximum 11 ; `tests/test_archive.py` et contrôle dans `construire_plugin.py` (fait) |
+
+A28 n'est pas un constat mais une vérification demandée, sans écart : le décompte de la synthèse porte sur A01 à
+A27 ; A29 s'y ajoute le 23/11/2026.
+
+### A29 : choix de la correction
+
+Il fallait gagner deux segments (13 → 11, un de marge sous la limite constatée). Pistes évaluées :
+
+| Piste | Gain | Verdict |
+|---|---|---|
+| Retirer le niveau `skills/` de `scenario-labs/` | 1 | **insuffisant** seul ; déplace 172 compétences et 170 liens d'index |
+| Raccourcir le gabarit (`scripts/templates/arena/` → `scripts/arena/`) | 1 | **insuffisant** seul ; modifie le code amont (`TEMPLATE = HERE / "templates" / "arena"`) |
+| Sortir `scenario-roblox-architecture` seule de sa famille | 2 | **refusé** : `rbx_architecture.py` importe `HERE.parents[1] / "scenario-roblox-expert"`, la compétence doit rester sœur des autres |
+| Remonter **toute la famille Roblox** d'un bloc : `skills/game-engines/roblox/` → `game-engines-roblox/` | 2 | **retenu** |
+
+La piste retenue ne modifie aucun octet des fichiers repris : 14 compétences et leur `README.md` changent de
+dossier, ensemble. Les renvois internes restent justes, car la famille garde sa forme : `parents[1]`, les
+`require("../../../../scenario-roblox-expert/…")` des scripts Luau, le gabarit `scripts/templates/arena/`. Aucun
+fichier hors de la famille n'y pointait par chemin relatif ; ses seuls liens sortants (`../../../tests/…` du
+`README.md`) visaient le dossier `tests/` amont, jamais copié : morts avant, morts après. Le nom
+`game-engines-roblox` reprend celui de l'index (`index/game-engines-roblox.md`). Contrepartie : la copie n'est
+plus rangée comme l'amont pour cette famille. C'est écrit dans `bibliotheque/scenario-labs/NOTICE.md`,
+`INDEX.md`, `dan-cortex/NOTICE.md`, `renfort-externe.md` §8 et `docs/bibliotheque.md` ; le commit d'origine et
+les textes de licence ne changent pas. Renvois mis à jour : 14 liens de `index/game-engines-roblox.md`,
+12 cellules du pivot `studio-3d-jeu` (préfixe `R:`) et sa règle de préfixe. `creation-medias-ia` ne route vers
+aucune compétence Roblox. Contrôle : les 172 liens des index et les 94 cellules du pivot se résolvent.
+
+Limites vérifiées par `tests/test_archive.py` et par `construire_plugin.py` (construction et `--verifier`) :
+11 segments au plus, 5 000 fichiers, 200 Mo, pas de `bin/` à la racine, `.claude-plugin/plugin.json` présent.
+Les trois dernières limites sont celles annoncées par l'éditeur : **à vérifier** sur sa documentation (aucun
+accès réseau pendant ce correctif). Appliqué à l'ancienne archive, le contrôle la refuse (44 entrées).
 
 ## Verdict sur le correctif proposé
 
@@ -110,6 +144,7 @@ ligne par ligne, après contrôle.
 |---|---|
 | Avant (commit `447cdb1`) | `784 contrôles`, format correct ; `Ran 53 tests`, `OK` ; `Catalogues à jour.` ; `dist/dan-cortex.plugin à jour (2579 fichiers).` ; audit des réglages : `NO_MATCHING_PATTERNS` (INFO) ; `Tout est vert.` |
 | Après (`make build` puis `make verify`) | `784 contrôles`, format correct ; `Ran 65 tests`, `OK` ; `Catalogues à jour.` ; `dist/dan-cortex.plugin à jour (2579 fichiers).` ; audit des réglages : `NO_MATCHING_PATTERNS` (INFO) ; `Tout est vert.` |
+| Après A29 (23/11/2026) | `784 contrôles`, format correct ; `Ran 69 tests`, `OK` ; `Catalogues à jour.` ; `dist/dan-cortex.plugin à jour (2579 fichiers).` ; audit des réglages : `NO_MATCHING_PATTERNS` (INFO) ; `Tout est vert.` Archive : profondeur maximale 11, 12 460 784 octets, 34 931 065 octets décompressés |
 
 ## Méthode
 

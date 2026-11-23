@@ -27,7 +27,7 @@ Ne pas l'utiliser pour : la 3D dans un navigateur (`${CLAUDE_SKILL_DIR}/../web-3
 5. **Chaîne d'un asset** : modélisation ou sculpture, retopologie, UV et cuisson, texturage, rig, animation, export, import moteur, performance. Valider chaque étape avant la suivante, sauvegarde d'étape à chaque séance.
 
 ## Table de routage
-Préfixe `P` = `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/skills/`. Chaque cellule est un dossier ; le fichier à ouvrir est `P<dossier>/SKILL.md`. « — » : aucun skill dédié.
+Préfixe `P` = `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/skills/`. Chaque cellule est un dossier ; le fichier à ouvrir est `P<dossier>/SKILL.md`. Exception, la famille Roblox : une cellule `R:<dossier>` s'ouvre en `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/game-engines-roblox/<dossier>/SKILL.md` (famille remontée de deux niveaux pour l'import du plugin, voir `bibliotheque/scenario-labs/NOTICE.md`). « — » : aucun skill dédié.
 
 **Création numérique (DCC)**
 
@@ -52,21 +52,21 @@ Préfixe `P` = `${CLAUDE_PLUGIN_ROOT}/bibliotheque/scenario-labs/skills/`. Chaqu
 
 | Besoin | Godot | Unity | Unreal | Roblox |
 |---|---|---|---|---|
-| Point d'entrée, canal d'exécution | `game-engines/godot/scenario-godot-expert` | `game-engines/unity/scenario-unity-expert` | `game-engines/unreal/scenario-unreal-expert` | `game-engines/roblox/scenario-roblox-expert` |
-| Architecture du code, données | `game-engines/godot/scenario-godot-architecture` | `game-engines/unity/scenario-unity-architecture` | voir gameplay | `game-engines/roblox/scenario-roblox-architecture` ; `game-engines/roblox/scenario-roblox-data` |
-| Gameplay, IA | `game-engines/godot/scenario-godot-gameplay` | `game-engines/unity/scenario-unity-gameplay` | `game-engines/unreal/scenario-unreal-gameplay` | `game-engines/roblox/scenario-roblox-gameplay` |
+| Point d'entrée, canal d'exécution | `game-engines/godot/scenario-godot-expert` | `game-engines/unity/scenario-unity-expert` | `game-engines/unreal/scenario-unreal-expert` | `R:scenario-roblox-expert` |
+| Architecture du code, données | `game-engines/godot/scenario-godot-architecture` | `game-engines/unity/scenario-unity-architecture` | voir gameplay | `R:scenario-roblox-architecture` ; `R:scenario-roblox-data` |
+| Gameplay, IA | `game-engines/godot/scenario-godot-gameplay` | `game-engines/unity/scenario-unity-gameplay` | `game-engines/unreal/scenario-unreal-gameplay` | `R:scenario-roblox-gameplay` |
 | 2D | `game-engines/godot/scenario-godot-2d` | `game-engines/unity/scenario-unity-2d` | — | — |
-| Monde, niveau | `game-engines/godot/scenario-godot-3d-world` | `game-engines/unity/scenario-unity-world-building` | `game-engines/unreal/scenario-unreal-world-building` | `game-engines/roblox/scenario-roblox-environment` |
-| Animation de personnages | `game-engines/godot/scenario-godot-animation` | `game-engines/unity/scenario-unity-animation` | `game-engines/unreal/scenario-unreal-animation` ; `game-engines/unreal/scenario-unreal-cinematics` | `game-engines/roblox/scenario-roblox-animation` |
-| Interface (UI, HUD) | `game-engines/godot/scenario-godot-ui` | `game-engines/unity/scenario-unity-ui` | voir gameplay | `game-engines/roblox/scenario-roblox-ui` |
-| Effets (VFX) | `game-engines/godot/scenario-godot-vfx` | `game-engines/unity/scenario-unity-vfx` | `game-engines/unreal/scenario-unreal-vfx` | `game-engines/roblox/scenario-roblox-vfx-audio` |
+| Monde, niveau | `game-engines/godot/scenario-godot-3d-world` | `game-engines/unity/scenario-unity-world-building` | `game-engines/unreal/scenario-unreal-world-building` | `R:scenario-roblox-environment` |
+| Animation de personnages | `game-engines/godot/scenario-godot-animation` | `game-engines/unity/scenario-unity-animation` | `game-engines/unreal/scenario-unreal-animation` ; `game-engines/unreal/scenario-unreal-cinematics` | `R:scenario-roblox-animation` |
+| Interface (UI, HUD) | `game-engines/godot/scenario-godot-ui` | `game-engines/unity/scenario-unity-ui` | voir gameplay | `R:scenario-roblox-ui` |
+| Effets (VFX) | `game-engines/godot/scenario-godot-vfx` | `game-engines/unity/scenario-unity-vfx` | `game-engines/unreal/scenario-unreal-vfx` | `R:scenario-roblox-vfx-audio` |
 | Shaders, matériaux | `game-engines/godot/scenario-godot-shaders` | `game-engines/unity/scenario-unity-shaders` | `game-engines/unreal/scenario-unreal-materials` | — |
-| Éclairage, rendu | `game-engines/godot/scenario-godot-rendering-lighting` | `game-engines/unity/scenario-unity-rendering-lighting` | `game-engines/unreal/scenario-unreal-lighting-rendering` | `game-engines/roblox/scenario-roblox-environment` |
-| Performance | `game-engines/godot/scenario-godot-performance-export` | `game-engines/unity/scenario-unity-performance` | `game-engines/unreal/scenario-unreal-performance` | `game-engines/roblox/scenario-roblox-performance` |
-| Multijoueur | `game-engines/godot/scenario-godot-multiplayer` | voir gameplay (étape netcode) | voir gameplay (réplication) | `game-engines/roblox/scenario-roblox-networking` |
-| Mobile | `game-engines/godot/scenario-godot-performance-export` | `game-engines/unity/scenario-unity-mobile` | `game-engines/unreal/scenario-unreal-performance` | `game-engines/roblox/scenario-roblox-performance` |
+| Éclairage, rendu | `game-engines/godot/scenario-godot-rendering-lighting` | `game-engines/unity/scenario-unity-rendering-lighting` | `game-engines/unreal/scenario-unreal-lighting-rendering` | `R:scenario-roblox-environment` |
+| Performance | `game-engines/godot/scenario-godot-performance-export` | `game-engines/unity/scenario-unity-performance` | `game-engines/unreal/scenario-unreal-performance` | `R:scenario-roblox-performance` |
+| Multijoueur | `game-engines/godot/scenario-godot-multiplayer` | voir gameplay (étape netcode) | voir gameplay (réplication) | `R:scenario-roblox-networking` |
+| Mobile | `game-engines/godot/scenario-godot-performance-export` | `game-engines/unity/scenario-unity-mobile` | `game-engines/unreal/scenario-unreal-performance` | `R:scenario-roblox-performance` |
 | Web | `game-engines/godot/scenario-godot-performance-export` | `game-engines/unity/scenario-unity-web` | — | — |
-| Import d'assets, pipeline, CI | `game-engines/godot/scenario-godot-pipeline-automation` | `game-engines/unity/scenario-unity-pipeline-automation` | `game-engines/unreal/scenario-unreal-pipeline-automation` | `game-engines/roblox/scenario-roblox-assets` ; `game-engines/roblox/scenario-roblox-tooling` |
+| Import d'assets, pipeline, CI | `game-engines/godot/scenario-godot-pipeline-automation` | `game-engines/unity/scenario-unity-pipeline-automation` | `game-engines/unreal/scenario-unreal-pipeline-automation` | `R:scenario-roblox-assets` ; `R:scenario-roblox-tooling` |
 
 Absents du tableau (audio Godot, Luau, monétisation Roblox) : voir `index/game-engines-godot.md` et `index/game-engines-roblox.md`.
 

@@ -34,7 +34,7 @@ Dan-Cortex intègre des textes tiers traduits et adaptés (forme B limitée de `
 
 | Dossier | Dépôt amont | Titulaire | Licence | Commit | Fichiers repris | NOTICE détaillée |
 |---|---|---|---|---|---|---|
-| `bibliotheque/scenario-labs/` | https://github.com/scenario-labs/skills | © 2026 Scenario Inc. | MIT | `221ed89562795d4a7095c9530cf807062e7ad8d3` | `skills/` complet (172 skills, références, scripts), non traduit | `bibliotheque/scenario-labs/NOTICE.md` |
+| `bibliotheque/scenario-labs/` | https://github.com/scenario-labs/skills | © 2026 Scenario Inc. | MIT | `221ed89562795d4a7095c9530cf807062e7ad8d3` | `skills/` complet (172 skills, références, scripts), non traduit ; famille Roblox rangée dans `game-engines-roblox/` (contenu inchangé) | `bibliotheque/scenario-labs/NOTICE.md` |
 | `bibliotheque/scroll-world/` | https://github.com/oso95/scroll-world | © 2026 cyw | MIT | `71cc36d3bb150248ae36a2c552f9cbf88802a79c` | `skills/scroll-world/` complet, non traduit | `bibliotheque/scroll-world/NOTICE.md` |
 | `bibliotheque/cli-anything/` | https://github.com/HKUDS/CLI-Anything | © 2026 HKUDS — Yuhao Yang, Tianyu Fan, Chao Huang | Apache-2.0 | `34f519533bc175d2fe287ab8316b0dd99bb9cc43` | `skills/` seul (70 compétences, aucun script), non traduit | `bibliotheque/cli-anything/NOTICE.md` |
 | `bibliotheque/understand-anything/` | https://github.com/Egonex-AI/Understand-Anything | © 2026 Yuxiang Lin ; © 2026 Infinite Universe, Inc. | MIT | `17550efd7f70c9af683ce2b4bf0bd71f42593500` | `understand-anything-plugin/skills/` seul (9 compétences, 20 scripts d'analyse locale), non traduit | `bibliotheque/understand-anything/NOTICE.md` |
